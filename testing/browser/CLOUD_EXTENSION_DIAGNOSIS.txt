@@ -1,0 +1,12 @@
+
+targets [
+  { type: 'browser_ui', url: 'chrome://omnibox-popup.top-chrome/' },
+  {
+    type: 'browser_ui',
+    url: 'chrome://omnibox-popup.top-chrome/omnibox_popup_aim.html'
+  },
+  { type: 'page', url: 'about:blank' },
+  { type: 'page', url: 'chrome://extensions/' }
+]
+loadErr cdpSession.send: Protocol error (Extensions.loadUnpacked): Loading of unpacked extensions is disabled by the administrator.
+workers []

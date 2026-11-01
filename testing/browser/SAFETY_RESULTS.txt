@@ -1,0 +1,19 @@
+✔ production safety checks pass without action side effects (1.627508ms)
+✔ fixed ceiling independently enforced (0.175455ms)
+✔ stricter native ceiling preserved (0.143156ms)
+✔ dynamic unavailable fails closed without networking (0.169436ms)
+✔ stricter dynamic cap preserved (0.150197ms)
+✔ 59 seconds rejected, endpoints accepted (0.708991ms)
+✔ original rating middleware rejects (0.287114ms)
+✔ unknown balance, budget, profitability do not fabricate approval (0.528148ms)
+✔ native purchase cache respected but never mutated (0.247644ms)
+✔ club ownership unknown fails closed without squad requests (0.412133ms)
+✔ unconfigured profit rule is labeled without inventing rejection (0.327465ms)
+ℹ tests 11
+ℹ suites 0
+ℹ pass 11
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10.547104

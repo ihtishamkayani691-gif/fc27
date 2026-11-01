@@ -1,0 +1,27 @@
+✔ missing search maximum receives fixed ceiling and preserves all-player promo intent (1.849394ms)
+✔ tighter native maximum and minimum are preserved; original criteria remains untouched (0.960331ms)
+✔ invalid or contradictory price limits fail closed (0.336959ms)
+✔ native price rounding never broadens maximum (0.233563ms)
+✔ missing/mismatched promo metadata blocks intents (0.249998ms)
+✔ player selection restrictions are rejected rather than silently cleared (0.21183ms)
+✔ unknown response capacity does not invent a 21-item cap or split (0.389618ms)
+✔ explicit observed capacity causes overlapping valid-price splits (0.35731ms)
+✔ native SDK capacity provenance is explicit and permits a split (0.28502ms)
+✔ capacity-sized result is possible crowding, never full market coverage (0.305141ms)
+✔ bounded scope capacity marks unresolved crowding without unbounded tree growth (0.590452ms)
+✔ crowded atomic or guarded boundary band stays explicitly incomplete (0.172781ms)
+✔ unavailable native helpers do not trigger guessed split boundaries (0.138499ms)
+✔ fair leaf rotation and broad backstop preserve both sides (0.333544ms)
+✔ unproductive scopes cool down without faster requests or infinite retries (0.29784ms)
+✔ stale response IDs and overlapping requests are rejected (0.217609ms)
+✔ rejected request settles without changing the price cap or adding guessed scopes (0.123857ms)
+✔ native criteria prototype and stricter custom filters survive scoped copies (0.217619ms)
+✔ stop prevents all subsequent discovery intents (0.126862ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 13.902092

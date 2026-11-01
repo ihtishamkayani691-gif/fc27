@@ -1,0 +1,11 @@
+[FC Fresh Pages v6] requested=30 returned=0 min=0 max=0 class=empty fresh=false phase=empty-retry next=30 anchor=0 jumpsOk=null bounds=0-501
+✔ v6 production randomizer reproduces 200,250,300,0 cycle (1.292062ms)
+✔ v6 actual runActions starts at unverified 30; 30/31 empty states have no terminal state (5.197821ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 10.835768

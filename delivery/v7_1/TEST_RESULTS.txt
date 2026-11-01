@@ -1,0 +1,74 @@
+$ node work/baseline.cjs
+[FC Fresh Pages v6] requested=30 returned=0 min=0 max=0 class=empty fresh=false phase=empty-retry next=30 anchor=0 jumpsOk=null bounds=0-501
+✔ v6 production randomizer reproduces 200,250,300,0 cycle (1.255156ms)
+✔ v6 actual runActions starts at unverified 30; 30/31 empty states have no terminal state (5.620207ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11.2241
+
+exit=0
+
+$ node work/regression.cjs
+✔ page 1 is validated first, inclusive seconds reach only candidate handler (23.314557ms)
+✔ configured page 30 cannot trigger an unsupported direct jump (10.943146ms)
+✔ starting beyond final page recovers by sequential initialization and terminates at empty edge (4.588558ms)
+✔ server always returning first page is detected without endless scan (6.439304ms)
+✔ all-empty page 30/31 regression terminates after three page-1 requests (7.532295ms)
+✔ HTTP 429, auth, malformed and network failures are not successful empty pages (19.641191ms)
+✔ random minima freeze only for fresh requests; intended filters and buy limits remain (6.235156ms)
+✔ criteria change starts a separate page-1 session without stale anchor (4.567117ms)
+✔ target split across boundary visits both pages and both neighbours (4.735501ms)
+✔ moving target outside the neighbourhood triggers rediscovery (7.006561ms)
+✔ stale remembered anchor is never loaded (4.409188ms)
+✔ cache/page inconsistencies with same listing set stop safely (3.496409ms)
+✔ unsorted durations do not cause bisection or miss target candidates (2.872097ms)
+✔ Search Result Threshold 0, equal, exceeded preserve raw-result safeguard (23.021875ms)
+✔ stop/restart clears navigation and ignores late responses (8.271872ms)
+✔ milliseconds, timestamps, nonnumbers, invalid seconds cannot become target (26.307707ms)
+✔ TEST service interlock blocks native bidding and scoped search bypasses enhancer sorter/autobuy (4.229216ms)
+✔ service-side criteria mutation fails closed with normal-log diagnostics (3.637443ms)
+✔ configured page limit bounds discovery independently of item count (5.096096ms)
+✔ individual-player random rotation rejected in broad-market fresh mode (4.658875ms)
+✔ passive fetch diagnostics log only numeric observed pagination; no tokens or guessed page (3.81388ms)
+✔ multiple observed requests remain ambiguous instead of confirming a page (3.371311ms)
+✔ passive XHR diagnostics preserve open/send and record real observed parameters (3.34398ms)
+✔ unchanged stale durations after 15 seconds fail closed (2.685405ms)
+✔ known-empty neighbour is bounded and skipped while valid targets remain (17.698426ms)
+✔ monitoring never requires multi-page jumps except supported page-1 reset (17.208256ms)
+✔ existing production bid middleware rejects out-of-window cards on both initial and rebid paths (4.141905ms)
+✔ effective multi-rarity selection is preserved before fingerprint/request creation (3.340595ms)
+✔ enhancer exclusion filter still gates candidates after raw-page navigation (3.339954ms)
+✔ actual service wrapper forwards page unchanged and only clears cache at page 1 (2.794881ms)
+✔ prototype-level TEST interlock also blocks direct class bidding (7.11865ms)
+✔ modern client filtering cannot turn a populated raw market page into an empty-page decision (4.374997ms)
+✔ actual modern bundle hook captures original response before RXe hides listings (22.069698ms)
+✔ previous v7 reproduces live page 1/2 times then false-positive DTO mutation stop (16.322028ms)
+✔ live sequence continues to supported starting page 50 and finds 3540-3600 seconds (5.784726ms)
+✔ valid supported direct page 50 is monitored instead of returning to page 1 (7.761631ms)
+✔ empty unsupported jump falls back to sequential warmup then reaches 50 despite budget 39 (17.159332ms)
+✔ jump replaying first-page data is rejected and sequential fallback still finds target (5.825597ms)
+✔ different data at wrong observed jump offset is not trusted as requested page 50 (4.664324ms)
+✔ without observable offsets, sequential fallback reaches starting page without guessed jumps (18.132943ms)
+✔ 59 and 60 seconds never count as discovery and never reach purchase evaluation (13.476271ms)
+✔ semantic filter changes still stop, but all known DTO pagination mutations continue (21.668231ms)
+✔ calibrated 20-stride is learned, never computed from count 21 (4.31745ms)
+✔ above-window starting page probes backwards and finds an earlier fresh band (4.606897ms)
+✔ page budget 39 at validated starting page 50 permits page 88 then stops explicitly (12.336539ms)
+✔ rate limit at direct probe stops immediately, never attempts a sequential bypass (5.253364ms)
+✔ starting page 2 is already sequentially validated and is not redundantly jump-probed (10.445985ms)
+✔ changing observed page size makes a direct-jump calibration ineligible (14.827181ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 455.410358
+
+exit=0

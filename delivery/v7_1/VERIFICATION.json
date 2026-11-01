@@ -1,0 +1,41 @@
+{
+  "syntax_checks": [
+    {
+      "file": "background.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "content_script.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/index.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/main.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/vendor.js",
+      "syntax_exit": 0
+    }
+  ],
+  "manifest_resources_checked": 11,
+  "zip_crc": "passed",
+  "zip_root_manifest": "passed",
+  "zip_contents_match_tested_files": true,
+  "changed_files": [
+    "manifest.json",
+    "AUTOFIND_V7_1_README.md",
+    "js/index.js",
+    "js/main.js"
+  ],
+  "extension_zip_sha256": "4ac783f12d3d516bbf59567fe6e73633cfed3d02d4c993353d1778ae21691b7e",
+  "live_EA_verified": false,
+  "chrome_loaded": false,
+  "both_source_diffs_apply_and_match_tested_files": true,
+  "regression_tests_passed": 48,
+  "original_v7_zip_unchanged": true,
+  "extension_zip_size": 1788252
+}

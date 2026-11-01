@@ -1,0 +1,100 @@
+$ node work/baseline.cjs
+[FC Fresh Pages v6] requested=30 returned=0 min=0 max=0 class=empty fresh=false phase=empty-retry next=30 anchor=0 jumpsOk=null bounds=0-501
+✔ v6 production randomizer reproduces 200,250,300,0 cycle (1.470542ms)
+✔ v6 actual runActions starts at unverified 30; 30/31 empty states have no terminal state (5.706241ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11.595819
+
+exit=0
+
+$ node work/regression.cjs
+✔ page 1 is validated first, inclusive seconds reach only candidate handler (22.70248ms)
+✔ configured page 30 cannot trigger an unsupported direct jump (16.14336ms)
+✔ starting beyond final page recovers by sequential initialization and terminates at empty edge (5.812031ms)
+✔ server always returning first page is detected without endless scan (5.320869ms)
+✔ all-empty page 30/31 regression terminates after three page-1 requests (9.106288ms)
+✔ HTTP 429, auth, malformed and network failures are not successful empty pages (23.762531ms)
+✔ random minima freeze only for fresh requests; intended filters and buy limits remain (6.476224ms)
+✔ criteria change starts a separate page-1 session without stale anchor (6.160858ms)
+✔ target split across boundary visits both pages and both neighbours (5.470085ms)
+✔ moving target outside the neighbourhood triggers rediscovery (8.256765ms)
+✔ stale remembered anchor is never loaded (5.081587ms)
+✔ cache/page inconsistencies with same listing set stop safely (3.889527ms)
+✔ unsorted durations do not cause bisection or miss target candidates (3.520068ms)
+✔ Search Result Threshold 0, equal, exceeded preserve raw-result safeguard (17.213366ms)
+✔ stop/restart clears navigation and ignores late responses (6.959315ms)
+✔ milliseconds, timestamps, nonnumbers, invalid seconds cannot become target (23.130486ms)
+✔ TEST service interlock blocks native bidding and scoped search bypasses enhancer sorter/autobuy (3.535832ms)
+✔ service-side criteria mutation fails closed with normal-log diagnostics (3.27637ms)
+✔ configured page limit bounds discovery independently of item count (4.038482ms)
+✔ individual-player random rotation rejected in broad-market fresh mode (2.898799ms)
+✔ passive fetch diagnostics log only numeric observed pagination; no tokens or guessed page (5.377554ms)
+✔ multiple observed requests remain ambiguous instead of confirming a page (3.443382ms)
+✔ passive XHR diagnostics preserve open/send and record real observed parameters (3.518556ms)
+✔ unchanged stale durations after 15 seconds fail closed (2.806961ms)
+✔ known-empty neighbour is bounded and skipped while valid targets remain (20.834117ms)
+✔ monitoring never requires multi-page jumps except supported page-1 reset (10.974901ms)
+✔ existing production bid middleware rejects out-of-window cards on both initial and rebid paths (9.693555ms)
+✔ effective multi-rarity selection is preserved before fingerprint/request creation (3.384013ms)
+✔ enhancer exclusion filter still gates candidates after raw-page navigation (3.583535ms)
+✔ actual service wrapper forwards page unchanged and only clears cache at page 1 (2.97816ms)
+✔ prototype-level TEST interlock also blocks direct class bidding (2.602642ms)
+✔ modern client filtering cannot turn a populated raw market page into an empty-page decision (3.438035ms)
+✔ actual modern bundle hook captures original response before RXe hides listings (14.290461ms)
+✔ previous v7 reproduces live page 1/2 times then false-positive DTO mutation stop (15.623976ms)
+✔ live sequence continues to supported starting page 50 and finds 3540-3600 seconds (5.111032ms)
+✔ valid supported direct page 50 is monitored instead of returning to page 1 (4.757527ms)
+✔ empty unsupported jump falls back to sequential warmup then reaches 50 despite budget 39 (20.073859ms)
+✔ jump replaying first-page data is rejected and sequential fallback still finds target (5.714043ms)
+✔ different data at wrong observed jump offset is not trusted as requested page 50 (4.434951ms)
+✔ without observable offsets, sequential fallback reaches starting page without guessed jumps (15.586709ms)
+✔ 59 and 60 seconds never count as discovery and never reach purchase evaluation (4.37501ms)
+✔ semantic filter changes still stop, but all known DTO pagination mutations continue (7.601525ms)
+✔ calibrated 20-stride is learned, never computed from count 21 (4.4742ms)
+✔ above-window starting page probes backwards and finds an earlier fresh band (4.998913ms)
+✔ page budget 39 at validated starting page 50 permits page 88 then stops explicitly (15.572858ms)
+✔ rate limit at direct probe stops immediately, never attempts a sequential bypass (5.445888ms)
+✔ starting page 2 is already sequentially validated and is not redundantly jump-probed (5.043139ms)
+✔ changing observed page size makes a direct-jump calibration ineligible (5.51329ms)
+✔ v7.1 exact 1,2,20,1 recovery persists through actual single-SCREAM reload and native adapter (25.208505ms)
+✔ v7.1 actual multi-filter rotation can repeatedly restart calibration without discovery (5.094027ms)
+✔ v7.1 concurrent real runActions can dispatch duplicate page-1 requests before locking (3.314127ms)
+✔ v7.2 exact failed page-20 probe uses actual loop/adapter then reaches page 3 without reprobing (6.545259ms)
+✔ v7.2 actual sequential fallback reaches 3559s target on page 20 and monitors it (9.985566ms)
+✔ same SCREAM assignments, fresh criteria objects and deleted processor pointers do not restart recovery (5.760944ms)
+✔ processor recreation sharing real Trader data restores sequential warmup instead of calibration (5.20242ms)
+✔ same-market controller rebinding preserves recovery and emits its lifecycle cause (6.08949ms)
+✔ failed-probe latch prevents forced re-entry into calibration/probe during recovery (5.618188ms)
+✔ actual multi-filter rotation is deferred during bounded discovery and cannot restart every request (7.028969ms)
+✔ saved same-SCREAM settings cannot silently replace active start/page budget during fallback (6.015098ms)
+✔ unchanged semantic criteria retain the same fingerprint across transport changes/reapplied SCREAM (6.91676ms)
+✔ genuine changed search context resets with a cause and repeated context flipping stops by watchdog (8.483577ms)
+✔ cyclic warmup 1/2 requests with no new valid page trips watchdog instead of hanging (8.614365ms)
+✔ legitimate monitoring refreshes are exempt from discovery watchdog (13.036997ms)
+✔ concurrent actual runActions is locked before pre-search await and sends only one request (3.523743ms)
+✔ stop during actual asynchronous filter loading prevents a late native market request (2.881403ms)
+✔ missing controller criteria releases early lock and allows a later healthy cycle (3.295739ms)
+✔ wrong observed sequential offset at page 3 stops; internal counter cannot fake advancement (6.010921ms)
+✔ sequential page-3 successful empty tail is finite and explicitly inconclusive (5.828506ms)
+✔ HTTP 429 at page 20 through the actual request adapter stops with no fallback bypass (4.497745ms)
+✔ non-Auto-Find retains original scheduled filter load behavior (3.052703ms)
+✔ two processor owners sharing Trader data cannot overlap native market requests (3.305484ms)
+✔ real controller filter change while awaiting a native response discards stale candidates safely (3.231652ms)
+✔ adjacent 21-result pages can overlap by one listing without triggering a false replay (4.036158ms)
+✔ legitimate rotation after finding a target lets another market discover its own later pages (8.354353ms)
+ℹ tests 74
+ℹ suites 0
+ℹ pass 74
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 578.267509
+
+exit=0

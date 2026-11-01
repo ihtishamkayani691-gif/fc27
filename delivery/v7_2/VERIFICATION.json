@@ -1,0 +1,63 @@
+{
+  "syntax_checks": [
+    {
+      "file": "background.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "content_script.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/index.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/main.js",
+      "syntax_exit": 0
+    },
+    {
+      "file": "js/vendor.js",
+      "syntax_exit": 0
+    }
+  ],
+  "manifest_resources_checked": 11,
+  "zip_crc": "passed",
+  "zip_root_manifest": "passed",
+  "zip_contents_match_tested_files": true,
+  "changed_files": [
+    "AUTOFIND_V7_2_README.md",
+    "manifest.json",
+    "js/index.js",
+    "js/main.js"
+  ],
+  "extension_zip_sha256": "ab11022dd5340023455375705c799081fdcc186aa6c5fb5521c1cf02d5a433e8",
+  "live_EA_verified": false,
+  "chrome_loaded": false,
+  "both_source_diffs_apply_and_match_tested_files": true,
+  "regression_tests_passed": 74,
+  "separate_v6_baseline_tests_passed": 2,
+  "extension_zip_size": 1791729,
+  "files_sha256": {
+    "AUTOFIND_V4_README.txt": "4728a3127566d0e0adc5393f79ab559ec356adfdd8e51d2d9bce464c5fa4378c",
+    "AUTOFIND_V7_2_README.md": "ddeb78a7999095f57e4088d8c88f146667068135ed29664b5b1a2a8076a2a974",
+    "manifest.json": "11eb430617ef84cca60eee758bce54061ec1da113b0ac57b60da605d7e01fc50",
+    "AUTOFIND_V3_README.txt": "37323ee249c412cfb4575da8c2dd1249bdb4437f63bceaa5d5f22423a1d3c489",
+    "content_script.js": "2751b13f917ac73d4ee7e9c16a01bec345dc3dc712f782c4903a5ba3dbb6d6d5",
+    "AUTOFIND_V2_README.txt": "b4277b57155678f819dc69419685e65275672844e09e124742e25e6201a04212",
+    "icon48.png": "caf910618b243aa006423d271aaf40d78585e518fa0484de87ac8d485c1b74fc",
+    "header_image.png": "98e147fe55595e2bbdead5051b8a4355af8a53e7d47bbf85f0110cf30c124540",
+    "background.js": "220272a43a8d6600ed51aca4fe91668b00821320b368ad0c0a50e06bb6c928e8",
+    "icon16.png": "00795f10d9a84b90770b197be22fbb5f4e67f8297e060ecc09b16cc8611ee768",
+    "icon128.png": "01eb8a5b996c6ffbc09d8d436a653043c32f32df4648664e2648c62445ca8e2e",
+    "FRESH_PAGE_README.txt": "ed92cb657c0fa0a1328f8f80a130ee0209afd2f048173a6ed0d3f297f2d80fd0",
+    "AUTOFIND_V6_README.txt": "08541551a6f82010484efd9e3260cc39710f815bbd90a3affeeeeb2d4ddfc445",
+    "icon32.png": "58b02ea9d151e046b4b5bfc09638726864206626871ee7862b25cc7a7db16dbc",
+    "js/index.js": "38722837d1dc3d0cf1b3f6e9def2910f2942e13ebaaa7d00a212a08d6855b00f",
+    "js/main.js": "ed00ac0976812d6d28bf4f5231625b0c55c32b3e420772d502717d02e5811ac2",
+    "js/vendor.js.LICENSE.txt": "0550c36e0ac61b27f7c71ca61991e566636a04a62f60dbd05048ee9be3722d92",
+    "js/vendor.js": "c3398de76dd97cafdca883d9767c854e4f8ce18437a69d35bfefddf6c04cfcc7",
+    "assets/index.css": "d6b65e451896e49ce59cb3ebc12c2dd1d67dec46eb0a7a85ce0c0561e6b9bbd3"
+  },
+  "previous_v7_1_zip_unchanged": true
+}

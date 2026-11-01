@@ -1,0 +1,384 @@
+{
+  "mode": "offline-replay-explicit-fixture-clock",
+  "liveSuccess": false,
+  "purchaseAuthorized": false,
+  "rarityMappingProvenance": "synthetic-not-a-real-promo-id",
+  "proposedSearch": {
+    "criteria": {
+      "type": "player",
+      "rarities": [
+        4242
+      ],
+      "defId": [],
+      "minBuy": 0,
+      "maxBuy": 100000
+    },
+    "coverageWarnings": [],
+    "executableRequest": false,
+    "appliedToLiveSearch": false,
+    "notes": [
+      "Intersect existing search maximum with snipe maximum; do not broaden a tighter user filter.",
+      "Research proposal only: no service called; UI/DTO-to-wire mapping requires permitted validation."
+    ]
+  },
+  "rosterPlan": {
+    "groups": [
+      {
+        "groupId": "offline-cohort-1",
+        "cards": [
+          {
+            "definitionId": "1001",
+            "rarityId": 4242
+          },
+          {
+            "definitionId": "1002",
+            "rarityId": 4242
+          }
+        ],
+        "nativeMultiIdQuerySupport": "unverified",
+        "executableRequest": false
+      },
+      {
+        "groupId": "offline-cohort-2",
+        "cards": [
+          {
+            "definitionId": "1003",
+            "rarityId": 4242
+          },
+          {
+            "definitionId": "1004",
+            "rarityId": 4242
+          }
+        ],
+        "nativeMultiIdQuerySupport": "unverified",
+        "executableRequest": false
+      }
+    ],
+    "plannedCardCount": 4,
+    "coversProvidedRoster": true,
+    "completeLivePlayerCoverage": false,
+    "note": "Partitions only the supplied roster; no native multi-ID request is generated or executed."
+  },
+  "batches": [
+    {
+      "mode": "offline-evaluation",
+      "liveSuccess": false,
+      "purchaseAuthorized": false,
+      "safetyChecks": "original-price-profit-balance-purchase-middleware-not-executed",
+      "contextId": "synthetic-fixture",
+      "records": [
+        {
+          "playerName": "Synthetic Player 1",
+          "tradeId": "9001",
+          "playerDefinitionId": "1001",
+          "rarityId": 4242,
+          "buyNowPrice": 75000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 30,
+          "remainingSeconds": 30,
+          "firstSeenAt": "2026-11-01T12:00:00.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": false,
+          "snipeEligible": false,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "outside-3540-3600-second-window"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        },
+        {
+          "playerName": "Synthetic Player 2",
+          "tradeId": "9002",
+          "playerDefinitionId": "1002",
+          "rarityId": 4242,
+          "buyNowPrice": 60000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 29,
+          "remainingSeconds": 29,
+          "firstSeenAt": "2026-11-01T12:00:00.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": false,
+          "snipeEligible": false,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "outside-3540-3600-second-window"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        }
+      ],
+      "snapshotAccepted": true,
+      "coverage": {
+        "providedRosterCount": 4,
+        "queriedRosterCount": 0,
+        "observedRosterCount": 2,
+        "observedCardsOutsideRoster": 0,
+        "rosterAsOf": "2026-11-01T12:00:00.000Z",
+        "rosterCompleteness": "not-independently-verified",
+        "allEligiblePlayersCoveredLive": false,
+        "note": "Query intent, observed cards and complete market coverage are different. Broad empty-player scope does not prove all players were returned."
+      },
+      "error": null,
+      "capturedAt": "2026-11-01T12:00:00.000Z",
+      "evaluatedAt": "2026-11-01T12:00:00.000Z",
+      "sourceStage": "before-client-filter",
+      "declaredProvenance": "synthetic",
+      "snapshotAgeSeconds": 0,
+      "summary": {
+        "returnedCount": 2,
+        "observedRequestCount": 2,
+        "crowding": "possibly-capacity-limited",
+        "duplicateCount": 0,
+        "newTradeCount": 2,
+        "offlineEligibleCount": 0,
+        "minRemainingSeconds": 29,
+        "maxRemainingSeconds": 30,
+        "observedOrdering": "nonincreasing-this-snapshot-only",
+        "marketCoverage": "unknown-no-ordering-or-completeness-guarantee"
+      }
+    },
+    {
+      "mode": "offline-evaluation",
+      "liveSuccess": false,
+      "purchaseAuthorized": false,
+      "safetyChecks": "original-price-profit-balance-purchase-middleware-not-executed",
+      "contextId": "synthetic-fixture",
+      "records": [
+        {
+          "playerName": "Synthetic Player 3",
+          "tradeId": "9003",
+          "playerDefinitionId": "1003",
+          "rarityId": 4242,
+          "buyNowPrice": 80000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 3559,
+          "remainingSeconds": 3559,
+          "firstSeenAt": "2026-11-01T12:00:10.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": true,
+          "snipeEligible": true,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "first-seen-in-window-and-within-snipe-ceiling-logging-only"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        },
+        {
+          "playerName": "Synthetic Player 4",
+          "tradeId": "9004",
+          "playerDefinitionId": "1004",
+          "rarityId": 4242,
+          "buyNowPrice": 120000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 3559,
+          "remainingSeconds": 3559,
+          "firstSeenAt": "2026-11-01T12:00:10.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": false,
+          "freshWindow": true,
+          "snipeEligible": false,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "above-snipe-maximum"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        }
+      ],
+      "snapshotAccepted": true,
+      "coverage": {
+        "providedRosterCount": 4,
+        "queriedRosterCount": 2,
+        "observedRosterCount": 4,
+        "observedCardsOutsideRoster": 0,
+        "rosterAsOf": "2026-11-01T12:00:00.000Z",
+        "rosterCompleteness": "not-independently-verified",
+        "allEligiblePlayersCoveredLive": false,
+        "note": "Query intent, observed cards and complete market coverage are different. Broad empty-player scope does not prove all players were returned."
+      },
+      "error": null,
+      "capturedAt": "2026-11-01T12:00:10.000Z",
+      "evaluatedAt": "2026-11-01T12:00:10.000Z",
+      "sourceStage": "before-client-filter",
+      "declaredProvenance": "synthetic",
+      "snapshotAgeSeconds": 0,
+      "summary": {
+        "returnedCount": 2,
+        "observedRequestCount": 2,
+        "crowding": "possibly-capacity-limited",
+        "duplicateCount": 0,
+        "newTradeCount": 2,
+        "offlineEligibleCount": 1,
+        "minRemainingSeconds": 3559,
+        "maxRemainingSeconds": 3559,
+        "observedOrdering": "equal",
+        "marketCoverage": "unknown-no-ordering-or-completeness-guarantee"
+      }
+    },
+    {
+      "mode": "offline-evaluation",
+      "liveSuccess": false,
+      "purchaseAuthorized": false,
+      "safetyChecks": "original-price-profit-balance-purchase-middleware-not-executed",
+      "contextId": "synthetic-fixture",
+      "records": [
+        {
+          "playerName": "Synthetic Player 3",
+          "tradeId": "9003",
+          "playerDefinitionId": "1003",
+          "rarityId": 4242,
+          "buyNowPrice": 80000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 3549,
+          "remainingSeconds": 3549,
+          "firstSeenAt": "2026-11-01T12:00:10.000Z",
+          "newlyDiscovered": false,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": true,
+          "snipeEligible": false,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "trade-already-seen"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        },
+        {
+          "playerName": "Synthetic Player 4",
+          "tradeId": "9005",
+          "playerDefinitionId": "1004",
+          "rarityId": 4242,
+          "buyNowPrice": 90000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 3560,
+          "remainingSeconds": 3560,
+          "firstSeenAt": "2026-11-01T12:00:10.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": true,
+          "snipeEligible": true,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "first-seen-in-window-and-within-snipe-ceiling-logging-only"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        },
+        {
+          "playerName": "Synthetic Player 2",
+          "tradeId": "9006",
+          "playerDefinitionId": "1002",
+          "rarityId": 1,
+          "buyNowPrice": 50000,
+          "currentBid": 0,
+          "observedRemainingSeconds": 3550,
+          "remainingSeconds": 3550,
+          "firstSeenAt": "2026-11-01T12:00:10.000Z",
+          "newlyDiscovered": true,
+          "snipeMaximum": 100000,
+          "meetsSnipePrice": true,
+          "freshWindow": true,
+          "snipeEligible": false,
+          "eligibilityScope": "offline-freshness-rarity-state-identity-price-only",
+          "purchaseAuthorized": false,
+          "originalSafetyPending": true,
+          "reasons": [
+            "rarity-not-selected"
+          ],
+          "warnings": [],
+          "listedAtProof": "unavailable-first-seen-is-not-listing-birth-time"
+        }
+      ],
+      "snapshotAccepted": true,
+      "coverage": {
+        "providedRosterCount": 4,
+        "queriedRosterCount": 2,
+        "observedRosterCount": 4,
+        "observedCardsOutsideRoster": 0,
+        "rosterAsOf": "2026-11-01T12:00:00.000Z",
+        "rosterCompleteness": "not-independently-verified",
+        "allEligiblePlayersCoveredLive": false,
+        "note": "Query intent, observed cards and complete market coverage are different. Broad empty-player scope does not prove all players were returned."
+      },
+      "error": null,
+      "capturedAt": "2026-11-01T12:00:10.000Z",
+      "evaluatedAt": "2026-11-01T12:00:10.000Z",
+      "sourceStage": "before-client-filter",
+      "declaredProvenance": "synthetic",
+      "snapshotAgeSeconds": 0,
+      "summary": {
+        "returnedCount": 3,
+        "observedRequestCount": 3,
+        "crowding": "possibly-capacity-limited",
+        "duplicateCount": 1,
+        "newTradeCount": 2,
+        "offlineEligibleCount": 1,
+        "minRemainingSeconds": 3549,
+        "maxRemainingSeconds": 3560,
+        "observedOrdering": "mixed-this-snapshot",
+        "marketCoverage": "unknown-no-ordering-or-completeness-guarantee"
+      }
+    }
+  ],
+  "finalSeenState": {
+    "schemaVersion": 1,
+    "contextId": "synthetic-fixture",
+    "lastEvaluationAt": "2026-11-01T12:00:10.000Z",
+    "halted": false,
+    "seen": [
+      {
+        "tradeId": "9001",
+        "firstSeenAt": "2026-11-01T12:00:00.000Z",
+        "definitionId": "1001"
+      },
+      {
+        "tradeId": "9002",
+        "firstSeenAt": "2026-11-01T12:00:00.000Z",
+        "definitionId": "1002"
+      },
+      {
+        "tradeId": "9003",
+        "firstSeenAt": "2026-11-01T12:00:10.000Z",
+        "definitionId": "1003"
+      },
+      {
+        "tradeId": "9004",
+        "firstSeenAt": "2026-11-01T12:00:10.000Z",
+        "definitionId": "1004"
+      },
+      {
+        "tradeId": "9005",
+        "firstSeenAt": "2026-11-01T12:00:10.000Z",
+        "definitionId": "1004"
+      },
+      {
+        "tradeId": "9006",
+        "firstSeenAt": "2026-11-01T12:00:10.000Z",
+        "definitionId": "1002"
+      }
+    ]
+  }
+}

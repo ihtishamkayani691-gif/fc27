@@ -1,0 +1,67 @@
+{
+  "researchDate": "2026-11-01",
+  "sources": [
+    {
+      "url": "https://github.com/AbdoD97/fut-web-app-api",
+      "read": true,
+      "revision": "ad9a5f9384c3a80a6c00f33c14ca9cbd344c4aba",
+      "title": "EA FC 26 Ultimate Team \u2014 REST API Reference",
+      "readmeSHA256": "90655bc864bea49c1ef04f19cc479022887b535c8e8f96f7919e29f3075b3f92",
+      "classification": "Unofficial FC26/community reference; not FC27 compatibility proof",
+      "relevantLines": {
+        "transferMarket": [
+          106,
+          160
+        ],
+        "jsItem": [
+          485,
+          528
+        ],
+        "jsSearchDTO": [
+          533,
+          550
+        ],
+        "genericPromoRarity": [
+          572,
+          578
+        ]
+      }
+    },
+    {
+      "url": "https://futsplash.com/guides/fc-27-sniping-filters",
+      "read": false,
+      "outcome": "Proxy CONNECT rejected with 403; origin HTTP 000",
+      "claimsVerified": false
+    },
+    {
+      "url": "https://fcautobuyer.com/news/how-does-an-fc-autobuyer-work/",
+      "read": false,
+      "outcome": "Proxy CONNECT rejected with 403; origin HTTP 000",
+      "claimsVerified": false
+    }
+  ],
+  "penguCore": {
+    "bundledInSuppliedArchives": false,
+    "retrieved": false,
+    "currentRuntimeAccess": false,
+    "algorithmKnown": false,
+    "previousLoaderReport": "PENGUBOT_STATUS.md"
+  },
+  "configuration": {
+    "draftSaved": true,
+    "newHosts": [
+      "futsplash.com",
+      "fcautobuyer.com"
+    ],
+    "existingPendingPenguHostsPreserved": true,
+    "runtimeApplied": false,
+    "published": false,
+    "requiresPublishReported": true
+  },
+  "data": {
+    "realMarketResponsesAvailable": 0,
+    "includedFixtures": "synthetic only",
+    "screenshots": "User-supplied timer/search observations; not raw saved auction responses",
+    "liveSuccess": false
+  }
+}

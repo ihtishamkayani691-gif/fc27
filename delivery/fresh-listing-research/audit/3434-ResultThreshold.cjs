@@ -1,0 +1,2 @@
+// Exact production webpack module 3434 from inspected FC Enhancer v7.2.
+module.exports = (e,t,n)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.checkResultsCount=void 0;const a=n(32024),i=n(26735),r=n(44669),o=n(51477);t.checkResultsCount=async(e,t)=>{const{data:{results:n}}=e,s=a.InMemoryStore.instance,{searchResultThreshold:l}=s.get("traderSettings").buySetting;return l&&n.length>l?(o.Logger.writeToLog((0,r.translate)("searchResultThresholdExceeded",{resultsCount:n.length,searchResultThreshold:l}),i.UINotificationTypeEnum.NEUTRAL),{response:!1}):t(e)}};

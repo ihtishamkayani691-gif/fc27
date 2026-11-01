@@ -1,0 +1,2 @@
+// Exact production webpack module 30804 from inspected FC Enhancer v7.2.
+module.exports = (e,t,n)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.checkBuyPrice=void 0;const a=n(99398);t.checkBuyPrice=async(e,t)=>{const{data:n,params:i}=e;return i.calculatedPriceToBin&&n._auction.buyNowPrice>i.calculatedPriceToBin?((0,a.writeBuyPriceGreaterLog)(e.data,i.calculatedPriceToBin,!0,n._auction.buyNowPrice),{response:!1}):t(e)}};

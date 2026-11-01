@@ -1,0 +1,2 @@
+// Exact production webpack module 58104 from inspected FC Enhancer v7.2.
+module.exports = (e,t,n)=>{Object.defineProperty(t,"__esModule",{value:!0}),t.buyPriceValidator=void 0;const a=n(32024),i=n(26735),r=n(44669),o=n(51477);t.buyPriceValidator=async(e,t)=>{const n=a.InMemoryStore.instance,{buyPrice:s,bidPrice:l,findBuyPrice:c,findBidPrice:d}=n.get("traderSettings").buySetting;return s||l||c||d?t(e):(o.Logger.writeToLog((0,r.translate)("bidBuyPriceMissing"),i.UINotificationTypeEnum.NEGATIVE),{response:!1})}};

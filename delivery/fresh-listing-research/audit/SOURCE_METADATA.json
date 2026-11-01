@@ -1,0 +1,8 @@
+{
+  "sourceFile": "FC Enhancer v7.2 js/main.js",
+  "sha256": "ed00ac0976812d6d28bf4f5231625b0c55c32b3e420772d502717d02e5811ac2",
+  "sourceZIP": "FC_Enhancer_v7_2_Pagination_Recovery_TEST.zip",
+  "zipSHA256": "ab11022dd5340023455375705c799081fdcc186aa6c5fb5521c1cf02d5a433e8",
+  "sourceCommit": "f40413e7a19e8753bc1cc970b4c63ae754a20cda",
+  "extraction": "Exact function source captured from the production webpack module table without executing the extension entrypoint."
+}

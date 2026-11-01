@@ -1,0 +1,31 @@
+{
+  "sourceFile": "FC Enhancer v7.2 js/main.js",
+  "sha256": "ed00ac0976812d6d28bf4f5231625b0c55c32b3e420772d502717d02e5811ac2",
+  "tests": [
+    {
+      "case": "BuySetting=400000, controller maxBuy absent",
+      "outgoingMaxBuy": "absent",
+      "passed": true
+    },
+    {
+      "case": "BuySetting=400000, controller maxBuy=250000",
+      "outgoingMaxBuy": 250000,
+      "passed": true
+    },
+    {
+      "case": "BuySetting=400000, controller maxBuy=900000",
+      "outgoingMaxBuy": 900000,
+      "passed": true
+    },
+    {
+      "case": "production checkBuyPrice rejects 500000 above 400000",
+      "passed": true
+    },
+    {
+      "case": "production checkBuyPrice accepts price equality 400000",
+      "passed": true
+    }
+  ],
+  "execution": "actual production runActions/helper with stubbed external search/handlers; actual checkBuyPrice; no network or purchases",
+  "liveEA": false
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "notice": "ALL records/IDs/rarity 4242 are synthetic. This is not a real Ultimate Scream rarity mapping or EA response.",
+  "config": {
+    "contextId": "synthetic-fixture",
+    "snipeMaximum": 100000,
+    "selectedRarityIds": [
+      4242
+    ],
+    "rarityMappingProvenance": "synthetic",
+    "maxSnapshotAgeSeconds": 15,
+    "roster": {
+      "asOf": "2026-11-01T12:00:00.000Z",
+      "players": [
+        {
+          "definitionId": "1001",
+          "rarityId": 4242,
+          "name": "Synthetic Player 1"
+        },
+        {
+          "definitionId": "1002",
+          "rarityId": 4242,
+          "name": "Synthetic Player 2"
+        },
+        {
+          "definitionId": "1003",
+          "rarityId": 4242,
+          "name": "Synthetic Player 3"
+        },
+        {
+          "definitionId": "1004",
+          "rarityId": 4242,
+          "name": "Synthetic Player 4"
+        }
+      ]
+    }
+  },
+  "groupSize": 2,
+  "searchCriteria": {
+    "type": "player",
+    "rarities": [
+      4242
+    ],
+    "defId": [],
+    "minBuy": 0
+  },
+  "snapshots": [
+    {
+      "capturedAt": "2026-11-01T12:00:00.000Z",
+      "evaluatedAt": "2026-11-01T12:00:00.000Z",
+      "format": "normalized",
+      "provenance": "synthetic",
+      "sourceStage": "before-client-filter",
+      "status": {
+        "httpStatus": 200,
+        "success": true
+      },
+      "observedRequestCount": 2,
+      "criteria": {
+        "playerDefinitionIds": []
+      },
+      "response": {
+        "listings": [
+          {
+            "tradeId": "9001",
+            "definitionId": "1001",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 1",
+            "remainingSeconds": 30,
+            "buyNowPrice": 75000,
+            "currentBid": 0,
+            "tradeState": "active"
+          },
+          {
+            "tradeId": "9002",
+            "definitionId": "1002",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 2",
+            "remainingSeconds": 29,
+            "buyNowPrice": 60000,
+            "currentBid": 0,
+            "tradeState": "active"
+          }
+        ]
+      }
+    },
+    {
+      "capturedAt": "2026-11-01T12:00:10.000Z",
+      "evaluatedAt": "2026-11-01T12:00:10.000Z",
+      "format": "normalized",
+      "provenance": "synthetic",
+      "sourceStage": "before-client-filter",
+      "status": {
+        "httpStatus": 200,
+        "success": true
+      },
+      "observedRequestCount": 2,
+      "criteria": {
+        "playerDefinitionIds": [
+          "1003",
+          "1004"
+        ]
+      },
+      "response": {
+        "listings": [
+          {
+            "tradeId": "9003",
+            "definitionId": "1003",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 3",
+            "remainingSeconds": 3559,
+            "buyNowPrice": 80000,
+            "currentBid": 0,
+            "tradeState": "active"
+          },
+          {
+            "tradeId": "9004",
+            "definitionId": "1004",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 4",
+            "remainingSeconds": 3559,
+            "buyNowPrice": 120000,
+            "currentBid": 0,
+            "tradeState": "active"
+          }
+        ]
+      }
+    },
+    {
+      "capturedAt": "2026-11-01T12:00:10.000Z",
+      "evaluatedAt": "2026-11-01T12:00:10.000Z",
+      "format": "normalized",
+      "provenance": "synthetic",
+      "sourceStage": "before-client-filter",
+      "status": {
+        "httpStatus": 200,
+        "success": true
+      },
+      "observedRequestCount": 3,
+      "criteria": {
+        "playerDefinitionIds": []
+      },
+      "response": {
+        "listings": [
+          {
+            "tradeId": "9003",
+            "definitionId": "1003",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 3",
+            "remainingSeconds": 3549,
+            "buyNowPrice": 80000,
+            "currentBid": 0,
+            "tradeState": "active"
+          },
+          {
+            "tradeId": "9005",
+            "definitionId": "1004",
+            "rarityId": 4242,
+            "itemType": "player",
+            "playerName": "Synthetic Player 4",
+            "remainingSeconds": 3560,
+            "buyNowPrice": 90000,
+            "currentBid": 0,
+            "tradeState": "active"
+          },
+          {
+            "tradeId": "9006",
+            "definitionId": "1002",
+            "rarityId": 1,
+            "itemType": "player",
+            "playerName": "Synthetic Player 2",
+            "remainingSeconds": 3550,
+            "buyNowPrice": 50000,
+            "currentBid": 0,
+            "tradeState": "active"
+          }
+        ]
+      }
+    }
+  ]
+}

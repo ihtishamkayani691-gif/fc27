@@ -1,0 +1,89 @@
+OFFLINE evaluator:
+✔ 3540/3600 inclusive boundaries and 3559s accepted; 59s and 30s rejected (3.42976ms)
+✔ snipe maximum is inclusive and zero BIN cannot be purchased (0.385993ms)
+✔ duplicates across snapshots keep first-seen timestamp and never become new again (0.470511ms)
+✔ overlapping duplicate records inside one response are processed only once (0.194804ms)
+✔ previously seen near-expiry/overpriced/wrong-rarity listings are not later called new (0.33131ms)
+✔ strict rarity ID matching; no guessed generic promo ID (0.236727ms)
+✔ expired/closed/unknown auction states are rejected even with fresh-looking duration (1.088354ms)
+✔ missing/malformed required market fields fail closed (0.481458ms)
+✔ millisecond durations and absolute timestamps are not guessed into seconds (0.296457ms)
+✔ unsafe numeric trade IDs rejected; exact large decimal string IDs preserved (0.337991ms)
+✔ unsafe/negative/string prices and bids are invalid (0.460316ms)
+✔ snapshot age reduces remaining seconds at the decision time (0.13892ms)
+✔ old snapshots cannot establish freshness (0.094783ms)
+✔ invalid/missing/future timestamps reject the snapshot (0.127012ms)
+✔ out-of-order evaluation clocks cannot reset dedup history (0.167202ms)
+✔ HTTP errors/auth/rate limiting are distinct from empty successful responses (0.206171ms)
+✔ success=false and missing status do not become valid empty results (0.147283ms)
+✔ missing/nonarray response is a parsing failure, never an empty market (0.282407ms)
+✔ null records are rejected without throwing (0.170117ms)
+✔ saved REST response adapter uses resourceId/cardsubtypeid/expires/tradeId (0.231209ms)
+✔ saved FC model adapter uses definitionId/rareflag/_auction (0.136707ms)
+✔ conflicting saved auction states are rejected (0.118228ms)
+✔ unsorted responses are fully evaluated without ordering assumptions (0.104178ms)
+✔ capacity-sized responses flag possible crowding rather than complete coverage (0.100081ms)
+✔ no fixed 21-result page size is assumed (0.124088ms)
+✔ synthetic narrow cohort can expose a fresh card omitted by a capped broad response (0.201795ms)
+✔ roster partitions cover every provided card once, including the final short group (0.2714ms)
+✔ declared cohort query coverage and observed coverage are separate (0.1524ms)
+✔ broad search does not silently count all roster players as returned (0.101684ms)
+✔ fresh selected-rarity card outside an incomplete roster remains visible in broad scope (0.108094ms)
+✔ an explicit offline cohort scope rejects a result for a different player (0.129085ms)
+✔ duplicate roster entries and invalid group sizes are rejected (0.359553ms)
+✔ price proposal puts snipe maximum into maxBuy without issuing a request (0.268395ms)
+✔ price proposal never broadens an existing tighter maximum or drops a minimum (0.148705ms)
+✔ empty price intersection and invalid maxima are explicit errors (0.292903ms)
+✔ existing player-specific search restriction is preserved but warns about coverage (0.166241ms)
+✔ plain-data proposal never invokes getters or custom serialization (0.172681ms)
+✔ seen-state export/import preserves deduplication across offline runs (0.178259ms)
+✔ wrong-context and malformed seen state are rejected (0.250648ms)
+✔ dedup capacity halts instead of forgetting old listings and calling them new (0.191259ms)
+✔ same trade ID changing player identity is rejected (0.128795ms)
+✔ auth/cookie/unknown response fields never enter output or exported state (0.213212ms)
+✔ names are optional display metadata, control characters cannot forge log rows (0.252392ms)
+✔ no test result can authorize buying or claim listing creation time (0.109576ms)
+✔ configuration requires positive maximum, explicit rarity selection and valid scope (0.197989ms)
+✔ network and purchase functions are never used by the offline evaluator (0.209546ms)
+✔ invalid calendar dates and rollover clocks are rejected instead of normalized (0.224078ms)
+ℹ tests 47
+ℹ suites 0
+ℹ pass 47
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 26.359922
+
+Production audit (no native search/purchase):
+{
+  "sourceFile": "FC Enhancer v7.2 js/main.js",
+  "sha256": "ed00ac0976812d6d28bf4f5231625b0c55c32b3e420772d502717d02e5811ac2",
+  "tests": [
+    {
+      "case": "BuySetting=400000, controller maxBuy absent",
+      "outgoingMaxBuy": "absent",
+      "passed": true
+    },
+    {
+      "case": "BuySetting=400000, controller maxBuy=250000",
+      "outgoingMaxBuy": 250000,
+      "passed": true
+    },
+    {
+      "case": "BuySetting=400000, controller maxBuy=900000",
+      "outgoingMaxBuy": 900000,
+      "passed": true
+    },
+    {
+      "case": "production checkBuyPrice rejects 500000 above 400000",
+      "passed": true
+    },
+    {
+      "case": "production checkBuyPrice accepts price equality 400000",
+      "passed": true
+    }
+  ],
+  "execution": "actual production runActions/helper with stubbed external search/handlers; actual checkBuyPrice; no network or purchases",
+  "liveEA": false
+}

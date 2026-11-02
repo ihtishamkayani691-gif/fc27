@@ -1,0 +1,18 @@
+'use strict';
+// Runs only on the packaged offline-test.html page. Every native API is synthetic.
+module.exports=async function(){
+ const factories=globalThis.__fcProductionFactories,cache=new Map();let calls=0,handled=0;
+ const settings={searchSetting:{autoFindNewest:true,v8SnipeMaximum:900,ratingRange:[10,99]},buySetting:{buyPrice:1000,bidPrice:500,findBuyPrice:true,noOfCards:10},safeSetting:{maxPurchasesPerSearchRequest:1}},data={stats:{purchasedCardCount:0},cache:{cachedBids:new Set(),bidsByFilter:new Map(),filter:{currentFilter:'SYNTHETIC RC'}}};
+ globalThis.DEFAULT_PLAYSTYLE_ID=0;globalThis.ItemSubType={TRAINING_PLAYERSTYLE_GOALKEEPER_5:9};globalThis.isPhone=()=>false;
+ globalThis.services={User:{getUser:()=>({coins:{amount:10000}})},Item:{bid(item,price){if(price!==item._auction.buyNowPrice||price>settings.searchSetting.v8SnipeMaximum)throw Error('Invalid synthetic BIN');calls++;return Promise.resolve({success:true})}}};
+ const guard=globalThis[Symbol.for('fcEnhancer.v8.executionGuard')];if(!guard.installServices(services.Item))throw Error('Offline RC service guard missing');
+ const stats={wonCount:0,lossCount:0,bidCount:0};
+ const stubs={32024:{InMemoryStore:{instance:{get:k=>k==='traderSettings'?settings:data}}},27988:{getLocalization:()=>({localize:()=>''}),observableToPromise:x=>x},26735:{UINotificationTypeEnum:{}},44669:{translate:()=>''},51477:{Logger:{writeToLog(){}}},99398:{writeBuyPriceGreaterLog(){}},99611:{getBidPrice:()=>100},53799:{getRealTimePrice:async()=>800},75212:{},74350:{sendPinEvents(){}},22869:{ExternalNotificationType:{LOST:'LOST',WON:'WON'}},82125:{getRandomNumberInRange:()=>0,wait:async()=>{},NotificationEventPublisher:{instance:{notifyObservers(){}}}},57439:{Analytics:{instance:{fireEvent(){}}}},39021:{StatsFactory:{instance:{getProcessor:()=>({incrementStat:k=>stats[k]++,getStats:()=>stats})}}},19719:{bidErrorCodeLookup:{},errorCodeLookUp:{}},41880:{updateErrorCodeCount(){}}};
+ const req=id=>{if(id in stubs)return stubs[id];if(cache.has(id))return cache.get(id).exports;if(id===13808){stubs[id]={...req(33147),getSquadPlayerIds:async()=>new Set()};return stubs[id]}const m={exports:{}};cache.set(id,m);factories[id](m,m.exports,req);return m.exports};
+ const processor={isStarted:false,cancellationToken:{isCancelled:false},traderSettings:settings,traderData:data,controllerInstance:{viewmodel:{searchCriteria:{type:'player',rarities:[151],defId:[],maskedDefId:0,minBuy:0,maxBuy:0}}}},bridge=req(99012),native=req(30154);
+ const orchestrator={handleTransferResults:(items,safe,token)=>native.handleTransferResultsBG(items,safe,token),handleWonItems:async()=>{handled++;data.stats.purchasedCardCount++}};
+ const mount=()=>bridge.attachControls(processor,document.querySelector('.fc-v8-trader-status'));
+ mount();
+ globalThis.__fcRcInstalled={snapshot:()=>({status:bridge.status(processor),calls,handled,running:processor.isStarted}),setSavedFlag:()=>{settings.searchSetting.purchaseEnabled=true},start:()=>{processor.isStarted=true;processor.cancellationToken={isCancelled:false};mount()},stop:()=>{bridge.disarm(processor,'stopped');processor.isStarted=false;processor.cancellationToken.isCancelled=true},async execute(id,price){const auction={tradeId:id,buyNowPrice:price,expires:3559,isExpired:()=>false},item={_auction:auction,rareflag:151,rating:85,preferredPosition:1,playStyle:1,getAuctionData:()=>auction,getStaticData:()=>({name:'Synthetic RC player'})};return bridge.execute(item,{processor,orchestrator,maximum:900,perSearch:{attempts:0},observedAt:Date.now(),observedRemaining:3559})}};
+ document.documentElement.dataset.rcTestState='ready';
+};

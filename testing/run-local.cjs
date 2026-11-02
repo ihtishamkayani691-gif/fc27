@@ -7,6 +7,7 @@ process.env.FC_EXTENSION_DIR=path.join(source,'patched');
 process.env.CHROMIUM_PATH||='C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
 run(process.execPath,['testing/v8/build-offline.cjs']);
 run(process.execPath,['testing/v8/build-trader.cjs']);
+run(process.execPath,['testing/v8/build-rc.cjs','--skip-test-build']);
 const tests=fs.readdirSync(path.join(root,'testing/v8/tests')).filter(f=>f.endsWith('.test.cjs')).map(f=>'testing/v8/tests/'+f);
 run(process.execPath,['--test',...tests]);
 run(process.execPath,['delivery/fresh-listing-research/offline/evaluator.test.cjs']);
@@ -16,3 +17,5 @@ run(process.execPath,['testing/browser/renderer-smoke.cjs',process.env.FC_EXTENS
 run(process.execPath,['testing/browser/renderer-smoke.cjs','.local/v8-offline-extension','testing/browser/v8-integration-fixture.cjs','testing/browser/LOCAL_V8_RENDERER.json']);
 run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-offline-extension','testing/browser/LOCAL_V8_REGISTRATION.json']);
 run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-trader-validation','testing/browser/LOCAL_TRADER_REGISTRATION.json']);
+run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-release-candidate','testing/browser/RC_REGISTRATION.json']);
+run(process.execPath,['testing/browser/rc-registration.cjs','.local/v8-release-candidate','testing/browser/RC_INSTALLED_RESULTS.json']);

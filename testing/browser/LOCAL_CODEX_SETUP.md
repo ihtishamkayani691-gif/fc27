@@ -153,3 +153,15 @@ guards. Mock-only authorization in unit tests never changes the installed policy
 Unknown transaction outcomes or wins arriving after cancellation require native
 state reconciliation before future execution; there is no automatic unlock.
 The ZIP contains no browser profile, account data, or preset purchase limit.
+
+## Separate release candidate
+
+`npm test` now also builds RC1 and runs its mocked production-path, native lifecycle
+and installed-browser checks. `npm run build:v8:rc` creates
+`.local/v8-release-candidate`; the existing locked TEST ZIP is unchanged.
+RC1 purchasing defaults OFF and requires a trusted user opt-in for each run,
+explicit price/coin/card budgets and native dynamic pricing. Stop, errors,
+configuration changes and reload disarm it. All automated RC browser tests use
+fresh offline profiles and synthetic native APIs, with HTTP(S) traffic blocked.
+See `delivery/v8-rc/ACCEPTANCE.md` for installation, evidence and what remains
+unverified. This does not authorize live purchases or bids.

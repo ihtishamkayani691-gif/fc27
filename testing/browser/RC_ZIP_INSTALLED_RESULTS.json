@@ -1,0 +1,62 @@
+{
+  "liveEA": false,
+  "realTransactions": 0,
+  "checks": [
+    {
+      "name": "RC installed worker has distinct identity",
+      "passed": true
+    },
+    {
+      "name": "installed RC purchase setting defaults OFF",
+      "passed": true
+    },
+    {
+      "name": "synthetic checkbox event cannot authorize purchases",
+      "passed": true
+    },
+    {
+      "name": "saved enable flags and reload cannot authorize purchases",
+      "passed": true
+    },
+    {
+      "name": "trusted explicit user checkbox enables only the stopped fixture run",
+      "passed": true
+    },
+    {
+      "name": "installed actual native purchase path succeeds only against mocked API",
+      "passed": true
+    },
+    {
+      "name": "installed pipeline rejects duplicate trade ID",
+      "passed": true
+    },
+    {
+      "name": "installed pipeline preserves remaining coin budget",
+      "passed": true
+    },
+    {
+      "name": "Stop disarms installed purchase setting",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves controls available for explicit re-enable",
+      "passed": true
+    },
+    {
+      "name": "reload disarms a previously user-enabled setting",
+      "passed": true
+    },
+    {
+      "name": "settled trade journal prevents duplicate purchase across reload",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors or external market requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "japfjeodmipoidmfamlkmmdbhbpaidla",
+  "passed": true
+}

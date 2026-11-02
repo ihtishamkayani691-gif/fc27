@@ -1,0 +1,68 @@
+{
+  "baseline": "2c9d672",
+  "branch": "dev/v8-browser-testing",
+  "build": "FC Enhancer v8 RC1 (purchases OFF by default)",
+  "version": "27.0.3.1",
+  "archive": "FC_Enhancer_v8_RC1_PURCHASING_OFF_DEFAULT.zip",
+  "sha256": "69d4f0330190cb32a4bf1cb1900d962611c0ccda79cb12f4bbdf2e77360f4bdf",
+  "bytes": 1984915,
+  "filesMatchTestedBuild": 25,
+  "manifestResourcesChecked": 12,
+  "lockedTest": {
+    "archive": "FC_Enhancer_v8_Trader_Validation_TEST.zip",
+    "sha256": "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4",
+    "unchanged": true
+  },
+  "policy": {
+    "releaseCandidate": true,
+    "runtimeOptInRequired": true,
+    "productionReadinessVerified": false
+  },
+  "purchasingDisabledByDefault": true,
+  "realPurchases": 0,
+  "realBids": 0,
+  "rcBrowserTestsOfflineOnly": true,
+  "tests": {
+    "v8": 129,
+    "evaluator": 47,
+    "baseline": 2,
+    "productionRegression": 74,
+    "total": 252
+  },
+  "browserReports": {
+    "RC_REGISTRATION": {
+      "passed": true,
+      "checks": 6,
+      "browser": "156.0.8078.79"
+    },
+    "RC_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 13,
+      "browser": "156.0.8078.79"
+    },
+    "RC_ZIP_REGISTRATION": {
+      "passed": true,
+      "checks": 6,
+      "browser": "156.0.8078.79"
+    },
+    "RC_ZIP_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 13,
+      "browser": "156.0.8078.79"
+    }
+  },
+  "discoveryFactoriesIdenticalToValidatedBaseline": [
+    99009,
+    99013,
+    99007,
+    65757
+  ],
+  "remainingUnverified": [
+    "Real EA purchase transport timing and response behavior; no real transaction was attempted.",
+    "Live economic profitability, resale prices, fees and native inventory/post-purchase effects.",
+    "Exhaustive coverage of all eligible players/listings under server pagination.",
+    "Operational reconciliation of uncertain real transactions; RC intentionally has no automatic unlock.",
+    "Long-duration live RC soak, service compatibility and account-specific production acceptance."
+  ],
+  "productionReady": false
+}

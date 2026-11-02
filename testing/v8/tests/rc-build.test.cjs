@@ -1,0 +1,5 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto');
+test('separate RC manifest and purchase factories exist without changing locked TEST ZIP',()=>{const file='.local/v8-release-candidate/manifest.json';assert.ok(fs.existsSync(file),'RC build missing');const m=JSON.parse(fs.readFileSync(file));assert.equal(m.version,'27.0.3.1');assert.match(m.name,/RC1/);assert.equal(m.key,undefined);const h=crypto.createHash('sha256').update(fs.readFileSync('delivery/v8/FC_Enhancer_v8_Trader_Validation_TEST.zip')).digest('hex');assert.equal(h,'8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4');});
+
+test('RC retains the exact validated native discovery planner, scope pager and request adapter',()=>{const {load}=require('./bundle-loader.cjs');const baseline=load('.local/v8-trader-validation/js/main.js').modules,rc=load('.local/v8-release-candidate/js/main.js').modules;for(const id of [99009,99013,99007,65757])assert.equal(rc[id].toString(),baseline[id].toString(),'discovery factory '+id)});

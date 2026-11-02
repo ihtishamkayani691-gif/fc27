@@ -5,6 +5,7 @@
     "test": "node testing/run-local.cjs",
     "test:evaluator": "node delivery/fresh-listing-research/offline/evaluator.test.cjs",
     "build:v8": "node testing/v8/build-trader.cjs",
+    "build:v8:rc": "node testing/v8/build-rc.cjs",
     "build:v8:offline": "node testing/v8/build-offline.cjs",
     "test:mcp": "node testing/browser/verify-local-mcp.cjs",
     "browser:offline": "node testing/browser/start-offline.cjs",

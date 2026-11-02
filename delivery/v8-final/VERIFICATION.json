@@ -1,0 +1,58 @@
+{
+  "baseline": "87c3c41",
+  "branch": "dev/v8-browser-testing",
+  "version": "27.0.4.0",
+  "archive": "FC_Enhancer_v8_FINAL_RC.zip",
+  "sha256": "729c404abd37b5bcce18f36a061766b797dfdda8e024c508895172dfae1d0d3c",
+  "bytes": 1983854,
+  "filesMatchTestedBuild": 24,
+  "manifestResourcesChecked": 12,
+  "priorArchivesUnchanged": {
+    "TEST": [
+      "delivery/v8/FC_Enhancer_v8_Trader_Validation_TEST.zip",
+      "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4"
+    ],
+    "RC1": [
+      "delivery/v8-rc/FC_Enhancer_v8_RC1_PURCHASING_OFF_DEFAULT.zip",
+      "69d4f0330190cb32a4bf1cb1900d962611c0ccda79cb12f4bbdf2e77360f4bdf"
+    ],
+    "RC2": [
+      "delivery/v8-rc2/FC_Enhancer_v8_RC2.zip",
+      "a42b80b7303fad935705dddfff0815e03d58eca9f22f50c645dd3e54c1dea49a"
+    ]
+  },
+  "tests": {
+    "v8": 202,
+    "evaluator": 47,
+    "baseline": 2,
+    "archivedRegression": 74,
+    "total": 325,
+    "original284Preserved": true
+  },
+  "sessionSnapshots": 23,
+  "browser": {
+    "FINAL_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 15
+    },
+    "FINAL_ZIP_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 15
+    },
+    "FINAL_MCP_RESULTS": {
+      "passed": true,
+      "checks": null
+    }
+  },
+  "discoveryFactoriesPreserved": [
+    99007,
+    99009,
+    99013,
+    65757,
+    30154
+  ],
+  "purchasingOffByDefault": true,
+  "realPurchases": 0,
+  "realBids": 0,
+  "productionReady": false
+}

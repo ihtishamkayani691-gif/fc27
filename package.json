@@ -10,7 +10,8 @@
     "test:mcp": "node testing/browser/verify-local-mcp.cjs",
     "browser:offline": "node testing/browser/start-offline.cjs",
     "browser:validation": "node testing/browser/start-validation.cjs",
-    "build:v8:rc2": "node testing/v8/build-rc2.cjs"
+    "build:v8:rc2": "node testing/v8/build-rc2.cjs",
+    "build:v8:final": "node testing/v8/build-final.cjs"
   },
   "devDependencies": {
     "playwright": "1.65.0-alpha-2026-10-30",

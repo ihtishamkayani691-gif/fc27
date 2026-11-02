@@ -1,0 +1,4232 @@
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "actualProductionEntry": "TraderProcessor.start/runActions",
+  "timerPolicy": "native rate timers are simulated; production cadence unchanged",
+  "sessions": [
+    {
+      "name": "mixed-multiple-players",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 2250,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 100,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 1750,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 2,
+        "attempts": 2,
+        "successes": 2,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "1",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          },
+          {
+            "tradeId": "2",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 100
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.04,
+            "medianMs": 9.04,
+            "p95Ms": 9.04,
+            "maxMs": 9.04,
+            "totalMs": 9.04
+          },
+          "candidate_parsing": {
+            "count": 3,
+            "minMs": 0.02,
+            "medianMs": 0.026,
+            "p95Ms": 0.07,
+            "maxMs": 0.07,
+            "totalMs": 0.117
+          },
+          "purchase_decision": {
+            "count": 3,
+            "minMs": 0.119,
+            "medianMs": 0.123,
+            "p95Ms": 0.543,
+            "maxMs": 0.543,
+            "totalMs": 0.784
+          },
+          "price_evidence": {
+            "count": 2,
+            "minMs": 0.936,
+            "medianMs": 14.932,
+            "p95Ms": 14.932,
+            "maxMs": 14.932,
+            "totalMs": 15.868
+          },
+          "safety_evaluation": {
+            "count": 2,
+            "minMs": 0.302,
+            "medianMs": 1.124,
+            "p95Ms": 1.124,
+            "maxMs": 1.124,
+            "totalMs": 1.426
+          },
+          "discovery_to_purchase_ready": {
+            "count": 2,
+            "minMs": 3.562,
+            "medianMs": 15.83,
+            "p95Ms": 15.83,
+            "maxMs": 15.83,
+            "totalMs": 19.391
+          },
+          "transaction_completion": {
+            "count": 2,
+            "minMs": 7.381,
+            "medianMs": 14.712,
+            "p95Ms": 14.712,
+            "maxMs": 14.712,
+            "totalMs": 22.093
+          },
+          "reconciliation": {
+            "count": 2,
+            "minMs": 14.754,
+            "medianMs": 19.416,
+            "p95Ms": 19.416,
+            "maxMs": 19.416,
+            "totalMs": 34.17
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "stale-response": 1
+          }
+        }
+      },
+      "attempts": 2,
+      "coins": 3250,
+      "inventory": [
+        101,
+        102
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 6.149799999999999
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 101,
+          "reference": 1000,
+          "at": 1793605939646
+        },
+        {
+          "kind": "attempt",
+          "id": "1",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "1",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 5.086100000000002
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 102,
+          "reference": 1000,
+          "at": 1793605946646
+        },
+        {
+          "kind": "attempt",
+          "id": "2",
+          "price": 850,
+          "coinsBefore": 4100
+        },
+        {
+          "kind": "result",
+          "id": "2",
+          "success": true,
+          "coinsAfter": 3250,
+          "elapsedMs": 13.85820000000001
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 6 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 101 tradeId=1 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 102 tradeId=2 buyNow=850 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8 candidate] tradeId=3 price=901 priceEligible=false execution=RC-controls",
+        "[v8 candidate] Player: Player 4 tradeId=4 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=stale-response purchaseAuthorized=false buying=DISABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=6 minBuy=0 maxBuy=900 minSec=30 maxSec=3559 minPrice=850 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.04,
+          "medianMs": 9.04,
+          "p95Ms": 9.04,
+          "maxMs": 9.04,
+          "totalMs": 9.04
+        },
+        "candidate_parsing": {
+          "count": 3,
+          "minMs": 0.02,
+          "medianMs": 0.026,
+          "p95Ms": 0.07,
+          "maxMs": 0.07,
+          "totalMs": 0.117
+        },
+        "purchase_decision": {
+          "count": 3,
+          "minMs": 0.119,
+          "medianMs": 0.123,
+          "p95Ms": 0.543,
+          "maxMs": 0.543,
+          "totalMs": 0.784
+        },
+        "price_evidence": {
+          "count": 2,
+          "minMs": 0.936,
+          "medianMs": 14.932,
+          "p95Ms": 14.932,
+          "maxMs": 14.932,
+          "totalMs": 15.868
+        },
+        "safety_evaluation": {
+          "count": 2,
+          "minMs": 0.302,
+          "medianMs": 1.124,
+          "p95Ms": 1.124,
+          "maxMs": 1.124,
+          "totalMs": 1.426
+        },
+        "discovery_to_purchase_ready": {
+          "count": 2,
+          "minMs": 3.562,
+          "medianMs": 15.83,
+          "p95Ms": 15.83,
+          "maxMs": 15.83,
+          "totalMs": 19.391
+        },
+        "transaction_completion": {
+          "count": 2,
+          "minMs": 7.381,
+          "medianMs": 14.712,
+          "p95Ms": 14.712,
+          "maxMs": 14.712,
+          "totalMs": 22.093
+        },
+        "reconciliation": {
+          "count": 2,
+          "minMs": 14.754,
+          "medianMs": 19.416,
+          "p95Ms": 19.416,
+          "maxMs": 19.416,
+          "totalMs": 34.17
+        }
+      }
+    },
+    {
+      "name": "sold-then-success",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 3100,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 900,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 2,
+        "attempts": 2,
+        "successes": 1,
+        "lost": 1,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "10",
+            "outcome": "confirmed-sold"
+          },
+          {
+            "tradeId": "11",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 7.585,
+            "medianMs": 7.585,
+            "p95Ms": 7.585,
+            "maxMs": 7.585,
+            "totalMs": 7.585
+          },
+          "candidate_parsing": {
+            "count": 2,
+            "minMs": 0.027,
+            "medianMs": 0.046,
+            "p95Ms": 0.046,
+            "maxMs": 0.046,
+            "totalMs": 0.073
+          },
+          "purchase_decision": {
+            "count": 2,
+            "minMs": 0.047,
+            "medianMs": 0.127,
+            "p95Ms": 0.127,
+            "maxMs": 0.127,
+            "totalMs": 0.174
+          },
+          "price_evidence": {
+            "count": 2,
+            "minMs": 14.551,
+            "medianMs": 14.759,
+            "p95Ms": 14.759,
+            "maxMs": 14.759,
+            "totalMs": 29.31
+          },
+          "safety_evaluation": {
+            "count": 2,
+            "minMs": 0.163,
+            "medianMs": 0.227,
+            "p95Ms": 0.227,
+            "maxMs": 0.227,
+            "totalMs": 0.39
+          },
+          "discovery_to_purchase_ready": {
+            "count": 2,
+            "minMs": 15.192,
+            "medianMs": 15.332,
+            "p95Ms": 15.332,
+            "maxMs": 15.332,
+            "totalMs": 30.524
+          },
+          "transaction_completion": {
+            "count": 2,
+            "minMs": 15.131,
+            "medianMs": 15.178,
+            "p95Ms": 15.178,
+            "maxMs": 15.178,
+            "totalMs": 30.309
+          },
+          "reconciliation": {
+            "count": 2,
+            "minMs": 15.183,
+            "medianMs": 15.573,
+            "p95Ms": 15.573,
+            "maxMs": 15.573,
+            "totalMs": 30.756
+          }
+        },
+        "rejections": {
+          "count": 0,
+          "reasons": {}
+        }
+      },
+      "attempts": 2,
+      "coins": 4100,
+      "inventory": [
+        111
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 7.298900000000003
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 10,
+          "reference": 1000,
+          "at": 1793605939786
+        },
+        {
+          "kind": "attempt",
+          "id": "10",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "10",
+          "success": false,
+          "coinsAfter": 5000,
+          "elapsedMs": 14.633700000000005
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 111,
+          "reference": 1000,
+          "at": 1793605946786
+        },
+        {
+          "kind": "attempt",
+          "id": "11",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "11",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.534199999999998
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "[v8 candidate] Player: Player 10 tradeId=10 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 111 tradeId=11 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=2 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=2 priceEligible=2 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 7.585,
+          "medianMs": 7.585,
+          "p95Ms": 7.585,
+          "maxMs": 7.585,
+          "totalMs": 7.585
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0.027,
+          "medianMs": 0.046,
+          "p95Ms": 0.046,
+          "maxMs": 0.046,
+          "totalMs": 0.073
+        },
+        "purchase_decision": {
+          "count": 2,
+          "minMs": 0.047,
+          "medianMs": 0.127,
+          "p95Ms": 0.127,
+          "maxMs": 0.127,
+          "totalMs": 0.174
+        },
+        "price_evidence": {
+          "count": 2,
+          "minMs": 14.551,
+          "medianMs": 14.759,
+          "p95Ms": 14.759,
+          "maxMs": 14.759,
+          "totalMs": 29.31
+        },
+        "safety_evaluation": {
+          "count": 2,
+          "minMs": 0.163,
+          "medianMs": 0.227,
+          "p95Ms": 0.227,
+          "maxMs": 0.227,
+          "totalMs": 0.39
+        },
+        "discovery_to_purchase_ready": {
+          "count": 2,
+          "minMs": 15.192,
+          "medianMs": 15.332,
+          "p95Ms": 15.332,
+          "maxMs": 15.332,
+          "totalMs": 30.524
+        },
+        "transaction_completion": {
+          "count": 2,
+          "minMs": 15.131,
+          "medianMs": 15.178,
+          "p95Ms": 15.178,
+          "maxMs": 15.178,
+          "totalMs": 30.309
+        },
+        "reconciliation": {
+          "count": 2,
+          "minMs": 15.183,
+          "medianMs": 15.573,
+          "p95Ms": 15.573,
+          "maxMs": 15.573,
+          "totalMs": 30.756
+        }
+      }
+    },
+    {
+      "name": "repeated-cycles-ownership",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 2200,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 1800,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 2,
+        "attempts": 2,
+        "successes": 2,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "20",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          },
+          {
+            "tradeId": "22",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 3,
+            "minMs": 9.63,
+            "medianMs": 14.55,
+            "p95Ms": 14.7,
+            "maxMs": 14.7,
+            "totalMs": 38.88
+          },
+          "candidate_parsing": {
+            "count": 3,
+            "minMs": 0.015,
+            "medianMs": 0.017,
+            "p95Ms": 0.023,
+            "maxMs": 0.023,
+            "totalMs": 0.055
+          },
+          "purchase_decision": {
+            "count": 3,
+            "minMs": 0.028,
+            "medianMs": 0.029,
+            "p95Ms": 0.096,
+            "maxMs": 0.096,
+            "totalMs": 0.154
+          },
+          "price_evidence": {
+            "count": 2,
+            "minMs": 15.054,
+            "medianMs": 15.453,
+            "p95Ms": 15.453,
+            "maxMs": 15.453,
+            "totalMs": 30.507
+          },
+          "safety_evaluation": {
+            "count": 2,
+            "minMs": 0.221,
+            "medianMs": 0.261,
+            "p95Ms": 0.261,
+            "maxMs": 0.261,
+            "totalMs": 0.482
+          },
+          "discovery_to_purchase_ready": {
+            "count": 2,
+            "minMs": 15.563,
+            "medianMs": 16.039,
+            "p95Ms": 16.039,
+            "maxMs": 16.039,
+            "totalMs": 31.602
+          },
+          "transaction_completion": {
+            "count": 2,
+            "minMs": 15.051,
+            "medianMs": 15.399,
+            "p95Ms": 15.399,
+            "maxMs": 15.399,
+            "totalMs": 30.45
+          },
+          "reconciliation": {
+            "count": 2,
+            "minMs": 15.38,
+            "medianMs": 15.55,
+            "p95Ms": 15.55,
+            "maxMs": 15.55,
+            "totalMs": 30.931
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "inventory-duplicate": 1
+          }
+        }
+      },
+      "attempts": 2,
+      "coins": 3200,
+      "inventory": [
+        120,
+        122
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.45410000000004
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 120,
+          "reference": 1000,
+          "at": 1793605939898
+        },
+        {
+          "kind": "attempt",
+          "id": "20",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "20",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.878899999999987
+        },
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 850,
+            "maxBuy": 900
+          },
+          "elapsedMs": 14.533299999999997
+        },
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 14.393599999999992
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 122,
+          "reference": 1000,
+          "at": 1793605960898
+        },
+        {
+          "kind": "attempt",
+          "id": "22",
+          "price": 900,
+          "coinsBefore": 4100
+        },
+        {
+          "kind": "result",
+          "id": "22",
+          "success": true,
+          "coinsAfter": 3200,
+          "elapsedMs": 14.532399999999996
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 120 tradeId=20 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 850",
+        "[v8 candidate] Player: Player 120 tradeId=21 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=inventory-duplicate purchaseAuthorized=false buying=DISABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 122 tradeId=22 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 3,
+          "minMs": 9.63,
+          "medianMs": 14.55,
+          "p95Ms": 14.7,
+          "maxMs": 14.7,
+          "totalMs": 38.88
+        },
+        "candidate_parsing": {
+          "count": 3,
+          "minMs": 0.015,
+          "medianMs": 0.017,
+          "p95Ms": 0.023,
+          "maxMs": 0.023,
+          "totalMs": 0.055
+        },
+        "purchase_decision": {
+          "count": 3,
+          "minMs": 0.028,
+          "medianMs": 0.029,
+          "p95Ms": 0.096,
+          "maxMs": 0.096,
+          "totalMs": 0.154
+        },
+        "price_evidence": {
+          "count": 2,
+          "minMs": 15.054,
+          "medianMs": 15.453,
+          "p95Ms": 15.453,
+          "maxMs": 15.453,
+          "totalMs": 30.507
+        },
+        "safety_evaluation": {
+          "count": 2,
+          "minMs": 0.221,
+          "medianMs": 0.261,
+          "p95Ms": 0.261,
+          "maxMs": 0.261,
+          "totalMs": 0.482
+        },
+        "discovery_to_purchase_ready": {
+          "count": 2,
+          "minMs": 15.563,
+          "medianMs": 16.039,
+          "p95Ms": 16.039,
+          "maxMs": 16.039,
+          "totalMs": 31.602
+        },
+        "transaction_completion": {
+          "count": 2,
+          "minMs": 15.051,
+          "medianMs": 15.399,
+          "p95Ms": 15.399,
+          "maxMs": 15.399,
+          "totalMs": 30.45
+        },
+        "reconciliation": {
+          "count": 2,
+          "minMs": 15.38,
+          "medianMs": 15.55,
+          "p95Ms": 15.55,
+          "maxMs": 15.55,
+          "totalMs": 30.931
+        }
+      }
+    },
+    {
+      "name": "insufficient-coins",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.058,
+            "medianMs": 9.058,
+            "p95Ms": 9.058,
+            "maxMs": 9.058,
+            "totalMs": 9.058
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.041,
+            "medianMs": 0.041,
+            "p95Ms": 0.041,
+            "maxMs": 0.041,
+            "totalMs": 0.041
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.144,
+            "medianMs": 0.144,
+            "p95Ms": 0.144,
+            "maxMs": 0.144,
+            "totalMs": 0.144
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "insufficient-coins": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 800,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 8.83080000000001
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:insufficient-coins execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.058,
+          "medianMs": 9.058,
+          "p95Ms": 9.058,
+          "maxMs": 9.058,
+          "totalMs": 9.058
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.041,
+          "medianMs": 0.041,
+          "p95Ms": 0.041,
+          "maxMs": 0.041,
+          "totalMs": 0.041
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.144,
+          "medianMs": 0.144,
+          "p95Ms": 0.144,
+          "maxMs": 0.144,
+          "totalMs": 0.144
+        }
+      }
+    },
+    {
+      "name": "budget-exhaustion",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 100,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 900,
+        "budget": 1000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 1,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "31",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 6.117,
+            "medianMs": 6.117,
+            "p95Ms": 6.117,
+            "maxMs": 6.117,
+            "totalMs": 6.117
+          },
+          "candidate_parsing": {
+            "count": 2,
+            "minMs": 0.022,
+            "medianMs": 0.032,
+            "p95Ms": 0.032,
+            "maxMs": 0.032,
+            "totalMs": 0.054
+          },
+          "purchase_decision": {
+            "count": 2,
+            "minMs": 0.073,
+            "medianMs": 0.074,
+            "p95Ms": 0.074,
+            "maxMs": 0.074,
+            "totalMs": 0.147
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.766,
+            "medianMs": 14.766,
+            "p95Ms": 14.766,
+            "maxMs": 14.766,
+            "totalMs": 14.766
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.138,
+            "medianMs": 0.138,
+            "p95Ms": 0.138,
+            "maxMs": 0.138,
+            "totalMs": 0.138
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.228,
+            "medianMs": 15.228,
+            "p95Ms": 15.228,
+            "maxMs": 15.228,
+            "totalMs": 15.228
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.134,
+            "medianMs": 15.134,
+            "p95Ms": 15.134,
+            "maxMs": 15.134,
+            "totalMs": 15.134
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.051,
+            "medianMs": 15.051,
+            "p95Ms": 15.051,
+            "maxMs": 15.051,
+            "totalMs": 15.051
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "spend-budget-exceeded": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [
+        31
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 5.930000000000007
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 31,
+          "reference": 1000,
+          "at": 1793605940054
+        },
+        {
+          "kind": "attempt",
+          "id": "31",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "31",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.690400000000011
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 31 tradeId=31 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8] state=STOPPED reason=purchase-safety-stop:spend-budget-exceeded execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 6.117,
+          "medianMs": 6.117,
+          "p95Ms": 6.117,
+          "maxMs": 6.117,
+          "totalMs": 6.117
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0.022,
+          "medianMs": 0.032,
+          "p95Ms": 0.032,
+          "maxMs": 0.032,
+          "totalMs": 0.054
+        },
+        "purchase_decision": {
+          "count": 2,
+          "minMs": 0.073,
+          "medianMs": 0.074,
+          "p95Ms": 0.074,
+          "maxMs": 0.074,
+          "totalMs": 0.147
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.766,
+          "medianMs": 14.766,
+          "p95Ms": 14.766,
+          "maxMs": 14.766,
+          "totalMs": 14.766
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.138,
+          "medianMs": 0.138,
+          "p95Ms": 0.138,
+          "maxMs": 0.138,
+          "totalMs": 0.138
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.228,
+          "medianMs": 15.228,
+          "p95Ms": 15.228,
+          "maxMs": 15.228,
+          "totalMs": 15.228
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.134,
+          "medianMs": 15.134,
+          "p95Ms": 15.134,
+          "maxMs": 15.134,
+          "totalMs": 15.134
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.051,
+          "medianMs": 15.051,
+          "p95Ms": 15.051,
+          "maxMs": 15.051,
+          "totalMs": 15.051
+        }
+      }
+    },
+    {
+      "name": "unknown-outcome",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "40",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.522,
+            "medianMs": 9.522,
+            "p95Ms": 9.522,
+            "maxMs": 9.522,
+            "totalMs": 9.522
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.036,
+            "medianMs": 0.036,
+            "p95Ms": 0.036,
+            "maxMs": 0.036,
+            "totalMs": 0.036
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.079,
+            "medianMs": 0.079,
+            "p95Ms": 0.079,
+            "maxMs": 0.079,
+            "totalMs": 0.079
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.749,
+            "medianMs": 14.749,
+            "p95Ms": 14.749,
+            "maxMs": 14.749,
+            "totalMs": 14.749
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.15,
+            "medianMs": 0.15,
+            "p95Ms": 0.15,
+            "maxMs": 0.15,
+            "totalMs": 0.15
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.222,
+            "medianMs": 15.222,
+            "p95Ms": 15.222,
+            "maxMs": 15.222,
+            "totalMs": 15.222
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 14.977,
+            "medianMs": 14.977,
+            "p95Ms": 14.977,
+            "maxMs": 14.977,
+            "totalMs": 14.977
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.408,
+            "medianMs": 15.408,
+            "p95Ms": 15.408,
+            "maxMs": 15.408,
+            "totalMs": 15.408
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.043,
+            "medianMs": 0.043,
+            "p95Ms": 0.043,
+            "maxMs": 0.043,
+            "totalMs": 0.043
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.355699999999956
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 40,
+          "reference": 1000,
+          "at": 1793605940115
+        },
+        {
+          "kind": "attempt",
+          "id": "40",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "40",
+          "success": false,
+          "coinsAfter": 5000,
+          "elapsedMs": 14.611800000000017
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.522,
+          "medianMs": 9.522,
+          "p95Ms": 9.522,
+          "maxMs": 9.522,
+          "totalMs": 9.522
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.036,
+          "medianMs": 0.036,
+          "p95Ms": 0.036,
+          "maxMs": 0.036,
+          "totalMs": 0.036
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.079,
+          "medianMs": 0.079,
+          "p95Ms": 0.079,
+          "maxMs": 0.079,
+          "totalMs": 0.079
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.749,
+          "medianMs": 14.749,
+          "p95Ms": 14.749,
+          "maxMs": 14.749,
+          "totalMs": 14.749
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.15,
+          "medianMs": 0.15,
+          "p95Ms": 0.15,
+          "maxMs": 0.15,
+          "totalMs": 0.15
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.222,
+          "medianMs": 15.222,
+          "p95Ms": 15.222,
+          "maxMs": 15.222,
+          "totalMs": 15.222
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 14.977,
+          "medianMs": 14.977,
+          "p95Ms": 14.977,
+          "maxMs": 14.977,
+          "totalMs": 14.977
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.408,
+          "medianMs": 15.408,
+          "p95Ms": 15.408,
+          "maxMs": 15.408,
+          "totalMs": 15.408
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.043,
+          "medianMs": 0.043,
+          "p95Ms": 0.043,
+          "maxMs": 0.043,
+          "totalMs": 0.043
+        }
+      }
+    },
+    {
+      "name": "market-error-malformed",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.305,
+            "medianMs": 9.305,
+            "p95Ms": 9.305,
+            "maxMs": 9.305,
+            "totalMs": 9.305
+          }
+        },
+        "rejections": {
+          "count": 0,
+          "reasons": {}
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.180099999999925
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "[v8] state=STOPPED reason=malformed-response execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.305,
+          "medianMs": 9.305,
+          "p95Ms": 9.305,
+          "maxMs": 9.305,
+          "totalMs": 9.305
+        }
+      }
+    },
+    {
+      "name": "market-error-503",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 1.298,
+            "medianMs": 1.298,
+            "p95Ms": 1.298,
+            "maxMs": 1.298,
+            "totalMs": 1.298
+          }
+        },
+        "rejections": {
+          "count": 0,
+          "reasons": {}
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 1.1760000000000446
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "[v8] state=STOPPED reason=service-error execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 1.298,
+          "medianMs": 1.298,
+          "p95Ms": 1.298,
+          "maxMs": 1.298,
+          "totalMs": 1.298
+        }
+      }
+    },
+    {
+      "name": "stop-during-search",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 66.136,
+            "medianMs": 66.136,
+            "p95Ms": 66.136,
+            "maxMs": 66.136,
+            "totalMs": 66.136
+          }
+        },
+        "rejections": {
+          "count": 0,
+          "reasons": {}
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 65.35000000000002
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "abStopped",
+        "Found 1 page 1 minBuy 0"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 66.136,
+          "medianMs": 66.136,
+          "p95Ms": 66.136,
+          "maxMs": 66.136,
+          "totalMs": 66.136
+        }
+      }
+    },
+    {
+      "name": "stop-and-reconcile",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 3100,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 900,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "reconciled-purchases-remain-disabled",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 1,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "70",
+            "outcome": "cancelled"
+          },
+          {
+            "tradeId": "70",
+            "outcome": "reconciled-won-manual-item-handling-required"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 8.667,
+            "medianMs": 8.667,
+            "p95Ms": 8.667,
+            "maxMs": 8.667,
+            "totalMs": 8.667
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.028,
+            "medianMs": 0.028,
+            "p95Ms": 0.028,
+            "maxMs": 0.028,
+            "totalMs": 0.028
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.064,
+            "medianMs": 0.064,
+            "p95Ms": 0.064,
+            "maxMs": 0.064,
+            "totalMs": 0.064
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.889,
+            "medianMs": 14.889,
+            "p95Ms": 14.889,
+            "maxMs": 14.889,
+            "totalMs": 14.889
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.185,
+            "medianMs": 0.185,
+            "p95Ms": 0.185,
+            "maxMs": 0.185,
+            "totalMs": 0.185
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.383,
+            "medianMs": 15.383,
+            "p95Ms": 15.383,
+            "maxMs": 15.383,
+            "totalMs": 15.383
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 45.886,
+            "medianMs": 45.886,
+            "p95Ms": 45.886,
+            "maxMs": 45.886,
+            "totalMs": 45.886
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.028,
+            "medianMs": 0.028,
+            "p95Ms": 0.028,
+            "maxMs": 0.028,
+            "totalMs": 0.028
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 14.785,
+            "medianMs": 14.785,
+            "p95Ms": 14.785,
+            "maxMs": 14.785,
+            "totalMs": 14.785
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "cancelled": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [
+        70
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 8.459799999999973
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 70,
+          "reference": 1000,
+          "at": 1793605940268
+        },
+        {
+          "kind": "attempt",
+          "id": "70",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "70",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 45.41190000000006
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "abStopped",
+        "Next action in 4 (secs)"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 8.667,
+          "medianMs": 8.667,
+          "p95Ms": 8.667,
+          "maxMs": 8.667,
+          "totalMs": 8.667
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.028,
+          "medianMs": 0.028,
+          "p95Ms": 0.028,
+          "maxMs": 0.028,
+          "totalMs": 0.028
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.064,
+          "medianMs": 0.064,
+          "p95Ms": 0.064,
+          "maxMs": 0.064,
+          "totalMs": 0.064
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.889,
+          "medianMs": 14.889,
+          "p95Ms": 14.889,
+          "maxMs": 14.889,
+          "totalMs": 14.889
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.185,
+          "medianMs": 0.185,
+          "p95Ms": 0.185,
+          "maxMs": 0.185,
+          "totalMs": 0.185
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.383,
+          "medianMs": 15.383,
+          "p95Ms": 15.383,
+          "maxMs": 15.383,
+          "totalMs": 15.383
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 45.886,
+          "medianMs": 45.886,
+          "p95Ms": 45.886,
+          "maxMs": 45.886,
+          "totalMs": 45.886
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.028,
+          "medianMs": 0.028,
+          "p95Ms": 0.028,
+          "maxMs": 0.028,
+          "totalMs": 0.028
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 14.785,
+          "medianMs": 14.785,
+          "p95Ms": 14.785,
+          "maxMs": 14.785,
+          "totalMs": 14.785
+        }
+      }
+    },
+    {
+      "name": "timeout-late-win",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 3100,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 900,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "reconciled-purchases-remain-disabled",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 1,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "80",
+            "outcome": "transaction-timeout"
+          },
+          {
+            "tradeId": "80",
+            "outcome": "reconciled-won-manual-item-handling-required"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 10.303,
+            "medianMs": 10.303,
+            "p95Ms": 10.303,
+            "maxMs": 10.303,
+            "totalMs": 10.303
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.029,
+            "medianMs": 0.029,
+            "p95Ms": 0.029,
+            "maxMs": 0.029,
+            "totalMs": 0.029
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.076,
+            "medianMs": 0.076,
+            "p95Ms": 0.076,
+            "maxMs": 0.076,
+            "totalMs": 0.076
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.813,
+            "medianMs": 14.813,
+            "p95Ms": 14.813,
+            "maxMs": 14.813,
+            "totalMs": 14.813
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.157,
+            "medianMs": 0.157,
+            "p95Ms": 0.157,
+            "maxMs": 0.157,
+            "totalMs": 0.157
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.349,
+            "medianMs": 15.349,
+            "p95Ms": 15.349,
+            "maxMs": 15.349,
+            "totalMs": 15.349
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.078,
+            "medianMs": 0.078,
+            "p95Ms": 0.078,
+            "maxMs": 0.078,
+            "totalMs": 0.078
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 308.569,
+            "medianMs": 308.569,
+            "p95Ms": 308.569,
+            "maxMs": 308.569,
+            "totalMs": 308.569
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.629,
+            "medianMs": 15.629,
+            "p95Ms": 15.629,
+            "maxMs": 15.629,
+            "totalMs": 15.629
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-timeout": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [
+        80
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 10.161899999999946
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 80,
+          "reference": 1000,
+          "at": 1793605940360
+        },
+        {
+          "kind": "attempt",
+          "id": "80",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "80",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 308.121
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-timeout execution=RC-controls",
+        "abStopped",
+        "Next action in 4 (secs)"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 10.303,
+          "medianMs": 10.303,
+          "p95Ms": 10.303,
+          "maxMs": 10.303,
+          "totalMs": 10.303
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.029,
+          "medianMs": 0.029,
+          "p95Ms": 0.029,
+          "maxMs": 0.029,
+          "totalMs": 0.029
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.076,
+          "medianMs": 0.076,
+          "p95Ms": 0.076,
+          "maxMs": 0.076,
+          "totalMs": 0.076
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.813,
+          "medianMs": 14.813,
+          "p95Ms": 14.813,
+          "maxMs": 14.813,
+          "totalMs": 14.813
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.157,
+          "medianMs": 0.157,
+          "p95Ms": 0.157,
+          "maxMs": 0.157,
+          "totalMs": 0.157
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.349,
+          "medianMs": 15.349,
+          "p95Ms": 15.349,
+          "maxMs": 15.349,
+          "totalMs": 15.349
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.078,
+          "medianMs": 0.078,
+          "p95Ms": 0.078,
+          "maxMs": 0.078,
+          "totalMs": 0.078
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 308.569,
+          "medianMs": 308.569,
+          "p95Ms": 308.569,
+          "maxMs": 308.569,
+          "totalMs": 308.569
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.629,
+          "medianMs": 15.629,
+          "p95Ms": 15.629,
+          "maxMs": 15.629,
+          "totalMs": 15.629
+        }
+      }
+    },
+    {
+      "name": "restart-settled-dedup",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.713,
+            "medianMs": 9.713,
+            "p95Ms": 9.713,
+            "maxMs": 9.713,
+            "totalMs": 9.713
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.02,
+            "medianMs": 0.02,
+            "p95Ms": 0.02,
+            "maxMs": 0.02,
+            "totalMs": 0.02
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.067,
+            "medianMs": 0.067,
+            "p95Ms": 0.067,
+            "maxMs": 0.067,
+            "totalMs": 0.067
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "duplicate-trade-id": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 4100,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.588899999999967
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "[v8 candidate] Player: Player 90 tradeId=90 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=duplicate-trade-id purchaseAuthorized=false buying=DISABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.713,
+          "medianMs": 9.713,
+          "p95Ms": 9.713,
+          "maxMs": 9.713,
+          "totalMs": 9.713
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.02,
+          "medianMs": 0.02,
+          "p95Ms": 0.02,
+          "maxMs": 0.02,
+          "totalMs": 0.02
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.067,
+          "medianMs": 0.067,
+          "p95Ms": 0.067,
+          "maxMs": 0.067,
+          "totalMs": 0.067
+        }
+      }
+    },
+    {
+      "name": "restart-unresolved-lock",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": null,
+        "remainingBudget": 0,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 0,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {},
+        "rejections": {
+          "count": 0,
+          "reasons": {}
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [],
+      "logs": [],
+      "timings": {}
+    },
+    {
+      "name": "pre-submit-timeout",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "100",
+            "outcome": "transaction-timeout"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 6.259,
+            "medianMs": 6.259,
+            "p95Ms": 6.259,
+            "maxMs": 6.259,
+            "totalMs": 6.259
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.021,
+            "medianMs": 0.021,
+            "p95Ms": 0.021,
+            "maxMs": 0.021,
+            "totalMs": 0.021
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.061,
+            "medianMs": 0.061,
+            "p95Ms": 0.061,
+            "maxMs": 0.061,
+            "totalMs": 0.061
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.016,
+            "medianMs": 0.016,
+            "p95Ms": 0.016,
+            "maxMs": 0.016,
+            "totalMs": 0.016
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 30.521,
+            "medianMs": 30.521,
+            "p95Ms": 30.521,
+            "maxMs": 30.521,
+            "totalMs": 30.521
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-timeout": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 6.130499999999984
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 100,
+          "reference": 1000,
+          "at": 1793605941042
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-timeout execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 6.259,
+          "medianMs": 6.259,
+          "p95Ms": 6.259,
+          "maxMs": 6.259,
+          "totalMs": 6.259
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.021,
+          "medianMs": 0.021,
+          "p95Ms": 0.021,
+          "maxMs": 0.021,
+          "totalMs": 0.021
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.061,
+          "medianMs": 0.061,
+          "p95Ms": 0.061,
+          "maxMs": 0.061,
+          "totalMs": 0.061
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.016,
+          "medianMs": 0.016,
+          "p95Ms": 0.016,
+          "maxMs": 0.016,
+          "totalMs": 0.016
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 30.521,
+          "medianMs": 30.521,
+          "p95Ms": 30.521,
+          "maxMs": 30.521,
+          "totalMs": 30.521
+        }
+      }
+    },
+    {
+      "name": "malformed-purchase-response",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "110",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 10.194,
+            "medianMs": 10.194,
+            "p95Ms": 10.194,
+            "maxMs": 10.194,
+            "totalMs": 10.194
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.031,
+            "medianMs": 0.031,
+            "p95Ms": 0.031,
+            "maxMs": 0.031,
+            "totalMs": 0.031
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.102,
+            "medianMs": 0.102,
+            "p95Ms": 0.102,
+            "maxMs": 0.102,
+            "totalMs": 0.102
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.697,
+            "medianMs": 14.697,
+            "p95Ms": 14.697,
+            "maxMs": 14.697,
+            "totalMs": 14.697
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.192,
+            "medianMs": 0.192,
+            "p95Ms": 0.192,
+            "maxMs": 0.192,
+            "totalMs": 0.192
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.276,
+            "medianMs": 15.276,
+            "p95Ms": 15.276,
+            "maxMs": 15.276,
+            "totalMs": 15.276
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.246,
+            "medianMs": 15.246,
+            "p95Ms": 15.246,
+            "maxMs": 15.246,
+            "totalMs": 15.246
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.452,
+            "medianMs": 15.452,
+            "p95Ms": 15.452,
+            "maxMs": 15.452,
+            "totalMs": 15.452
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.044,
+            "medianMs": 0.044,
+            "p95Ms": 0.044,
+            "maxMs": 0.044,
+            "totalMs": 0.044
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 10.003500000000031
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 110,
+          "reference": 1000,
+          "at": 1793605941115
+        },
+        {
+          "kind": "attempt",
+          "id": "110",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "110",
+          "success": false,
+          "coinsAfter": 5000,
+          "elapsedMs": 14.719299999999976
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 10.194,
+          "medianMs": 10.194,
+          "p95Ms": 10.194,
+          "maxMs": 10.194,
+          "totalMs": 10.194
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.031,
+          "medianMs": 0.031,
+          "p95Ms": 0.031,
+          "maxMs": 0.031,
+          "totalMs": 0.031
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.102,
+          "medianMs": 0.102,
+          "p95Ms": 0.102,
+          "maxMs": 0.102,
+          "totalMs": 0.102
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.697,
+          "medianMs": 14.697,
+          "p95Ms": 14.697,
+          "maxMs": 14.697,
+          "totalMs": 14.697
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.192,
+          "medianMs": 0.192,
+          "p95Ms": 0.192,
+          "maxMs": 0.192,
+          "totalMs": 0.192
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.276,
+          "medianMs": 15.276,
+          "p95Ms": 15.276,
+          "maxMs": 15.276,
+          "totalMs": 15.276
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.246,
+          "medianMs": 15.246,
+          "p95Ms": 15.246,
+          "maxMs": 15.246,
+          "totalMs": 15.246
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.452,
+          "medianMs": 15.452,
+          "p95Ms": 15.452,
+          "maxMs": 15.452,
+          "totalMs": 15.452
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.044,
+          "medianMs": 0.044,
+          "p95Ms": 0.044,
+          "maxMs": 0.044,
+          "totalMs": 0.044
+        }
+      }
+    },
+    {
+      "name": "runtime-pricing-outage",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "120",
+            "outcome": "price-source-service-error"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.916,
+            "medianMs": 9.916,
+            "p95Ms": 9.916,
+            "maxMs": 9.916,
+            "totalMs": 9.916
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.027,
+            "medianMs": 0.027,
+            "p95Ms": 0.027,
+            "maxMs": 0.027,
+            "totalMs": 0.027
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.074,
+            "medianMs": 0.074,
+            "p95Ms": 0.074,
+            "maxMs": 0.074,
+            "totalMs": 0.074
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 0.101,
+            "medianMs": 0.101,
+            "p95Ms": 0.101,
+            "maxMs": 0.101,
+            "totalMs": 0.101
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.009,
+            "medianMs": 0.009,
+            "p95Ms": 0.009,
+            "maxMs": 0.009,
+            "totalMs": 0.009
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "price-source-service-error": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.74350000000004
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "[v8] state=STOPPED reason=purchase-safety-stop:price-source-service-error execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.916,
+          "medianMs": 9.916,
+          "p95Ms": 9.916,
+          "maxMs": 9.916,
+          "totalMs": 9.916
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.027,
+          "medianMs": 0.027,
+          "p95Ms": 0.027,
+          "maxMs": 0.027,
+          "totalMs": 0.027
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.074,
+          "medianMs": 0.074,
+          "p95Ms": 0.074,
+          "maxMs": 0.074,
+          "totalMs": 0.074
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 0.101,
+          "medianMs": 0.101,
+          "p95Ms": 0.101,
+          "maxMs": 0.101,
+          "totalMs": 0.101
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.009,
+          "medianMs": 0.009,
+          "p95Ms": 0.009,
+          "maxMs": 0.009,
+          "totalMs": 0.009
+        }
+      }
+    },
+    {
+      "name": "net-profit-rejection",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 60,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": false,
+          "reason": "minimum-net-profit-not-met",
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.545,
+            "medianMs": 9.545,
+            "p95Ms": 9.545,
+            "maxMs": 9.545,
+            "totalMs": 9.545
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.023,
+            "medianMs": 0.023,
+            "p95Ms": 0.023,
+            "maxMs": 0.023,
+            "totalMs": 0.023
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.07,
+            "medianMs": 0.07,
+            "p95Ms": 0.07,
+            "maxMs": 0.07,
+            "totalMs": 0.07
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.632,
+            "medianMs": 14.632,
+            "p95Ms": 14.632,
+            "maxMs": 14.632,
+            "totalMs": 14.632
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "minimum-net-profit-not-met": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.422000000000025
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 130,
+          "reference": 1000,
+          "at": 1793605941193
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "[v8 candidate] Player: Player 130 tradeId=130 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=minimum-net-profit-not-met purchaseAuthorized=false buying=DISABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.545,
+          "medianMs": 9.545,
+          "p95Ms": 9.545,
+          "maxMs": 9.545,
+          "totalMs": 9.545
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.023,
+          "medianMs": 0.023,
+          "p95Ms": 0.023,
+          "maxMs": 0.023,
+          "totalMs": 0.023
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.07,
+          "medianMs": 0.07,
+          "p95Ms": 0.07,
+          "maxMs": 0.07,
+          "totalMs": 0.07
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.632,
+          "medianMs": 14.632,
+          "p95Ms": 14.632,
+          "maxMs": 14.632,
+          "totalMs": 14.632
+        }
+      }
+    },
+    {
+      "name": "session-count-limit",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 1
+        },
+        "remainingBudget": 3100,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 900,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "TraderProcessor.stop",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 1,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [
+          {
+            "tradeId": "140",
+            "outcome": "confirmed-owned",
+            "netProfitEstimate": 50
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 10.539,
+            "medianMs": 10.539,
+            "p95Ms": 10.539,
+            "maxMs": 10.539,
+            "totalMs": 10.539
+          },
+          "candidate_parsing": {
+            "count": 2,
+            "minMs": 0.016,
+            "medianMs": 0.024,
+            "p95Ms": 0.024,
+            "maxMs": 0.024,
+            "totalMs": 0.04
+          },
+          "purchase_decision": {
+            "count": 2,
+            "minMs": 0.055,
+            "medianMs": 0.074,
+            "p95Ms": 0.074,
+            "maxMs": 0.074,
+            "totalMs": 0.128
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.934,
+            "medianMs": 14.934,
+            "p95Ms": 14.934,
+            "maxMs": 14.934,
+            "totalMs": 14.934
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.274,
+            "medianMs": 0.274,
+            "p95Ms": 0.274,
+            "maxMs": 0.274,
+            "totalMs": 0.274
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.573,
+            "medianMs": 15.573,
+            "p95Ms": 15.573,
+            "maxMs": 15.573,
+            "totalMs": 15.573
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.061,
+            "medianMs": 15.061,
+            "p95Ms": 15.061,
+            "maxMs": 15.061,
+            "totalMs": 15.061
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.368,
+            "medianMs": 15.368,
+            "p95Ms": 15.368,
+            "maxMs": 15.368,
+            "totalMs": 15.368
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "session-purchase-limit": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [
+        140
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 10.4074999999998
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 140,
+          "reference": 1000,
+          "at": 1793605941223
+        },
+        {
+          "kind": "attempt",
+          "id": "140",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "140",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.6875
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8 candidate] Player: Player 140 tradeId=140 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+        "[v8] state=STOPPED reason=purchase-safety-stop:session-purchase-limit execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 10.539,
+          "medianMs": 10.539,
+          "p95Ms": 10.539,
+          "maxMs": 10.539,
+          "totalMs": 10.539
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0.016,
+          "medianMs": 0.024,
+          "p95Ms": 0.024,
+          "maxMs": 0.024,
+          "totalMs": 0.04
+        },
+        "purchase_decision": {
+          "count": 2,
+          "minMs": 0.055,
+          "medianMs": 0.074,
+          "p95Ms": 0.074,
+          "maxMs": 0.074,
+          "totalMs": 0.128
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.934,
+          "medianMs": 14.934,
+          "p95Ms": 14.934,
+          "maxMs": 14.934,
+          "totalMs": 14.934
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.274,
+          "medianMs": 0.274,
+          "p95Ms": 0.274,
+          "maxMs": 0.274,
+          "totalMs": 0.274
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.573,
+          "medianMs": 15.573,
+          "p95Ms": 15.573,
+          "maxMs": 15.573,
+          "totalMs": 15.573
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.061,
+          "medianMs": 15.061,
+          "p95Ms": 15.061,
+          "maxMs": 15.061,
+          "totalMs": 15.061
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.368,
+          "medianMs": 15.368,
+          "p95Ms": 15.368,
+          "maxMs": 15.368,
+          "totalMs": 15.368
+        }
+      }
+    },
+    {
+      "name": "per-purchase-limit",
+      "running": true,
+      "status": {
+        "enabled": true,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 899,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": null,
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": false,
+        "reason": "enabled-for-this-session",
+        "eligible": 0,
+        "attempts": 0,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 0,
+        "history": [],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 10.975,
+            "medianMs": 10.975,
+            "p95Ms": 10.975,
+            "maxMs": 10.975,
+            "totalMs": 10.975
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.029,
+            "medianMs": 0.029,
+            "p95Ms": 0.029,
+            "maxMs": 0.029,
+            "totalMs": 0.029
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.1,
+            "medianMs": 0.1,
+            "p95Ms": 0.1,
+            "maxMs": 0.1,
+            "totalMs": 0.1
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "fixed-snipe-maximum": 1
+          }
+        }
+      },
+      "attempts": 0,
+      "coins": 5000,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 10.830099999999902
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 1 page 1 minBuy 0",
+        "[v8 candidate] Player: Player 142 tradeId=142 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=fixed-snipe-maximum purchaseAuthorized=false buying=DISABLED",
+        "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 10.975,
+          "medianMs": 10.975,
+          "p95Ms": 10.975,
+          "maxMs": 10.975,
+          "totalMs": 10.975
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.029,
+          "medianMs": 0.029,
+          "p95Ms": 0.029,
+          "maxMs": 0.029,
+          "totalMs": 0.029
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        }
+      }
+    },
+    {
+      "name": "accepted-no-inventory",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "150",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.904,
+            "medianMs": 9.904,
+            "p95Ms": 9.904,
+            "maxMs": 9.904,
+            "totalMs": 9.904
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.025,
+            "medianMs": 0.025,
+            "p95Ms": 0.025,
+            "maxMs": 0.025,
+            "totalMs": 0.025
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.221,
+            "medianMs": 0.221,
+            "p95Ms": 0.221,
+            "maxMs": 0.221,
+            "totalMs": 0.221
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.693,
+            "medianMs": 14.693,
+            "p95Ms": 14.693,
+            "maxMs": 14.693,
+            "totalMs": 14.693
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.132,
+            "medianMs": 0.132,
+            "p95Ms": 0.132,
+            "maxMs": 0.132,
+            "totalMs": 0.132
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.279,
+            "medianMs": 15.279,
+            "p95Ms": 15.279,
+            "maxMs": 15.279,
+            "totalMs": 15.279
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.248,
+            "medianMs": 15.248,
+            "p95Ms": 15.248,
+            "maxMs": 15.248,
+            "totalMs": 15.248
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.206,
+            "medianMs": 15.206,
+            "p95Ms": 15.206,
+            "maxMs": 15.206,
+            "totalMs": 15.206
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.039,
+            "medianMs": 0.039,
+            "p95Ms": 0.039,
+            "maxMs": 0.039,
+            "totalMs": 0.039
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.77319999999986
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 150,
+          "reference": 1000,
+          "at": 1793605941301
+        },
+        {
+          "kind": "attempt",
+          "id": "150",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "150",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.88559999999984
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.904,
+          "medianMs": 9.904,
+          "p95Ms": 9.904,
+          "maxMs": 9.904,
+          "totalMs": 9.904
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.025,
+          "medianMs": 0.025,
+          "p95Ms": 0.025,
+          "maxMs": 0.025,
+          "totalMs": 0.025
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.221,
+          "medianMs": 0.221,
+          "p95Ms": 0.221,
+          "maxMs": 0.221,
+          "totalMs": 0.221
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.693,
+          "medianMs": 14.693,
+          "p95Ms": 14.693,
+          "maxMs": 14.693,
+          "totalMs": 14.693
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.132,
+          "medianMs": 0.132,
+          "p95Ms": 0.132,
+          "maxMs": 0.132,
+          "totalMs": 0.132
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.279,
+          "medianMs": 15.279,
+          "p95Ms": 15.279,
+          "maxMs": 15.279,
+          "totalMs": 15.279
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.248,
+          "medianMs": 15.248,
+          "p95Ms": 15.248,
+          "maxMs": 15.248,
+          "totalMs": 15.248
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.206,
+          "medianMs": 15.206,
+          "p95Ms": 15.206,
+          "maxMs": 15.206,
+          "totalMs": 15.206
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.039,
+          "medianMs": 0.039,
+          "p95Ms": 0.039,
+          "maxMs": 0.039,
+          "totalMs": 0.039
+        }
+      }
+    },
+    {
+      "name": "accepted-no-coins",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "150",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 11.349,
+            "medianMs": 11.349,
+            "p95Ms": 11.349,
+            "maxMs": 11.349,
+            "totalMs": 11.349
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.025,
+            "medianMs": 0.025,
+            "p95Ms": 0.025,
+            "maxMs": 0.025,
+            "totalMs": 0.025
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.081,
+            "medianMs": 0.081,
+            "p95Ms": 0.081,
+            "maxMs": 0.081,
+            "totalMs": 0.081
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.832,
+            "medianMs": 14.832,
+            "p95Ms": 14.832,
+            "maxMs": 14.832,
+            "totalMs": 14.832
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.146,
+            "medianMs": 0.146,
+            "p95Ms": 0.146,
+            "maxMs": 0.146,
+            "totalMs": 0.146
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.292,
+            "medianMs": 15.292,
+            "p95Ms": 15.292,
+            "maxMs": 15.292,
+            "totalMs": 15.292
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 14.993,
+            "medianMs": 14.993,
+            "p95Ms": 14.993,
+            "maxMs": 14.993,
+            "totalMs": 14.993
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.578,
+            "medianMs": 15.578,
+            "p95Ms": 15.578,
+            "maxMs": 15.578,
+            "totalMs": 15.578
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.041,
+            "medianMs": 0.041,
+            "p95Ms": 0.041,
+            "maxMs": 0.041,
+            "totalMs": 0.041
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 5000,
+      "inventory": [
+        150
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 11.21530000000007
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 150,
+          "reference": 1000,
+          "at": 1793605941362
+        },
+        {
+          "kind": "attempt",
+          "id": "150",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "150",
+          "success": true,
+          "coinsAfter": 5000,
+          "elapsedMs": 14.514300000000048
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 11.349,
+          "medianMs": 11.349,
+          "p95Ms": 11.349,
+          "maxMs": 11.349,
+          "totalMs": 11.349
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.025,
+          "medianMs": 0.025,
+          "p95Ms": 0.025,
+          "maxMs": 0.025,
+          "totalMs": 0.025
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.081,
+          "medianMs": 0.081,
+          "p95Ms": 0.081,
+          "maxMs": 0.081,
+          "totalMs": 0.081
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.832,
+          "medianMs": 14.832,
+          "p95Ms": 14.832,
+          "maxMs": 14.832,
+          "totalMs": 14.832
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.146,
+          "medianMs": 0.146,
+          "p95Ms": 0.146,
+          "maxMs": 0.146,
+          "totalMs": 0.146
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.292,
+          "medianMs": 15.292,
+          "p95Ms": 15.292,
+          "maxMs": 15.292,
+          "totalMs": 15.292
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 14.993,
+          "medianMs": 14.993,
+          "p95Ms": 14.993,
+          "maxMs": 14.993,
+          "totalMs": 14.993
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.578,
+          "medianMs": 15.578,
+          "p95Ms": 15.578,
+          "maxMs": 15.578,
+          "totalMs": 15.578
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.041,
+          "medianMs": 0.041,
+          "p95Ms": 0.041,
+          "maxMs": 0.041,
+          "totalMs": 0.041
+        }
+      }
+    },
+    {
+      "name": "accepted-no-confirmation",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "150",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 10.884,
+            "medianMs": 10.884,
+            "p95Ms": 10.884,
+            "maxMs": 10.884,
+            "totalMs": 10.884
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.026,
+            "medianMs": 0.026,
+            "p95Ms": 0.026,
+            "maxMs": 0.026,
+            "totalMs": 0.026
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.151,
+            "medianMs": 0.151,
+            "p95Ms": 0.151,
+            "maxMs": 0.151,
+            "totalMs": 0.151
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.72,
+            "medianMs": 14.72,
+            "p95Ms": 14.72,
+            "maxMs": 14.72,
+            "totalMs": 14.72
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.173,
+            "medianMs": 0.173,
+            "p95Ms": 0.173,
+            "maxMs": 0.173,
+            "totalMs": 0.173
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.302,
+            "medianMs": 15.302,
+            "p95Ms": 15.302,
+            "maxMs": 15.302,
+            "totalMs": 15.302
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.086,
+            "medianMs": 15.086,
+            "p95Ms": 15.086,
+            "maxMs": 15.086,
+            "totalMs": 15.086
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.23,
+            "medianMs": 15.23,
+            "p95Ms": 15.23,
+            "maxMs": 15.23,
+            "totalMs": 15.23
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.055,
+            "medianMs": 0.055,
+            "p95Ms": 0.055,
+            "maxMs": 0.055,
+            "totalMs": 0.055
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [
+        150
+      ],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 10.746499999999969
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 150,
+          "reference": 1000,
+          "at": 1793605941424
+        },
+        {
+          "kind": "attempt",
+          "id": "150",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "150",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.712399999999889
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 10.884,
+          "medianMs": 10.884,
+          "p95Ms": 10.884,
+          "maxMs": 10.884,
+          "totalMs": 10.884
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.026,
+          "medianMs": 0.026,
+          "p95Ms": 0.026,
+          "maxMs": 0.026,
+          "totalMs": 0.026
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.151,
+          "medianMs": 0.151,
+          "p95Ms": 0.151,
+          "maxMs": 0.151,
+          "totalMs": 0.151
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.72,
+          "medianMs": 14.72,
+          "p95Ms": 14.72,
+          "maxMs": 14.72,
+          "totalMs": 14.72
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.173,
+          "medianMs": 0.173,
+          "p95Ms": 0.173,
+          "maxMs": 0.173,
+          "totalMs": 0.173
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.302,
+          "medianMs": 15.302,
+          "p95Ms": 15.302,
+          "maxMs": 15.302,
+          "totalMs": 15.302
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.086,
+          "medianMs": 15.086,
+          "p95Ms": 15.086,
+          "maxMs": 15.086,
+          "totalMs": 15.086
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.23,
+          "medianMs": 15.23,
+          "p95Ms": 15.23,
+          "maxMs": 15.23,
+          "totalMs": 15.23
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.055,
+          "medianMs": 0.055,
+          "p95Ms": 0.055,
+          "maxMs": 0.055,
+          "totalMs": 0.055
+        }
+      }
+    },
+    {
+      "name": "accepted-missing-repository",
+      "running": false,
+      "status": {
+        "enabled": false,
+        "inFlight": false,
+        "pending": null,
+        "limits": {
+          "minimumProfit": 25,
+          "additionalCosts": 0,
+          "maximumPerPurchase": 900,
+          "maxPurchases": 10
+        },
+        "remainingBudget": 4000,
+        "lastEconomics": {
+          "response": true,
+          "fee": 50,
+          "netProceeds": 950,
+          "netProfit": 50,
+          "referencePrice": 1000,
+          "source": "native-live-asks",
+          "ageMs": 0
+        },
+        "spent": 0,
+        "budget": 4000,
+        "reconciliationRequired": true,
+        "reason": "reconciliation-required",
+        "eligible": 1,
+        "attempts": 1,
+        "successes": 0,
+        "lost": 0,
+        "uncertain": 1,
+        "history": [
+          {
+            "tradeId": "150",
+            "outcome": "transaction-outcome-unknown"
+          }
+        ],
+        "timings": {
+          "search_response": {
+            "count": 1,
+            "minMs": 9.743,
+            "medianMs": 9.743,
+            "p95Ms": 9.743,
+            "maxMs": 9.743,
+            "totalMs": 9.743
+          },
+          "candidate_parsing": {
+            "count": 1,
+            "minMs": 0.025,
+            "medianMs": 0.025,
+            "p95Ms": 0.025,
+            "maxMs": 0.025,
+            "totalMs": 0.025
+          },
+          "purchase_decision": {
+            "count": 1,
+            "minMs": 0.081,
+            "medianMs": 0.081,
+            "p95Ms": 0.081,
+            "maxMs": 0.081,
+            "totalMs": 0.081
+          },
+          "price_evidence": {
+            "count": 1,
+            "minMs": 14.709,
+            "medianMs": 14.709,
+            "p95Ms": 14.709,
+            "maxMs": 14.709,
+            "totalMs": 14.709
+          },
+          "safety_evaluation": {
+            "count": 1,
+            "minMs": 0.139,
+            "medianMs": 0.139,
+            "p95Ms": 0.139,
+            "maxMs": 0.139,
+            "totalMs": 0.139
+          },
+          "discovery_to_purchase_ready": {
+            "count": 1,
+            "minMs": 15.155,
+            "medianMs": 15.155,
+            "p95Ms": 15.155,
+            "maxMs": 15.155,
+            "totalMs": 15.155
+          },
+          "transaction_completion": {
+            "count": 1,
+            "minMs": 15.132,
+            "medianMs": 15.132,
+            "p95Ms": 15.132,
+            "maxMs": 15.132,
+            "totalMs": 15.132
+          },
+          "reconciliation": {
+            "count": 1,
+            "minMs": 15.179,
+            "medianMs": 15.179,
+            "p95Ms": 15.179,
+            "maxMs": 15.179,
+            "totalMs": 15.179
+          },
+          "recovery": {
+            "count": 1,
+            "minMs": 0.035,
+            "medianMs": 0.035,
+            "p95Ms": 0.035,
+            "maxMs": 0.035,
+            "totalMs": 0.035
+          }
+        },
+        "rejections": {
+          "count": 1,
+          "reasons": {
+            "transaction-outcome-unknown": 1
+          }
+        }
+      },
+      "attempts": 1,
+      "coins": 4100,
+      "inventory": [],
+      "events": [
+        {
+          "kind": "search",
+          "page": 1,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 900
+          },
+          "elapsedMs": 9.612500000000182
+        },
+        {
+          "kind": "price-quote",
+          "definitionId": 150,
+          "reference": 1000,
+          "at": 1793605941485
+        },
+        {
+          "kind": "attempt",
+          "id": "150",
+          "price": 900,
+          "coinsBefore": 5000
+        },
+        {
+          "kind": "result",
+          "id": "150",
+          "success": true,
+          "coinsAfter": 4100,
+          "elapsedMs": 14.740099999999984
+        }
+      ],
+      "logs": [
+        "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+        "Found 2 page 1 minBuy 0",
+        "Next action in 4 (secs)",
+        "[v8] state=STOPPED reason=purchase-safety-stop:transaction-outcome-unknown execution=RC-controls",
+        "abStopped"
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 9.743,
+          "medianMs": 9.743,
+          "p95Ms": 9.743,
+          "maxMs": 9.743,
+          "totalMs": 9.743
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.025,
+          "medianMs": 0.025,
+          "p95Ms": 0.025,
+          "maxMs": 0.025,
+          "totalMs": 0.025
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.081,
+          "medianMs": 0.081,
+          "p95Ms": 0.081,
+          "maxMs": 0.081,
+          "totalMs": 0.081
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 14.709,
+          "medianMs": 14.709,
+          "p95Ms": 14.709,
+          "maxMs": 14.709,
+          "totalMs": 14.709
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.139,
+          "medianMs": 0.139,
+          "p95Ms": 0.139,
+          "maxMs": 0.139,
+          "totalMs": 0.139
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 15.155,
+          "medianMs": 15.155,
+          "p95Ms": 15.155,
+          "maxMs": 15.155,
+          "totalMs": 15.155
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 15.132,
+          "medianMs": 15.132,
+          "p95Ms": 15.132,
+          "maxMs": 15.132,
+          "totalMs": 15.132
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 15.179,
+          "medianMs": 15.179,
+          "p95Ms": 15.179,
+          "maxMs": 15.179,
+          "totalMs": 15.179
+        },
+        "recovery": {
+          "count": 1,
+          "minMs": 0.035,
+          "medianMs": 0.035,
+          "p95Ms": 0.035,
+          "maxMs": 0.035,
+          "totalMs": 0.035
+        }
+      }
+    }
+  ]
+}

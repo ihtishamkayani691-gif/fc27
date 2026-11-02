@@ -9,6 +9,7 @@ run(process.execPath,['testing/v8/build-offline.cjs']);
 run(process.execPath,['testing/v8/build-trader.cjs']);
 run(process.execPath,['testing/v8/build-rc.cjs','--skip-test-build']);
 run(process.execPath,['testing/v8/build-rc2.cjs','--skip-rc1-build']);
+run(process.execPath,['testing/v8/build-final.cjs','--skip-rc2-build']);
 const tests=fs.readdirSync(path.join(root,'testing/v8/tests')).filter(f=>f.endsWith('.test.cjs')).map(f=>'testing/v8/tests/'+f);
 run(process.execPath,['--test',...tests]);
 run(process.execPath,['delivery/fresh-listing-research/offline/evaluator.test.cjs']);
@@ -22,3 +23,5 @@ run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-releas
 run(process.execPath,['testing/browser/rc-registration.cjs','.local/v8-release-candidate','testing/browser/RC_INSTALLED_RESULTS.json']);
 
 run(process.execPath,['testing/browser/rc2-registration.cjs','.local/v8-rc2','testing/browser/RC2_INSTALLED_RESULTS.json']);
+
+run(process.execPath,['testing/browser/final-registration.cjs','.local/v8-final-rc','testing/browser/FINAL_INSTALLED_RESULTS.json']);

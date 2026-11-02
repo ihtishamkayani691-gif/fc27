@@ -1,0 +1,19 @@
+{
+  "beforeRestore": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Script ran on page and returned:\n```json\n{\"running\":false,\"maximum\":0,\"purchasingEnabled\":false,\"blockedMutations\":0}\n```"
+      }
+    ]
+  },
+  "final": {
+    "restoredLockedTEST": true,
+    "running": false,
+    "maximum": 0,
+    "purchasingEnabled": false,
+    "interlockInstalled": true,
+    "hasPermitInterface": false,
+    "blockedMutations": 0
+  }
+}

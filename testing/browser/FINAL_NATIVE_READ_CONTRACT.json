@@ -1,0 +1,30 @@
+{
+  "readOnly": true,
+  "inventory": {
+    "success": true,
+    "array": true,
+    "fullType": "boolean"
+  },
+  "quoteAvailable": true,
+  "quote": {
+    "definitionId": 67380703,
+    "rarity": 151,
+    "price": 38750,
+    "observedAt": 1793605761571,
+    "source": "native-live-asks",
+    "sampleCount": 21
+  },
+  "priceReadLatenciesMs": [
+    197.10000000149012
+  ],
+  "totalQuotePreparationMs": 7200.5,
+  "discoveryCriteria": {
+    "defId": [],
+    "rarities": [
+      151
+    ]
+  },
+  "valuationIsExactDefinition": true,
+  "mutations": 0,
+  "purchasingOff": true
+}

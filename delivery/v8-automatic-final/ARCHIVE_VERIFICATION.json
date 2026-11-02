@@ -1,0 +1,11 @@
+{
+  "version": "27.0.8.0",
+  "files": 24,
+  "rootManifest": true,
+  "allManifestResourcesPresent": true,
+  "windowsExplorerExtraction": true,
+  "extractedFilesByteMatch": true,
+  "zipSha256": "372065c695eaa0b72ac14c523be6a9658c53170bb867c9863009d94b8d2d6aed",
+  "mainSha256": "15c361b2c661331ff3ea82f067057d67609c25ac10dd647bf0e8036b768a0fe9",
+  "crcPassed": true
+}

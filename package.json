@@ -15,7 +15,9 @@
     "build:v8:universal": "node testing/v8/build-universal.cjs",
     "build:v8:universal:final": "node testing/v8/build-universal-final.cjs",
     "build:v8:improved": "node testing/v8/build-improved.cjs",
-    "package:v8:improved": "node testing/v8/package-windows.cjs .local/v8-improved delivery/v8-improved/FC_Enhancer_v8_IMPROVED_READY_TO_INSTALL.zip"
+    "package:v8:improved": "node testing/v8/package-windows.cjs .local/v8-improved delivery/v8-improved/FC_Enhancer_v8_IMPROVED_READY_TO_INSTALL.zip",
+    "build:v8:automatic": "node testing/v8/build-automatic.cjs",
+    "package:v8:automatic": "node testing/v8/package-windows.cjs .local/v8-automatic delivery/v8-automatic-final/FC_Enhancer_v8_AUTOMATIC_FINAL_READY_TO_INSTALL.zip"
   },
   "devDependencies": {
     "playwright": "1.65.0-alpha-2026-10-30",

@@ -1,0 +1,3204 @@
+
+> test
+> node testing/run-local.cjs
+
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-offline-extension
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-offline-extension
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-trader-validation
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-release-candidate
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-rc2
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-final-rc
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-universal-rc
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-universal-final
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-improved
+C:\Users\Ihtisham\Downloads\fc27-dev-v8-browser-testing\verified-checkout\.local\v8-automatic
+✔ automatic session buys one qualifying card without exact-card consent then confirms and stops immediately (95.7974ms)
+✔ automatic authorization rejects weaker limits and requires explicit session enablement (39.8189ms)
+✔ unprofitable and over-price cards cannot spend, while a later qualifying player may buy once (81.2183ms)
+✔ uncertain native result stops, disarms, and cannot blindly retry (62.451ms)
+✔ session deadline rejects execution and stops even without a qualifying card (8.2013ms)
+✔ Stop cancels authorization and restart alone cannot buy (39.5327ms)
+✔ inventory or balance safety failures stop and revoke the automatic session (59.8276ms)
+✔ authorization expiring inside valuation is enforced again before native submission (30.3043ms)
+✔ positive native response with missing coins or inventory is never called a successful purchase (184.2327ms)
+✔ same search cannot exceed native max purchases by making separate single-item calls (3.8543ms)
+✔ unknown transaction failure is contained and cannot trigger an automatic repurchase (0.3826ms)
+✔ confirmed pre-submit rejection permits a different trade on the next search but never retries the same trade (0.3272ms)
+✔ post-win processing failure never repeats the purchase (1.3993ms)
+✔ win arriving after cancellation requires reconciliation before any later transaction (0.3584ms)
+✔ a normally returned failure after native submission is not mistaken for confirmed rejection (0.2754ms)
+✔ disabled execution does not inspect transaction objects or invoke routing (0.1987ms)
+✔ failed build cannot replace the offline manifest with EA permissions (67.3737ms)
+✔ document-start guard rejects fetch bid and listing mutations before transport (3.5527ms)
+✔ document-start guard rejects XHR bidding and preserves read-only market and login traffic (2.4309ms)
+✔ native service bid interlock survives later reassignment and never reaches the original service (1.7582ms)
+✔ production filter save awaits refreshed options before selecting and reloading the saved rarity (33.1561ms)
+✔ profit includes conservative sale fee and all configured costs (1.4736ms)
+✔ gross bargain that loses money after fees is never eligible (0.1797ms)
+✔ missing, stale, future, wrong-player and unsupported quote data fail closed (0.3059ms)
+✔ per-purchase maximum is independent and cannot be raised by reference prices (0.1448ms)
+✔ fees round conservatively and invalid limits/costs are not assumed (0.2589ms)
+✔ FINAL purchase requires explicit session limits and fee-adjusted positive profit (6.3874ms)
+✔ FINAL maximum per purchase and maximum purchase count constrain actual execution (1.8277ms)
+✔ FINAL rejects old evidence and never assumes profit from only a native fixed cap (0.468ms)
+✔ FINAL complete simulated transaction records phase and confirmed outcome (1.2756ms)
+✔ FINAL changed price, expired auction and changed trade identity reject at actual native boundary (1.5729ms)
+✔ FINAL coin balance and inventory capacity are checked again after pricing (2.7372ms)
+✔ RC guard blocks every unpermitted native service and transport mutation (4.0681ms)
+✔ one exact BIN permit admits only one service call and one matching transport (2.1281ms)
+✔ price, listing, body, token or budget mismatch cannot reach a native transport (7.6414ms)
+✔ revoke invalidates an unused permit and leaves market reads available (1.4698ms)
+✔ an exact bid permit refuses unexpected mutation endpoints inside native bid (1.7805ms)
+✔ FINAL permits a deferred exact native request, then refuses its retry (2.1398ms)
+✔ FINAL Stop/revoke prevents a deferred native network submission (1.6902ms)
+✔ native comparable quote excludes target and enforces shared search spacing (1.8589ms)
+✔ Stop during quote spacing prevents the native request (0.4691ms)
+✔ wrong-player, duplicate and insufficient comparable evidence is rejected (0.2314ms)
+✔ expired comparable samples cannot remain valid just because cache age is low (0.6523ms)
+✔ token rotation while native quote is in flight invalidates its response (1.3637ms)
+✔ complete production session discovers multiple players and excludes price, age, profit and duplicate failures (148.6468ms)
+✔ a competing buyer taking a listing is reconciled as lost and another player is purchased (119.2632ms)
+✔ inventory and coin changes affect subsequent automatic search cycles (137.7795ms)
+✔ insufficient coins stop actual Trader before any native purchase request (14.9101ms)
+✔ spend budget exhaustion stops the production loop after the confirmed purchase (31.0656ms)
+✔ unknown market mutation outcome stops and cannot retry another listing (61.0257ms)
+✔ malformed search response and market error stop without purchases (30.3271ms)
+✔ Stop during delayed search discards the complete response and prevents execution (77.0028ms)
+✔ Stop during transaction preserves uncertainty then explicit read-only reconciliation accounts ownership (92.157ms)
+✔ transaction timeout never retries and a late win requires reconciliation before a new user-enabled run (536.6452ms)
+✔ extension restart keeps purchases OFF and refuses unresolved journal; settled IDs remain deduplicated (141.6667ms)
+✔ timeout before native submission disarms without inventing an uncertain purchase (72.1474ms)
+✔ malformed purchase success value cannot count as a native win or authorize another listing (61.8468ms)
+✔ runtime pricing outage stops the actual Trader instead of silently falling back to scanning (8.1646ms)
+✔ FINAL fees and explicit profit threshold prevent an apparently cheap losing purchase (22.4591ms)
+✔ FINAL per-purchase limit and session purchase count are separate hard bounds (76.5312ms)
+✔ FINAL accepted requests without coin/inventory/confirmation proof cannot appear as confirmed wins (245.3547ms)
+✔ FINAL inventory capacity and unavailable inventory stop without a submission (30.7898ms)
+✔ evidence-checked seeking reaches a measured fresh frontier sooner and fills skipped pages (2.5199ms)
+✔ fresh seek rejects shifted offsets, repeated pages and unsupported wire evidence (1.1204ms)
+✔ empty seek frontier fills every skipped page without falsely rejecting its own repeated queue entries (0.5177ms)
+✔ balanced discovery gives cheap, middle and edge bands a first turn without waiting for crowded pages (1.8836ms)
+✔ productive scope bonus never starves other price bands or broad backstops (1.1942ms)
+✔ candidate report distinguishes price eligibility, unvalued evidence and after-fee rejection (22.9066ms)
+✔ normal installed production discovery values multiple players without arming or spending (69.8815ms)
+✔ disabled valuation is explicit NOT VALUED and never confuses price eligibility with profit (13.9286ms)
+✔ old, wrong-rarity and over-price listings have visible exact reasons without valuation requests (16.0359ms)
+✔ quote service errors stop read-only discovery without submitting a purchase (14.3779ms)
+✔ stale observation after rate-spaced valuations is rejected rather than claimed profitable (50.1916ms)
+✔ Stop during a read-only valuation cannot revive Running or authorize a purchase (44.0179ms)
+✔ offline integration controller is available (1.0916ms)
+✔ planner to native safety to logger remains read-only and deduplicates (7.3373ms)
+✔ stale responses and stopped sessions cannot evaluate or log candidates (1.0016ms)
+✔ caller cannot loosen fixed cap or enable pricing lookups (0.3955ms)
+✔ actual native failed transaction is not treated as a win and a later distinct trade can recover (37.8079ms)
+✔ production Trader validation bundle is built (1.2404ms)
+✔ full original native safety preview excludes cache and bid terminal steps (37.0455ms)
+✔ native preview rejects above fixed cap and preserves tighter native buy limit (11.8076ms)
+✔ native duplicate and dynamic-price-unavailable checks fail closed (12.2241ms)
+✔ native profitability-derived maximum remains stricter than the configured fixed ceiling (4.9534ms)
+✔ authorized-flow fixture reaches only mocked native purchase terminals after all checks (6.4404ms)
+✔ native execution pipeline independently rejects above v8 maximum before mocked purchase (5.7952ms)
+✔ v8 maximum alone supplies a BIN price without permitting bidding (6.5618ms)
+✔ purchase bridge routes a separately authorized fixture through the existing orchestrator and original safety chain (9.3971ms)
+✔ purchase policy requires validation, a distinct enable switch and separate user authorization (17.151ms)
+✔ native page continuation keeps the same query scope until its bounded traversal finishes (3.7693ms)
+✔ optional native upper-boundary probe preserves broad all-player coverage and the exact ceiling (1.1035ms)
+✔ upper-boundary probe requires native helper evidence and available scope budget (0.3492ms)
+✔ missing search maximum receives fixed ceiling and preserves all-player promo intent (0.2768ms)
+✔ tighter native maximum and minimum are preserved; original criteria remains untouched (0.357ms)
+✔ invalid or contradictory price limits fail closed (0.4382ms)
+✔ native price rounding never broadens maximum (0.2621ms)
+✔ missing/mismatched promo metadata blocks intents (0.2654ms)
+✔ player selection restrictions are rejected rather than silently cleared (0.3657ms)
+✔ unknown response capacity does not invent a 21-item cap or split (0.384ms)
+✔ explicit observed capacity causes overlapping valid-price splits (0.3315ms)
+✔ native SDK capacity provenance is explicit and permits a split (0.2191ms)
+✔ capacity-sized result is possible crowding, never full market coverage (0.2256ms)
+✔ bounded scope capacity marks unresolved crowding without unbounded tree growth (1.5493ms)
+✔ crowded atomic or guarded boundary band stays explicitly incomplete (0.1929ms)
+✔ unavailable native helpers do not trigger guessed split boundaries (0.1774ms)
+✔ fair leaf rotation and broad backstop preserve both sides (0.5057ms)
+✔ unproductive scopes cool down without faster requests or infinite retries (0.2524ms)
+✔ stale response IDs and overlapping requests are rejected (0.2331ms)
+✔ rejected request settles without changing the price cap or adding guessed scopes (0.1492ms)
+✔ native criteria prototype and stricter custom filters survive scoped copies (0.1852ms)
+✔ stop prevents all subsequent discovery intents (0.1161ms)
+✔ actual production Trader runActions calls v8 native search adapter and never transfer execution (43.0106ms)
+✔ actual production Trader fails closed before search when no maximum is configured (7.0664ms)
+✔ actual production Trader retains early in-flight lock with v8 integration (10.9026ms)
+✔ stopping and restarting actual Trader discards the old response without stopping the new run (8.0113ms)
+✔ first v8 cycle retains the chosen filter before any legacy scheduled rotation can replace its price bounds (7.5181ms)
+✔ production v8 adapter exists (4.134ms)
+✔ production search uses all-player rarity criteria and stricter native ceiling at page one (9.9047ms)
+✔ over-ceiling, wrong-rarity, old and duplicate items never reach native purchase preview (1.5185ms)
+✔ missing maximum and selected player fail before a native market request (0.6763ms)
+✔ invalid native buy maximum cannot be silently broadened (0.2863ms)
+✔ stop while native response is pending discards late candidates (0.6084ms)
+✔ native HTTP failures stop without empty-result retries (1.1679ms)
+✔ price or rarity changes during an awaited response discard candidates (0.5087ms)
+✔ production adapter validates native sequential pages with legitimate overlap and unchanged cap (1.713ms)
+✔ replaying a completed old-listing traversal eventually cools down rather than inventing progress (8.2006ms)
+✔ stale native response is rejected before safety preview (1.2481ms)
+✔ unexpected market errors stop safely and a new healthy session can recover (2.2236ms)
+✔ status accounts for fresh, price, rarity, age and duplicate rejections without changing query bounds (0.6376ms)
+✔ production purchase preflight is present (1.0881ms)
+✔ all price ceilings intersect and insufficient/unknown coins fail closed (0.7179ms)
+✔ native total-card and per-search budgets plus explicit monetary budget are enforced (0.2172ms)
+✔ expired, duplicate and stale listings cannot reach transaction routing (0.3068ms)
+✔ required profitability cannot silently use only a fixed ceiling (0.1894ms)
+✔ separate RC manifest and purchase factories exist without changing locked TEST ZIP (8.1078ms)
+✔ RC retains the exact validated native discovery planner, scope pager and request adapter (61.7877ms)
+✔ RC never executes by default or from saved enable flags (4.4979ms)
+✔ explicit arming requires stopped Trader, price, profitability and budgets (0.8535ms)
+✔ confirmed BIN success is processed once and debits the run budget (2.0764ms)
+✔ configured maximum remains authoritative with permissive native prices (0.331ms)
+✔ insufficient coins and run/card/per-search budgets never submit (1.1163ms)
+✔ final service boundary rechecks balance, expiry, cancellation and settings after native middleware (1.2045ms)
+✔ native cache reservation is allowed only for the current transaction (1.5951ms)
+✔ pre-submit rejection recovers on a distinct trade without retrying the same ID (0.5909ms)
+✔ native failure persists reconciliation lock across reload and rejects arming (0.5041ms)
+✔ timeout locks without retry and a late success cannot resume or post-process (38.9956ms)
+✔ Stop and configuration changes disarm; reload never restores an enabled setting (0.3803ms)
+✔ corrupt or unwritable journal fails closed (0.2891ms)
+✔ pending transaction status is executing, not a reconciliation error (0.5476ms)
+✔ service permit cannot bypass a later balance or expiry change (0.4203ms)
+✔ expiry, rarity and changed listing identity reject at the final boundary (0.8867ms)
+✔ successful spend accumulates across searches and persisted duplicates survive a clean reload (0.3267ms)
+✔ a mocked success without a service submission is never accepted as a confirmed win (0.3323ms)
+✔ native per-cycle cancellation-token rotation preserves explicit enabling within the same Trader run (0.3644ms)
+✔ RC cannot arm with disabled native safety limits (0.115ms)
+✔ RC guard blocks every unpermitted native service and transport mutation (4.9469ms)
+✔ one exact BIN permit admits only one service call and one matching transport (2.6742ms)
+✔ price, listing, body, token or budget mismatch cannot reach a native transport (9.3509ms)
+✔ revoke invalidates an unused permit and leaves market reads available (2.5542ms)
+✔ an exact bid permit refuses unexpected mutation endpoints inside native bid (1.8119ms)
+✔ RC actual Trader starts native all-player discovery and Stop prevents additional requests (45.1712ms)
+✔ RC original Stop/restart discards a late search response (12.0965ms)
+✔ RC original Trader error stops and a healthy explicit restart can recover (7.3425ms)
+✔ RC production path reaches actual native API wrapper only after explicit enabling and checks (44.0595ms)
+✔ actual native failure cannot enter won processing and persists across reload (18.227ms)
+✔ actual pipeline rejects unavailable or unprofitable native price before service calls (21.8319ms)
+✔ balance and configured-cap changes during original pricing middleware prevent submission (23.3072ms)
+✔ journal corruption during native middleware blocks the final API call (7.2164ms)
+✔ external duplicate inserted after native duplicate check is not mistaken for our reservation (7.8502ms)
+✔ runtime preview errors disarm before another listing can execute (5.9338ms)
+✔ original native won-item middleware increments real card-count budget exactly once (8.3764ms)
+✔ RC2 reconciliation controls report storage errors without unhandled rejection (3.9819ms)
+✔ RC2 preserves both prior deliverable archives byte-for-byte (8.4562ms)
+✔ RC2 uses the proven native discovery and purchase cadence rather than a replacement strategy (63.4342ms)
+✔ RC2 confirms ownership and coins before accounting and continuing across players (8.4855ms)
+✔ authoritatively sold listing is not won and next fresh trade can continue (1.1723ms)
+✔ unknown or inconsistent confirmation stops execution without uncontrolled retry (1.1129ms)
+✔ hard disable prevents any subsequent native attempt (0.2576ms)
+✔ rejected native flow settles its lifetime so authoritative reconciliation remains available (0.7127ms)
+✔ reconciliation waits for delayed post-purchase middleware and cannot double count (88.2113ms)
+✔ complete production session discovers multiple players and excludes price, age, profit and duplicate failures (162.6665ms)
+✔ a competing buyer taking a listing is reconciled as lost and another player is purchased (135.874ms)
+✔ inventory and coin changes affect subsequent automatic search cycles (168.1195ms)
+✔ insufficient coins stop actual Trader before any native purchase request (15.9076ms)
+✔ spend budget exhaustion stops the production loop after the confirmed purchase (76.9379ms)
+✔ unknown market mutation outcome stops and cannot retry another listing (76.0812ms)
+✔ malformed search response and market error stop without purchases (22.8477ms)
+✔ Stop during delayed search discards the complete response and prevents execution (68.7705ms)
+✔ Stop during transaction preserves uncertainty then explicit read-only reconciliation accounts ownership (92.0417ms)
+✔ transaction timeout never retries and a late win requires reconciliation before a new user-enabled run (536.2594ms)
+✔ extension restart keeps purchases OFF and refuses unresolved journal; settled IDs remain deduplicated (157.3877ms)
+✔ timeout before native submission disarms without inventing an uncertain purchase (72.1501ms)
+✔ malformed purchase success value cannot count as a native win or authorize another listing (76.8535ms)
+✔ runtime pricing outage stops the actual Trader instead of silently falling back to scanning (30.6128ms)
+✔ native state reader requires exact trade, item identity and well-formed authoritative response (1.9734ms)
+✔ unavailable coin read fails closed without throwing through the Trader controls (0.3704ms)
+✔ read-only reconciliation request is bounded when the service never responds (5.8454ms)
+✔ observed live itemIds acknowledgement reconciles the exact native DTO updated in place (0.5705ms)
+✔ native acknowledgement for another item never confirms this transaction (0.4048ms)
+✔ restart resolver finds exact native watched/unassigned DTO and rejects other trades (0.4318ms)
+✔ restart reconciliation hydrates native inventory/targets before declaring exact DTO unavailable (1.2747ms)
+✔ native read restriction stops hydration without endpoint fallback (0.4092ms)
+✔ stalled hydration read is bounded and never issues the next request (6.6261ms)
+✔ production safety checks pass without action side effects (2.0258ms)
+✔ fixed ceiling independently enforced (0.1987ms)
+✔ stricter native ceiling preserved (0.1692ms)
+✔ dynamic unavailable fails closed without networking (0.1903ms)
+✔ stricter dynamic cap preserved (0.2034ms)
+✔ 59 seconds rejected, endpoints accepted (0.3978ms)
+✔ original rating middleware rejects (0.2686ms)
+✔ unknown balance, budget, profitability do not fabricate approval (0.6736ms)
+✔ native purchase cache respected but never mutated (0.2277ms)
+✔ club ownership unknown fails closed without squad requests (0.4253ms)
+✔ unconfigured profit rule is labeled without inventing rejection (0.3416ms)
+✔ bounded native scope pager is available (1.6899ms)
+✔ pagination advances only after observing a full terminal scope and native offset (0.7919ms)
+✔ unknown offset or a splittable scope does not invent page access (0.3002ms)
+✔ replayed pages and inconsistent offsets are rejected without looping (0.3233ms)
+✔ successful empty page returns to a bounded known page range (0.2513ms)
+✔ transient emptiness permits a bounded later reprobe after fresh full baseline responses (1.3689ms)
+✔ status reports native rarity, both ceilings and candidate rejection accounting (23.6002ms)
+✔ unknown rarity remains an ID fallback and unknown ceilings remain unconfigured (0.405ms)
+✔ panel mounts once by the log and safely retains result counts after stop and error (0.916ms)
+✔ Stop and restart during approved-listing refresh cannot revive an old acceptance or stop the new run (120.2806ms)
+✔ emergency disable while a price review is pending cannot republish approval readiness or stop discovery (60.9446ms)
+✔ acceptance review stops immediately on unavailable or full inventory without valuing another card (122.9863ms)
+✔ review preflight rejects a disabled native profitability rule before scanning (5.8423ms)
+✔ review window end preserves the actual candidate rejection and its identity (40.5355ms)
+✔ native catalog exposes verified rarity0 and excludes nontradable entries from purchase selection (1.7005ms)
+✔ future metadata addition is immediately available without guessing a native identifier (0.3276ms)
+✔ duplicate names remain separately selectable while duplicate native ID conflicts fail closed (0.3525ms)
+✔ missing or expired native metadata never authorizes a rarity (0.266ms)
+✔ new rarity has no spending defaults; explicit settings are isolated by native identity (1.6669ms)
+✔ renamed or changed-ID rarity cannot silently inherit saved spending (0.4145ms)
+✔ invalid limits, broken storage and unavailable metadata cannot save executable profiles (0.24ms)
+✔ profit includes conservative sale fee and all configured costs (1.4091ms)
+✔ gross bargain that loses money after fees is never eligible (0.1941ms)
+✔ missing, stale, future, wrong-player and unsupported quote data fail closed (0.2987ms)
+✔ per-purchase maximum is independent and cannot be raised by reference prices (0.1672ms)
+✔ fees round conservatively and invalid limits/costs are not assumed (0.2937ms)
+✔ economics requires the exact selected rarity, including zero and future IDs (0.2987ms)
+✔ the user100000 ceiling and15000 after-fee profit requirement are hard boundaries (0.9651ms)
+✔ FINAL purchase requires explicit session limits and fee-adjusted positive profit (7.3623ms)
+✔ FINAL maximum per purchase and maximum purchase count constrain actual execution (1.512ms)
+✔ FINAL rejects old evidence and never assumes profit from only a native fixed cap (0.5496ms)
+✔ FINAL complete simulated transaction records phase and confirmed outcome (1.2616ms)
+✔ FINAL changed price, expired auction and changed trade identity reject at actual native boundary (2.227ms)
+✔ FINAL coin balance and inventory capacity are checked again after pricing (0.9491ms)
+✔ universal purchase engine supports verified zero, Icon, Hero and future native rarities (0.8569ms)
+✔ removed rarity metadata or mismatched listing prevents actual native submission (0.3958ms)
+✔ read-only acceptance review evaluates the production safeguards without arming or submitting (0.5931ms)
+✔ exact acceptance approval cannot substitute another trade, item or price (0.4705ms)
+✔ an execution queued before Stop cannot acquire a new session after the browser lock resolves (0.2174ms)
+✔ an expired exact approval cannot submit even while listing and price evidence remain fresh (0.1516ms)
+✔ native comparable quote excludes target and enforces shared search spacing (1.5234ms)
+✔ Stop during quote spacing prevents the native request (0.3932ms)
+✔ wrong-player, duplicate and insufficient comparable evidence is rejected (0.2319ms)
+✔ expired comparable samples cannot remain valid just because cache age is low (0.4934ms)
+✔ token rotation while native quote is in flight invalidates its response (1.1096ms)
+✔ quote evidence and queries isolate different rarities for the same player definition (1.047ms)
+✔ complete production session discovers multiple players and excludes price, age, profit and duplicate failures (123.1719ms)
+✔ a competing buyer taking a listing is reconciled as lost and another player is purchased (105.1024ms)
+✔ inventory and coin changes affect subsequent automatic search cycles (138.1677ms)
+✔ insufficient coins stop actual Trader before any native purchase request (15.3333ms)
+✔ spend budget exhaustion stops the production loop after the confirmed purchase (30.8782ms)
+✔ unknown market mutation outcome stops and cannot retry another listing (60.8856ms)
+✔ malformed search response and market error stop without purchases (30.3198ms)
+✔ Stop during delayed search discards the complete response and prevents execution (76.6356ms)
+✔ Stop during transaction preserves uncertainty then explicit read-only reconciliation accounts ownership (76.6242ms)
+✔ transaction timeout never retries and a late win requires reconciliation before a new user-enabled run (536.0667ms)
+✔ extension restart keeps purchases OFF and refuses unresolved journal; settled IDs remain deduplicated (142.0193ms)
+✔ timeout before native submission disarms without inventing an uncertain purchase (57.2778ms)
+✔ malformed purchase success value cannot count as a native win or authorize another listing (61.4603ms)
+✔ runtime pricing outage stops the actual Trader instead of silently falling back to scanning (15.8892ms)
+✔ FINAL fees and explicit profit threshold prevent an apparently cheap losing purchase (30.097ms)
+✔ FINAL per-purchase limit and session purchase count are separate hard bounds (77.0692ms)
+✔ FINAL accepted requests without coin/inventory/confirmation proof cannot appear as confirmed wins (245.6021ms)
+✔ FINAL inventory capacity and unavailable inventory stop without a submission (30.57ms)
+✔ universal native Common complete all-player discovery-to-purchase session (107.4307ms)
+✔ universal native Base Hall of FUT complete all-player discovery-to-purchase session (107.3797ms)
+✔ universal native Base Hero complete all-player discovery-to-purchase session (107.744ms)
+✔ universal native Base Icon complete all-player discovery-to-purchase session (107.3861ms)
+✔ universal native Debut International Icon complete all-player discovery-to-purchase session (107.9404ms)
+✔ universal native Destined for Glory complete all-player discovery-to-purchase session (107.5579ms)
+✔ universal native FC Heritage complete all-player discovery-to-purchase session (107.8946ms)
+✔ universal native FUT Champions complete all-player discovery-to-purchase session (107.2327ms)
+✔ universal native Future Stars complete all-player discovery-to-purchase session (107.2033ms)
+✔ universal native Ones to Watch complete all-player discovery-to-purchase session (106.8413ms)
+✔ universal native POTM LIGA F complete all-player discovery-to-purchase session (107.7327ms)
+✔ universal native POTM Serie A complete all-player discovery-to-purchase session (108.6098ms)
+✔ universal native Showdown complete all-player discovery-to-purchase session (108.1923ms)
+✔ universal native Showdown Upgrade complete all-player discovery-to-purchase session (76.3527ms)
+✔ universal native Star Performer complete all-player discovery-to-purchase session (107.6283ms)
+✔ universal native Team of the Week complete all-player discovery-to-purchase session (107.5923ms)
+✔ universal native Ultimate Scream complete all-player discovery-to-purchase session (106.6486ms)
+✔ universal native Ultimate Scream Hero complete all-player discovery-to-purchase session (107.2703ms)
+✔ future native promo is supported by actual installed production modules without a static ID table (106.6963ms)
+✔ Windows delivery ZIP has a root manifest, literal relative paths, and identical extracted files (454.2887ms)
+✔ Windows packager refuses a folder without a root manifest and preserves an existing destination (2.7545ms)
+ℹ tests 299
+ℹ suites 0
+ℹ pass 299
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4334.3345
+✔ 3540/3600 inclusive boundaries and 3559s accepted; 59s and 30s rejected (3.0396ms)
+✔ snipe maximum is inclusive and zero BIN cannot be purchased (0.2932ms)
+✔ duplicates across snapshots keep first-seen timestamp and never become new again (0.3128ms)
+✔ overlapping duplicate records inside one response are processed only once (0.1811ms)
+✔ previously seen near-expiry/overpriced/wrong-rarity listings are not later called new (0.2372ms)
+✔ strict rarity ID matching; no guessed generic promo ID (0.1802ms)
+✔ expired/closed/unknown auction states are rejected even with fresh-looking duration (0.6018ms)
+✔ missing/malformed required market fields fail closed (0.4028ms)
+✔ millisecond durations and absolute timestamps are not guessed into seconds (0.1712ms)
+✔ unsafe numeric trade IDs rejected; exact large decimal string IDs preserved (0.2142ms)
+✔ unsafe/negative/string prices and bids are invalid (0.2585ms)
+✔ snapshot age reduces remaining seconds at the decision time (0.108ms)
+✔ old snapshots cannot establish freshness (0.0882ms)
+✔ invalid/missing/future timestamps reject the snapshot (0.1168ms)
+✔ out-of-order evaluation clocks cannot reset dedup history (0.1501ms)
+✔ HTTP errors/auth/rate limiting are distinct from empty successful responses (0.1451ms)
+✔ success=false and missing status do not become valid empty results (0.11ms)
+✔ missing/nonarray response is a parsing failure, never an empty market (0.1959ms)
+✔ null records are rejected without throwing (0.0842ms)
+✔ saved REST response adapter uses resourceId/cardsubtypeid/expires/tradeId (0.1097ms)
+✔ saved FC model adapter uses definitionId/rareflag/_auction (0.1216ms)
+✔ conflicting saved auction states are rejected (0.1ms)
+✔ unsorted responses are fully evaluated without ordering assumptions (0.1007ms)
+✔ capacity-sized responses flag possible crowding rather than complete coverage (0.0947ms)
+✔ no fixed 21-result page size is assumed (0.1191ms)
+✔ synthetic narrow cohort can expose a fresh card omitted by a capped broad response (0.1569ms)
+✔ roster partitions cover every provided card once, including the final short group (0.1944ms)
+✔ declared cohort query coverage and observed coverage are separate (0.0965ms)
+✔ broad search does not silently count all roster players as returned (0.1027ms)
+✔ fresh selected-rarity card outside an incomplete roster remains visible in broad scope (0.1005ms)
+✔ an explicit offline cohort scope rejects a result for a different player (0.1ms)
+✔ duplicate roster entries and invalid group sizes are rejected (0.2462ms)
+✔ price proposal puts snipe maximum into maxBuy without issuing a request (0.2408ms)
+✔ price proposal never broadens an existing tighter maximum or drops a minimum (0.1149ms)
+✔ empty price intersection and invalid maxima are explicit errors (0.2044ms)
+✔ existing player-specific search restriction is preserved but warns about coverage (0.1033ms)
+✔ plain-data proposal never invokes getters or custom serialization (0.1457ms)
+✔ seen-state export/import preserves deduplication across offline runs (0.1471ms)
+✔ wrong-context and malformed seen state are rejected (0.1608ms)
+✔ dedup capacity halts instead of forgetting old listings and calling them new (0.1169ms)
+✔ same trade ID changing player identity is rejected (0.1081ms)
+✔ auth/cookie/unknown response fields never enter output or exported state (0.1667ms)
+✔ names are optional display metadata, control characters cannot forge log rows (0.1908ms)
+✔ no test result can authorize buying or claim listing creation time (0.0983ms)
+✔ configuration requires positive maximum, explicit rarity selection and valid scope (0.1439ms)
+✔ network and purchase functions are never used by the offline evaluator (0.1295ms)
+✔ invalid calendar dates and rollover clocks are rejected instead of normalized (0.1326ms)
+ℹ tests 47
+ℹ suites 0
+ℹ pass 47
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 17.3703
+[FC Fresh Pages v6] requested=30 returned=0 min=0 max=0 class=empty fresh=false phase=empty-retry next=30 anchor=0 jumpsOk=null bounds=0-501
+✔ v6 production randomizer reproduces 200,250,300,0 cycle (1.1319ms)
+✔ v6 actual runActions starts at unverified 30; 30/31 empty states have no terminal state (4.7516ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9.5715
+✔ page 1 is validated first, inclusive seconds reach only candidate handler (20.1251ms)
+✔ configured page 30 cannot trigger an unsupported direct jump (10.5529ms)
+✔ starting beyond final page recovers by sequential initialization and terminates at empty edge (4.6166ms)
+✔ server always returning first page is detected without endless scan (4.2111ms)
+✔ all-empty page 30/31 regression terminates after three page-1 requests (8.2252ms)
+✔ HTTP 429, auth, malformed and network failures are not successful empty pages (18.6865ms)
+✔ random minima freeze only for fresh requests; intended filters and buy limits remain (3.9551ms)
+✔ criteria change starts a separate page-1 session without stale anchor (4.3694ms)
+✔ target split across boundary visits both pages and both neighbours (4.9507ms)
+✔ moving target outside the neighbourhood triggers rediscovery (7.8926ms)
+✔ stale remembered anchor is never loaded (4.8103ms)
+✔ cache/page inconsistencies with same listing set stop safely (3.3751ms)
+✔ unsorted durations do not cause bisection or miss target candidates (3.0108ms)
+✔ Search Result Threshold 0, equal, exceeded preserve raw-result safeguard (12.6212ms)
+✔ stop/restart clears navigation and ignores late responses (6.324ms)
+✔ milliseconds, timestamps, nonnumbers, invalid seconds cannot become target (21.7091ms)
+✔ TEST service interlock blocks native bidding and scoped search bypasses enhancer sorter/autobuy (3.3062ms)
+✔ service-side criteria mutation fails closed with normal-log diagnostics (3.0589ms)
+✔ configured page limit bounds discovery independently of item count (4.0518ms)
+✔ individual-player random rotation rejected in broad-market fresh mode (2.731ms)
+✔ passive fetch diagnostics log only numeric observed pagination; no tokens or guessed page (4.9674ms)
+✔ multiple observed requests remain ambiguous instead of confirming a page (3.4761ms)
+✔ passive XHR diagnostics preserve open/send and record real observed parameters (3.6461ms)
+✔ unchanged stale durations after 15 seconds fail closed (2.7463ms)
+✔ known-empty neighbour is bounded and skipped while valid targets remain (18.1738ms)
+✔ monitoring never requires multi-page jumps except supported page-1 reset (9.8458ms)
+✔ existing production bid middleware rejects out-of-window cards on both initial and rebid paths (8.649ms)
+✔ effective multi-rarity selection is preserved before fingerprint/request creation (3.2612ms)
+✔ enhancer exclusion filter still gates candidates after raw-page navigation (3.1824ms)
+✔ actual service wrapper forwards page unchanged and only clears cache at page 1 (2.8325ms)
+✔ prototype-level TEST interlock also blocks direct class bidding (2.6402ms)
+✔ modern client filtering cannot turn a populated raw market page into an empty-page decision (3.2286ms)
+✔ actual modern bundle hook captures original response before RXe hides listings (12.5882ms)
+✔ previous v7 reproduces live page 1/2 times then false-positive DTO mutation stop (15.2472ms)
+✔ live sequence continues to supported starting page 50 and finds 3540-3600 seconds (4.6989ms)
+✔ valid supported direct page 50 is monitored instead of returning to page 1 (4.422ms)
+✔ empty unsupported jump falls back to sequential warmup then reaches 50 despite budget 39 (17.5791ms)
+✔ jump replaying first-page data is rejected and sequential fallback still finds target (5.3298ms)
+✔ different data at wrong observed jump offset is not trusted as requested page 50 (4.2785ms)
+✔ without observable offsets, sequential fallback reaches starting page without guessed jumps (13.943ms)
+✔ 59 and 60 seconds never count as discovery and never reach purchase evaluation (4.0265ms)
+✔ semantic filter changes still stop, but all known DTO pagination mutations continue (7.3193ms)
+✔ calibrated 20-stride is learned, never computed from count 21 (4.2179ms)
+✔ above-window starting page probes backwards and finds an earlier fresh band (4.5847ms)
+✔ page budget 39 at validated starting page 50 permits page 88 then stops explicitly (13.9043ms)
+✔ rate limit at direct probe stops immediately, never attempts a sequential bypass (4.2349ms)
+✔ starting page 2 is already sequentially validated and is not redundantly jump-probed (4.0502ms)
+✔ changing observed page size makes a direct-jump calibration ineligible (5.1952ms)
+✔ v7.1 exact 1,2,20,1 recovery persists through actual single-SCREAM reload and native adapter (26.6644ms)
+✔ v7.1 actual multi-filter rotation can repeatedly restart calibration without discovery (5.2798ms)
+✔ v7.1 concurrent real runActions can dispatch duplicate page-1 requests before locking (3.5658ms)
+✔ v7.2 exact failed page-20 probe uses actual loop/adapter then reaches page 3 without reprobing (6.1646ms)
+✔ v7.2 actual sequential fallback reaches 3559s target on page 20 and monitors it (9.7008ms)
+✔ same SCREAM assignments, fresh criteria objects and deleted processor pointers do not restart recovery (5.3236ms)
+✔ processor recreation sharing real Trader data restores sequential warmup instead of calibration (4.9978ms)
+✔ same-market controller rebinding preserves recovery and emits its lifecycle cause (4.6889ms)
+✔ failed-probe latch prevents forced re-entry into calibration/probe during recovery (4.8659ms)
+✔ actual multi-filter rotation is deferred during bounded discovery and cannot restart every request (6.2411ms)
+✔ saved same-SCREAM settings cannot silently replace active start/page budget during fallback (5.5761ms)
+✔ unchanged semantic criteria retain the same fingerprint across transport changes/reapplied SCREAM (5.8402ms)
+✔ genuine changed search context resets with a cause and repeated context flipping stops by watchdog (7.1686ms)
+✔ cyclic warmup 1/2 requests with no new valid page trips watchdog instead of hanging (7.6678ms)
+✔ legitimate monitoring refreshes are exempt from discovery watchdog (13.8083ms)
+✔ concurrent actual runActions is locked before pre-search await and sends only one request (3.7267ms)
+✔ stop during actual asynchronous filter loading prevents a late native market request (2.871ms)
+✔ missing controller criteria releases early lock and allows a later healthy cycle (3.1435ms)
+✔ wrong observed sequential offset at page 3 stops; internal counter cannot fake advancement (5.3617ms)
+✔ sequential page-3 successful empty tail is finite and explicitly inconclusive (5.3217ms)
+✔ HTTP 429 at page 20 through the actual request adapter stops with no fallback bypass (4.0591ms)
+✔ non-Auto-Find retains original scheduled filter load behavior (3.2117ms)
+✔ two processor owners sharing Trader data cannot overlap native market requests (3.001ms)
+✔ real controller filter change while awaiting a native response discards stale candidates safely (2.8211ms)
+✔ adjacent 21-result pages can overlap by one listing without triggering a false replay (3.6762ms)
+✔ legitimate rotation after finding a target lets another market discover its own later pages (7.62ms)
+ℹ tests 74
+ℹ suites 0
+ℹ pass 74
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 517.5503
+{
+  "scope": "offline-browser-loader-and-explicit-production-module-fixture",
+  "liveEA": false,
+  "accountUsed": false,
+  "marketRequestsExecuted": 0,
+  "extensionInstalled": false,
+  "checks": [
+    {
+      "name": "all manifest resources exist",
+      "passed": true
+    },
+    {
+      "name": "exact content script loads all declared application assets",
+      "passed": true
+    },
+    {
+      "name": "classic vendor executes before classic main",
+      "passed": true
+    },
+    {
+      "name": "loader injects CSS and registers runtime message bridge",
+      "passed": true
+    },
+    {
+      "name": "expected webpack factory capture boundary exists",
+      "passed": true
+    },
+    {
+      "name": "exact production normal Trader Logger renders discovery diagnostics",
+      "passed": true
+    },
+    {
+      "name": "escaped external display text stays text in normal Trader log",
+      "passed": true
+    },
+    {
+      "name": "fixture made no forbidden network/market calls",
+      "passed": true
+    },
+    {
+      "name": "browser reports no page errors",
+      "passed": true
+    },
+    {
+      "name": "browser reports no console errors",
+      "passed": true
+    },
+    {
+      "name": "fixture requests have no transport failures",
+      "passed": true
+    },
+    {
+      "name": "loader requested no unexpected fixture paths",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "pageErrors": [],
+  "blockedExternalRequests": 0,
+  "unexpectedFixtureRequests": [],
+  "limitations": [
+    "This fixture does not attempt extension installation; see the separate local registration report.",
+    "App-asset markers test the content loader, not execution of the modern EA-dependent app bundles.",
+    "Only explicitly allowed production factories and supplied mocked dependencies are invoked."
+  ],
+  "browser": "156.0.8078.79",
+  "loaderMarkers": [
+    "/js/index.js",
+    "/js/vendor.js",
+    "/js/main.js"
+  ],
+  "productionFixture": {
+    "checks": [
+      {
+        "name": "exact production normal Trader Logger renders discovery diagnostics",
+        "passed": true
+      },
+      {
+        "name": "escaped external display text stays text in normal Trader log",
+        "passed": true
+      }
+    ],
+    "blockedCalls": 0,
+    "messages": [
+      "[Fresh Listing] Player: Synthetic <Alpha> Trade ID: 9000001 Buy Now: 75000 Remaining: 3559 Newly Discovered: TRUE Snipe Eligible: TRUE buying=DISABLED"
+    ],
+    "moduleCount": 767
+  },
+  "passed": true
+}
+{
+  "scope": "offline-browser-loader-and-explicit-production-module-fixture",
+  "liveEA": false,
+  "accountUsed": false,
+  "marketRequestsExecuted": 0,
+  "extensionInstalled": false,
+  "checks": [
+    {
+      "name": "all manifest resources exist",
+      "passed": true
+    },
+    {
+      "name": "exact content script loads all declared application assets",
+      "passed": true
+    },
+    {
+      "name": "classic vendor executes before classic main",
+      "passed": true
+    },
+    {
+      "name": "loader injects CSS and registers runtime message bridge",
+      "passed": true
+    },
+    {
+      "name": "expected webpack factory capture boundary exists",
+      "passed": true
+    },
+    {
+      "name": "bundled v8 planner and native safety evaluate synthetic item",
+      "passed": true,
+      "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+    },
+    {
+      "name": "v8 integration cannot authorize purchase",
+      "passed": true
+    },
+    {
+      "name": "v8 integration deduplicates repeated trade IDs",
+      "passed": true
+    },
+    {
+      "name": "integrated v8 output reaches the production Trader logger",
+      "passed": true
+    },
+    {
+      "name": "integrated player display text is escaped",
+      "passed": true
+    },
+    {
+      "name": "stopped integration produces no further intents",
+      "passed": true
+    },
+    {
+      "name": "offline integration reports incomplete live coverage",
+      "passed": true
+    },
+    {
+      "name": "fixture made no forbidden network/market calls",
+      "passed": true
+    },
+    {
+      "name": "browser reports no page errors",
+      "passed": true
+    },
+    {
+      "name": "browser reports no console errors",
+      "passed": true
+    },
+    {
+      "name": "fixture requests have no transport failures",
+      "passed": true
+    },
+    {
+      "name": "loader requested no unexpected fixture paths",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "pageErrors": [],
+  "blockedExternalRequests": 0,
+  "unexpectedFixtureRequests": [],
+  "limitations": [
+    "This fixture does not attempt extension installation; see the separate local registration report.",
+    "App-asset markers test the content loader, not execution of the modern EA-dependent app bundles.",
+    "Only explicitly allowed production factories and supplied mocked dependencies are invoked."
+  ],
+  "browser": "156.0.8078.79",
+  "loaderMarkers": [
+    "/js/index.js",
+    "/js/vendor.js",
+    "/js/main.js"
+  ],
+  "productionFixture": {
+    "checks": [
+      {
+        "name": "bundled v8 planner and native safety evaluate synthetic item",
+        "passed": true,
+        "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+      },
+      {
+        "name": "v8 integration cannot authorize purchase",
+        "passed": true
+      },
+      {
+        "name": "v8 integration deduplicates repeated trade IDs",
+        "passed": true
+      },
+      {
+        "name": "integrated v8 output reaches the production Trader logger",
+        "passed": true
+      },
+      {
+        "name": "integrated player display text is escaped",
+        "passed": true
+      },
+      {
+        "name": "stopped integration produces no further intents",
+        "passed": true
+      },
+      {
+        "name": "offline integration reports incomplete live coverage",
+        "passed": true
+      }
+    ],
+    "blockedCalls": 0,
+    "messages": [
+      "[v8 OFFLINE] Player: Synthetic <Alpha> Trade ID: 900000000000000001 Buy Now: 700 Remaining: 3559 Native safety: pass buying=DISABLED"
+    ],
+    "moduleCount": 770
+  },
+  "passed": true
+}
+{
+  "liveEA": false,
+  "marketRequestsExecuted": 0,
+  "checks": [
+    {
+      "name": "unpacked worker registered with expected identity",
+      "passed": true,
+      "detail": {
+        "id": "boffdonfioidojlcpmfnkngipappmcoh",
+        "name": "FC Enhancer v8 OFFLINE Integration TEST (NO BUYING)",
+        "version": "27.0.2.0"
+      }
+    },
+    {
+      "name": "CDP exposes extension service worker",
+      "passed": true
+    },
+    {
+      "name": "installed extension assets are readable",
+      "passed": true
+    },
+    {
+      "name": "installed extension runs v8 integration checks",
+      "passed": true
+    },
+    {
+      "name": "installed integration renders through production Trader logger",
+      "passed": true
+    },
+    {
+      "name": "no page runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "boffdonfioidojlcpmfnkngipappmcoh",
+  "workerUrl": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js",
+  "runtime": {
+    "id": "boffdonfioidojlcpmfnkngipappmcoh",
+    "name": "FC Enhancer v8 OFFLINE Integration TEST (NO BUYING)",
+    "version": "27.0.2.0"
+  },
+  "targets": [
+    {
+      "type": "service_worker",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js"
+    },
+    {
+      "type": "page",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/manifest.json"
+    }
+  ],
+  "installedIntegration": {
+    "checks": [
+      {
+        "name": "bundled v8 planner and native safety evaluate synthetic item",
+        "passed": true,
+        "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+      },
+      {
+        "name": "v8 integration cannot authorize purchase",
+        "passed": true
+      },
+      {
+        "name": "v8 integration deduplicates repeated trade IDs",
+        "passed": true
+      },
+      {
+        "name": "integrated v8 output reaches the production Trader logger",
+        "passed": true
+      },
+      {
+        "name": "integrated player display text is escaped",
+        "passed": true
+      },
+      {
+        "name": "stopped integration produces no further intents",
+        "passed": true
+      },
+      {
+        "name": "offline integration reports incomplete live coverage",
+        "passed": true
+      }
+    ],
+    "liveEA": false,
+    "purchaseAuthorized": false
+  },
+  "passed": true
+}
+{
+  "liveEA": false,
+  "marketRequestsExecuted": 0,
+  "checks": [
+    {
+      "name": "unpacked worker registered with expected identity",
+      "passed": true,
+      "detail": {
+        "id": "boffdonfioidojlcpmfnkngipappmcoh",
+        "name": "FC Enhancer v8 Trader Validation TEST (NO BUYING)",
+        "version": "27.0.2.2"
+      }
+    },
+    {
+      "name": "CDP exposes extension service worker",
+      "passed": true
+    },
+    {
+      "name": "installed extension assets are readable",
+      "passed": true
+    },
+    {
+      "name": "installed extension runs v8 integration checks",
+      "passed": true
+    },
+    {
+      "name": "installed integration renders through production Trader logger",
+      "passed": true
+    },
+    {
+      "name": "installed status shows rarity, both ceilings, candidates, rejection and execution lock",
+      "passed": true
+    },
+    {
+      "name": "no page runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "boffdonfioidojlcpmfnkngipappmcoh",
+  "workerUrl": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js",
+  "runtime": {
+    "id": "boffdonfioidojlcpmfnkngipappmcoh",
+    "name": "FC Enhancer v8 Trader Validation TEST (NO BUYING)",
+    "version": "27.0.2.2"
+  },
+  "targets": [
+    {
+      "type": "service_worker",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js"
+    },
+    {
+      "type": "page",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/manifest.json"
+    }
+  ],
+  "installedIntegration": {
+    "checks": [
+      {
+        "name": "bundled v8 planner and native safety evaluate synthetic item",
+        "passed": true,
+        "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+      },
+      {
+        "name": "v8 integration cannot authorize purchase",
+        "passed": true
+      },
+      {
+        "name": "v8 integration deduplicates repeated trade IDs",
+        "passed": true
+      },
+      {
+        "name": "integrated v8 output reaches the production Trader logger",
+        "passed": true
+      },
+      {
+        "name": "integrated player display text is escaped",
+        "passed": true
+      },
+      {
+        "name": "stopped integration produces no further intents",
+        "passed": true
+      },
+      {
+        "name": "offline integration reports incomplete live coverage",
+        "passed": true
+      }
+    ],
+    "liveEA": false,
+    "purchaseAuthorized": false
+  },
+  "passed": true
+}
+{
+  "liveEA": false,
+  "marketRequestsExecuted": 0,
+  "checks": [
+    {
+      "name": "unpacked worker registered with expected identity",
+      "passed": true,
+      "detail": {
+        "id": "dgkfmehlhicfmngkkefjoglboobkgnna",
+        "name": "FC Enhancer v8 RC1 (purchases OFF by default)",
+        "version": "27.0.3.1"
+      }
+    },
+    {
+      "name": "CDP exposes extension service worker",
+      "passed": true
+    },
+    {
+      "name": "installed extension assets are readable",
+      "passed": true
+    },
+    {
+      "name": "installed extension runs v8 integration checks",
+      "passed": true
+    },
+    {
+      "name": "installed integration renders through production Trader logger",
+      "passed": true
+    },
+    {
+      "name": "no page runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "dgkfmehlhicfmngkkefjoglboobkgnna",
+  "workerUrl": "chrome-extension://dgkfmehlhicfmngkkefjoglboobkgnna/background.js",
+  "runtime": {
+    "id": "dgkfmehlhicfmngkkefjoglboobkgnna",
+    "name": "FC Enhancer v8 RC1 (purchases OFF by default)",
+    "version": "27.0.3.1"
+  },
+  "targets": [
+    {
+      "type": "service_worker",
+      "url": "chrome-extension://dgkfmehlhicfmngkkefjoglboobkgnna/background.js"
+    },
+    {
+      "type": "page",
+      "url": "chrome-extension://dgkfmehlhicfmngkkefjoglboobkgnna/manifest.json"
+    }
+  ],
+  "installedIntegration": {
+    "checks": [
+      {
+        "name": "bundled v8 planner and native safety evaluate synthetic item",
+        "passed": true,
+        "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+      },
+      {
+        "name": "v8 integration cannot authorize purchase",
+        "passed": true
+      },
+      {
+        "name": "v8 integration deduplicates repeated trade IDs",
+        "passed": true
+      },
+      {
+        "name": "integrated v8 output reaches the production Trader logger",
+        "passed": true
+      },
+      {
+        "name": "integrated player display text is escaped",
+        "passed": true
+      },
+      {
+        "name": "stopped integration produces no further intents",
+        "passed": true
+      },
+      {
+        "name": "offline integration reports incomplete live coverage",
+        "passed": true
+      }
+    ],
+    "liveEA": false,
+    "purchaseAuthorized": false
+  },
+  "passed": true
+}
+{
+  "liveEA": false,
+  "realTransactions": 0,
+  "checks": [
+    {
+      "name": "RC installed worker has distinct identity",
+      "passed": true
+    },
+    {
+      "name": "installed RC purchase setting defaults OFF",
+      "passed": true
+    },
+    {
+      "name": "synthetic checkbox event cannot authorize purchases",
+      "passed": true
+    },
+    {
+      "name": "saved enable flags and reload cannot authorize purchases",
+      "passed": true
+    },
+    {
+      "name": "trusted explicit user checkbox enables only the stopped fixture run",
+      "passed": true
+    },
+    {
+      "name": "installed actual native purchase path succeeds only against mocked API",
+      "passed": true
+    },
+    {
+      "name": "installed pipeline rejects duplicate trade ID",
+      "passed": true
+    },
+    {
+      "name": "installed pipeline preserves remaining coin budget",
+      "passed": true
+    },
+    {
+      "name": "Stop disarms installed purchase setting",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves controls available for explicit re-enable",
+      "passed": true
+    },
+    {
+      "name": "reload disarms a previously user-enabled setting",
+      "passed": true
+    },
+    {
+      "name": "settled trade journal prevents duplicate purchase across reload",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors or external market requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "dgkfmehlhicfmngkkefjoglboobkgnna",
+  "passed": true
+}
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "checks": [
+    {
+      "name": "RC2 background worker runs with the expected manifest",
+      "passed": true
+    },
+    {
+      "name": "RC2 extension worker and native Trader controls installed",
+      "passed": true
+    },
+    {
+      "name": "purchases default OFF",
+      "passed": true
+    },
+    {
+      "name": "actual Trader discovered and purchased multiple players through native pipeline",
+      "passed": true
+    },
+    {
+      "name": "coins and native inventory accounting reconcile",
+      "passed": true
+    },
+    {
+      "name": "rarity and price visible",
+      "passed": true
+    },
+    {
+      "name": "hard disable works while discovery is running",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves Trader stopped and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "reload never re-enables purchases",
+      "passed": true
+    },
+    {
+      "name": "zero external network requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "extensionId": "ihfahbkmohnokflnnejfgmhgfpdcbamj",
+  "browser": "156.0.8078.79",
+  "worker": {
+    "id": "ihfahbkmohnokflnnejfgmhgfpdcbamj",
+    "version": "27.0.3.2"
+  },
+  "session": {
+    "running": true,
+    "status": {
+      "enabled": true,
+      "inFlight": false,
+      "spent": 1800,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "enabled-for-next-run",
+      "attempts": 3,
+      "successes": 2,
+      "lost": 1,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned"
+        },
+        {
+          "tradeId": "2002",
+          "outcome": "confirmed-sold"
+        },
+        {
+          "tradeId": "2005",
+          "outcome": "confirmed-owned"
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 2.2,
+          "medianMs": 3,
+          "p95Ms": 3,
+          "maxMs": 3,
+          "totalMs": 5.2
+        },
+        "candidate_parsing": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "purchase_decision": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0.1,
+          "p95Ms": 0.2,
+          "maxMs": 0.2,
+          "totalMs": 0.3
+        },
+        "safety_evaluation": {
+          "count": 4,
+          "minMs": 1.1,
+          "medianMs": 1.8,
+          "p95Ms": 2,
+          "maxMs": 2,
+          "totalMs": 6.5
+        },
+        "transaction_completion": {
+          "count": 3,
+          "minMs": 3.7,
+          "medianMs": 4.6,
+          "p95Ms": 4.7,
+          "maxMs": 4.7,
+          "totalMs": 13
+        },
+        "reconciliation": {
+          "count": 3,
+          "minMs": 1.8,
+          "medianMs": 1.9,
+          "p95Ms": 2,
+          "maxMs": 2,
+          "totalMs": 5.7
+        }
+      }
+    },
+    "attempts": 3,
+    "coins": 3200,
+    "inventory": [
+      201,
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.3999999910593033
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.5999999940395355
+      },
+      {
+        "kind": "attempt",
+        "id": "2002",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2002",
+        "success": false,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.300000011920929
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 850,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.2000000029802322
+      },
+      {
+        "kind": "attempt",
+        "id": "2005",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2005",
+        "success": true,
+        "coinsAfter": 3200,
+        "elapsedMs": 2.7999999970197678
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 201 tradeId=2001 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8 candidate] Player: Player 202 tradeId=2002 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] Player: Player 203 tradeId=2003 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=native-middleware-rejected purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] tradeId=2004 price=901 priceEligible=false execution=RC-controls",
+      "[v8] state=DISCOVERY page=1 offset=0 count=4 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 850",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 205 tradeId=2005 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 2.2,
+        "medianMs": 3,
+        "p95Ms": 3,
+        "maxMs": 3,
+        "totalMs": 5.2
+      },
+      "candidate_parsing": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "purchase_decision": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0.1,
+        "p95Ms": 0.2,
+        "maxMs": 0.2,
+        "totalMs": 0.3
+      },
+      "safety_evaluation": {
+        "count": 4,
+        "minMs": 1.1,
+        "medianMs": 1.8,
+        "p95Ms": 2,
+        "maxMs": 2,
+        "totalMs": 6.5
+      },
+      "transaction_completion": {
+        "count": 3,
+        "minMs": 3.7,
+        "medianMs": 4.6,
+        "p95Ms": 4.7,
+        "maxMs": 4.7,
+        "totalMs": 13
+      },
+      "reconciliation": {
+        "count": 3,
+        "minMs": 1.8,
+        "medianMs": 1.9,
+        "p95Ms": 2,
+        "maxMs": 2,
+        "totalMs": 5.7
+      }
+    }
+  },
+  "passed": true
+}
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "checks": [
+    {
+      "name": "FINAL background worker runs with the expected manifest",
+      "passed": true
+    },
+    {
+      "name": "FINAL extension worker and native Trader controls installed",
+      "passed": true
+    },
+    {
+      "name": "purchases default OFF",
+      "passed": true
+    },
+    {
+      "name": "blank session limits cannot arm",
+      "passed": true
+    },
+    {
+      "name": "explicit limits allow trusted session enablement",
+      "passed": true
+    },
+    {
+      "name": "actual Trader discovered and purchased multiple players through native pipeline",
+      "passed": true
+    },
+    {
+      "name": "coins and native inventory accounting reconcile",
+      "passed": true
+    },
+    {
+      "name": "rarity and price visible",
+      "passed": true
+    },
+    {
+      "name": "hard disable works while discovery is running",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves Trader stopped and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "reload never re-enables purchases",
+      "passed": true
+    },
+    {
+      "name": "installed native market error stops discovery safely",
+      "passed": true
+    },
+    {
+      "name": "fresh session recovers from market error with purchase mode OFF",
+      "passed": true
+    },
+    {
+      "name": "zero external network requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "extensionId": "dolgmhpdjjmmclmnbocjfmjboojahjno",
+  "browser": "156.0.8078.79",
+  "worker": {
+    "id": "dolgmhpdjjmmclmnbocjfmjboojahjno",
+    "version": "27.0.4.0"
+  },
+  "session": {
+    "running": true,
+    "status": {
+      "enabled": true,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 10
+      },
+      "remainingBudget": 2200,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 1800,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "enabled-for-this-session",
+      "eligible": 3,
+      "attempts": 3,
+      "successes": 2,
+      "lost": 1,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        },
+        {
+          "tradeId": "2002",
+          "outcome": "confirmed-sold"
+        },
+        {
+          "tradeId": "2005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 2.3,
+          "medianMs": 2.8,
+          "p95Ms": 2.8,
+          "maxMs": 2.8,
+          "totalMs": 5.1
+        },
+        "candidate_parsing": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "purchase_decision": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0.1,
+          "p95Ms": 0.4,
+          "maxMs": 0.4,
+          "totalMs": 0.5
+        },
+        "price_evidence": {
+          "count": 4,
+          "minMs": 0.1,
+          "medianMs": 1.9,
+          "p95Ms": 2.1,
+          "maxMs": 2.1,
+          "totalMs": 5.7
+        },
+        "safety_evaluation": {
+          "count": 3,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0.5,
+          "maxMs": 0.5,
+          "totalMs": 0.5
+        },
+        "discovery_to_purchase_ready": {
+          "count": 3,
+          "minMs": 2,
+          "medianMs": 2.3,
+          "p95Ms": 2.8,
+          "maxMs": 2.8,
+          "totalMs": 7.1
+        },
+        "transaction_completion": {
+          "count": 3,
+          "minMs": 3,
+          "medianMs": 3.1,
+          "p95Ms": 3.1,
+          "maxMs": 3.1,
+          "totalMs": 9.2
+        },
+        "reconciliation": {
+          "count": 3,
+          "minMs": 1.2,
+          "medianMs": 2,
+          "p95Ms": 2,
+          "maxMs": 2,
+          "totalMs": 5.2
+        }
+      },
+      "rejections": {
+        "count": 1,
+        "reasons": {
+          "stale-response": 1
+        }
+      }
+    },
+    "attempts": 3,
+    "coins": 3200,
+    "inventory": [
+      201,
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.2999999970197678
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793656565808
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.2000000029802322
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 202,
+        "reference": 1000,
+        "at": 1793656572808
+      },
+      {
+        "kind": "attempt",
+        "id": "2002",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2002",
+        "success": false,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.699999988079071
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 850,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.2000000029802322
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793656586808
+      },
+      {
+        "kind": "attempt",
+        "id": "2005",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2005",
+        "success": true,
+        "coinsAfter": 3200,
+        "elapsedMs": 2.699999988079071
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 201 tradeId=2001 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8 candidate] Player: Player 202 tradeId=2002 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] Player: Player 203 tradeId=2003 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=stale-response purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] tradeId=2004 price=901 priceEligible=false execution=RC-controls",
+      "[v8] state=DISCOVERY page=1 offset=0 count=4 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 850",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 205 tradeId=2005 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 2.3,
+        "medianMs": 2.8,
+        "p95Ms": 2.8,
+        "maxMs": 2.8,
+        "totalMs": 5.1
+      },
+      "candidate_parsing": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "purchase_decision": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0.1,
+        "p95Ms": 0.4,
+        "maxMs": 0.4,
+        "totalMs": 0.5
+      },
+      "price_evidence": {
+        "count": 4,
+        "minMs": 0.1,
+        "medianMs": 1.9,
+        "p95Ms": 2.1,
+        "maxMs": 2.1,
+        "totalMs": 5.7
+      },
+      "safety_evaluation": {
+        "count": 3,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0.5,
+        "maxMs": 0.5,
+        "totalMs": 0.5
+      },
+      "discovery_to_purchase_ready": {
+        "count": 3,
+        "minMs": 2,
+        "medianMs": 2.3,
+        "p95Ms": 2.8,
+        "maxMs": 2.8,
+        "totalMs": 7.1
+      },
+      "transaction_completion": {
+        "count": 3,
+        "minMs": 3,
+        "medianMs": 3.1,
+        "p95Ms": 3.1,
+        "maxMs": 3.1,
+        "totalMs": 9.2
+      },
+      "reconciliation": {
+        "count": 3,
+        "minMs": 1.2,
+        "medianMs": 2,
+        "p95Ms": 2,
+        "maxMs": 2,
+        "totalMs": 5.2
+      }
+    }
+  },
+  "passed": true
+}
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "checks": [
+    {
+      "name": "UNIVERSAL background worker runs with the expected manifest",
+      "passed": true
+    },
+    {
+      "name": "UNIVERSAL extension worker and native Trader controls installed",
+      "passed": true
+    },
+    {
+      "name": "purchases default OFF",
+      "passed": true
+    },
+    {
+      "name": "blank session limits cannot arm",
+      "passed": true
+    },
+    {
+      "name": "new rarity starts with blank spending limits and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "saved Icon profile restores only its own limits",
+      "passed": true
+    },
+    {
+      "name": "explicit limits allow trusted session enablement",
+      "passed": true
+    },
+    {
+      "name": "visible per-rarity snipe maximum overrides a stale native filter ceiling",
+      "passed": true
+    },
+    {
+      "name": "actual Trader discovered and purchased multiple players through native pipeline",
+      "passed": true
+    },
+    {
+      "name": "coins and native inventory accounting reconcile",
+      "passed": true
+    },
+    {
+      "name": "rarity and price visible",
+      "passed": true
+    },
+    {
+      "name": "hard disable works while discovery is running",
+      "passed": true
+    },
+    {
+      "name": "metadata rename during a run clears old spending after Stop",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves Trader stopped and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "reload never re-enables purchases",
+      "passed": true
+    },
+    {
+      "name": "installed native market error stops discovery safely",
+      "passed": true
+    },
+    {
+      "name": "fresh session recovers from market error with purchase mode OFF",
+      "passed": true
+    },
+    {
+      "name": "new native metadata appears without an extension rebuild",
+      "passed": true
+    },
+    {
+      "name": "future rarity inherits no higher spending limits",
+      "passed": true
+    },
+    {
+      "name": "missing native valuation is rejected before live discovery starts",
+      "passed": true
+    },
+    {
+      "name": "explicit valuation enablement changes the native rule without enabling buying",
+      "passed": true
+    },
+    {
+      "name": "acceptance review uses the native timer and production safeguards without a purchase",
+      "passed": true
+    },
+    {
+      "name": "exact review includes coins, budget and native comparable evidence",
+      "passed": true
+    },
+    {
+      "name": "exact acceptance execution is disabled before explicit consent",
+      "passed": true
+    },
+    {
+      "name": "editing any review limit invalidates the old transaction approval",
+      "passed": true
+    },
+    {
+      "name": "approved exact simulated transaction completes once and stops",
+      "passed": true
+    },
+    {
+      "name": "zero external network requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "extensionId": "gpniegaikjkjfbecipmompkomclhfgec",
+  "browser": "156.0.8078.79",
+  "worker": {
+    "id": "gpniegaikjkjfbecipmompkomclhfgec",
+    "version": "27.0.5.0"
+  },
+  "session": {
+    "running": true,
+    "status": {
+      "authorizationExpiresAt": null,
+      "enabled": true,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 10
+      },
+      "remainingBudget": 2200,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 1800,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "enabled-for-this-session",
+      "eligible": 3,
+      "attempts": 3,
+      "successes": 2,
+      "lost": 1,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        },
+        {
+          "tradeId": "2002",
+          "outcome": "confirmed-sold"
+        },
+        {
+          "tradeId": "2005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 2.9,
+          "medianMs": 3.2,
+          "p95Ms": 3.2,
+          "maxMs": 3.2,
+          "totalMs": 6.1
+        },
+        "candidate_parsing": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "purchase_decision": {
+          "count": 4,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.3,
+          "maxMs": 0.3,
+          "totalMs": 0.6
+        },
+        "price_evidence": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 1.5,
+          "p95Ms": 1.7,
+          "maxMs": 1.7,
+          "totalMs": 4.6
+        },
+        "safety_evaluation": {
+          "count": 3,
+          "minMs": 0,
+          "medianMs": 0.1,
+          "p95Ms": 0.4,
+          "maxMs": 0.4,
+          "totalMs": 0.5
+        },
+        "discovery_to_purchase_ready": {
+          "count": 3,
+          "minMs": 1.7,
+          "medianMs": 1.8,
+          "p95Ms": 2.9,
+          "maxMs": 2.9,
+          "totalMs": 6.4
+        },
+        "transaction_completion": {
+          "count": 3,
+          "minMs": 2.7,
+          "medianMs": 3.5,
+          "p95Ms": 5,
+          "maxMs": 5,
+          "totalMs": 11.2
+        },
+        "reconciliation": {
+          "count": 3,
+          "minMs": 1.7,
+          "medianMs": 2.1,
+          "p95Ms": 2.3,
+          "maxMs": 2.3,
+          "totalMs": 6.1
+        }
+      },
+      "automaticSessionMode": false,
+      "lastTransaction": null,
+      "acceptanceReview": null,
+      "rejections": {
+        "count": 1,
+        "reasons": {
+          "stale-response": 1
+        }
+      }
+    },
+    "attempts": 3,
+    "coins": 3200,
+    "inventory": [
+      201,
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.7999999970197678
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793656567158
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 3.6000000089406967
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 202,
+        "reference": 1000,
+        "at": 1793656574158
+      },
+      {
+        "kind": "attempt",
+        "id": "2002",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2002",
+        "success": false,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.9000000059604645
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 850,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.699999988079071
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793656588158
+      },
+      {
+        "kind": "attempt",
+        "id": "2005",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2005",
+        "success": true,
+        "coinsAfter": 3200,
+        "elapsedMs": 2.2000000029802322
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=12 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 201 tradeId=2001 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8 candidate] Player: Player 202 tradeId=2002 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] Player: Player 203 tradeId=2003 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=stale-response purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] tradeId=2004 price=901 priceEligible=false execution=RC-controls",
+      "[v8] state=DISCOVERY page=1 offset=0 count=4 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 850",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 205 tradeId=2005 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 2.9,
+        "medianMs": 3.2,
+        "p95Ms": 3.2,
+        "maxMs": 3.2,
+        "totalMs": 6.1
+      },
+      "candidate_parsing": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "purchase_decision": {
+        "count": 4,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.3,
+        "maxMs": 0.3,
+        "totalMs": 0.6
+      },
+      "price_evidence": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 1.5,
+        "p95Ms": 1.7,
+        "maxMs": 1.7,
+        "totalMs": 4.6
+      },
+      "safety_evaluation": {
+        "count": 3,
+        "minMs": 0,
+        "medianMs": 0.1,
+        "p95Ms": 0.4,
+        "maxMs": 0.4,
+        "totalMs": 0.5
+      },
+      "discovery_to_purchase_ready": {
+        "count": 3,
+        "minMs": 1.7,
+        "medianMs": 1.8,
+        "p95Ms": 2.9,
+        "maxMs": 2.9,
+        "totalMs": 6.4
+      },
+      "transaction_completion": {
+        "count": 3,
+        "minMs": 2.7,
+        "medianMs": 3.5,
+        "p95Ms": 5,
+        "maxMs": 5,
+        "totalMs": 11.2
+      },
+      "reconciliation": {
+        "count": 3,
+        "minMs": 1.7,
+        "medianMs": 2.1,
+        "p95Ms": 2.3,
+        "maxMs": 2.3,
+        "totalMs": 6.1
+      }
+    }
+  },
+  "acceptanceSession": {
+    "running": false,
+    "status": {
+      "authorizationExpiresAt": null,
+      "enabled": false,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 1
+      },
+      "remainingBudget": 3100,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 900,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "TraderProcessor.stop",
+      "eligible": 1,
+      "attempts": 1,
+      "successes": 1,
+      "lost": 0,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "9005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 4.3,
+          "medianMs": 4.4,
+          "p95Ms": 4.4,
+          "maxMs": 4.4,
+          "totalMs": 8.7
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 0.5,
+          "medianMs": 0.5,
+          "p95Ms": 0.5,
+          "maxMs": 0.5,
+          "totalMs": 0.5
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 3.4,
+          "medianMs": 3.4,
+          "p95Ms": 3.4,
+          "maxMs": 3.4,
+          "totalMs": 3.4
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 2.6,
+          "medianMs": 2.6,
+          "p95Ms": 2.6,
+          "maxMs": 2.6,
+          "totalMs": 2.6
+        }
+      },
+      "automaticSessionMode": false,
+      "lastTransaction": null,
+      "acceptanceReview": {
+        "requested": false,
+        "ready": false,
+        "count": 1,
+        "reviewBudget": 4000,
+        "minimumProfit": 25,
+        "endReason": "qualifying-candidate-ready",
+        "evaluations": [
+          {
+            "name": "Player 205",
+            "tradeId": "9005",
+            "itemId": 1000009005,
+            "rarity": 151,
+            "price": 900,
+            "response": true,
+            "reason": "qualified-for-review",
+            "netProfitEstimate": 50,
+            "fee": 50,
+            "referencePrice": 1000,
+            "sampleCount": 4,
+            "quoteObservedAt": 1793656581890,
+            "observedAt": 1793656581890,
+            "minimumProfit": 25
+          }
+        ],
+        "last": {
+          "response": true,
+          "purchaseAuthorized": false,
+          "tradeId": "9005",
+          "itemId": 1000009005,
+          "rarity": 151,
+          "name": "Player 205",
+          "price": 900,
+          "netProfitEstimate": 50,
+          "referencePrice": 1000,
+          "fee": 50,
+          "additionalCosts": 0,
+          "reviewedAt": 1793656581890,
+          "quoteObservedAt": 1793656581890,
+          "remainingSeconds": 3559,
+          "maximumExpenditure": 900,
+          "availableCoins": 5000,
+          "remainingBudget": 4000,
+          "inventoryCapacityVerified": true,
+          "valuation": {
+            "source": "native-live-asks",
+            "definitionId": 205,
+            "rarity": 151,
+            "sampleCount": 4,
+            "observedAt": 1793656581890,
+            "comparables": [
+              {
+                "tradeId": "9002051",
+                "price": 1000,
+                "validUntil": 1793660181890
+              },
+              {
+                "tradeId": "9002052",
+                "price": 1000,
+                "validUntil": 1793660181890
+              },
+              {
+                "tradeId": "9002053",
+                "price": 1000,
+                "validUntil": 1793660181890
+              },
+              {
+                "tradeId": "9002054",
+                "price": 1000,
+                "validUntil": 1793660181890
+              }
+            ]
+          }
+        },
+        "result": {
+          "response": true,
+          "eligible": true,
+          "reason": "native-flow-completed",
+          "purchaseAuthorized": true,
+          "wonCount": 1,
+          "observedBalanceChange": 900,
+          "coinsDeducted": 900
+        }
+      },
+      "rejections": {
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "attempts": 1,
+    "coins": 4100,
+    "inventory": [
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4.299999997019768
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793656567890
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4.299999997019768
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793656581890
+      },
+      {
+        "kind": "attempt",
+        "id": "9005",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "9005",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.2000000029802322
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "abStopped",
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 0",
+      "abStopped",
+      "Next action in 4 (secs)",
+      "abStopped"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 4.3,
+        "medianMs": 4.4,
+        "p95Ms": 4.4,
+        "maxMs": 4.4,
+        "totalMs": 8.7
+      },
+      "candidate_parsing": {
+        "count": 2,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "purchase_decision": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "price_evidence": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "safety_evaluation": {
+        "count": 1,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "discovery_to_purchase_ready": {
+        "count": 1,
+        "minMs": 0.5,
+        "medianMs": 0.5,
+        "p95Ms": 0.5,
+        "maxMs": 0.5,
+        "totalMs": 0.5
+      },
+      "transaction_completion": {
+        "count": 1,
+        "minMs": 3.4,
+        "medianMs": 3.4,
+        "p95Ms": 3.4,
+        "maxMs": 3.4,
+        "totalMs": 3.4
+      },
+      "reconciliation": {
+        "count": 1,
+        "minMs": 2.6,
+        "medianMs": 2.6,
+        "p95Ms": 2.6,
+        "maxMs": 2.6,
+        "totalMs": 2.6
+      }
+    }
+  },
+  "passed": true
+}
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "checks": [
+    {
+      "name": "UNIVERSAL background worker runs with the expected manifest",
+      "passed": true
+    },
+    {
+      "name": "UNIVERSAL extension worker and native Trader controls installed",
+      "passed": true
+    },
+    {
+      "name": "purchases default OFF",
+      "passed": true
+    },
+    {
+      "name": "blank session limits cannot arm",
+      "passed": true
+    },
+    {
+      "name": "new rarity starts with blank spending limits and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "saved Icon profile restores only its own limits",
+      "passed": true
+    },
+    {
+      "name": "explicit limits allow trusted session enablement",
+      "passed": true
+    },
+    {
+      "name": "visible per-rarity snipe maximum overrides a stale native filter ceiling",
+      "passed": true
+    },
+    {
+      "name": "actual Trader discovered and purchased multiple players through native pipeline",
+      "passed": true
+    },
+    {
+      "name": "coins and native inventory accounting reconcile",
+      "passed": true
+    },
+    {
+      "name": "rarity and price visible",
+      "passed": true
+    },
+    {
+      "name": "hard disable works while discovery is running",
+      "passed": true
+    },
+    {
+      "name": "metadata rename during a run clears old spending after Stop",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves Trader stopped and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "reload never re-enables purchases",
+      "passed": true
+    },
+    {
+      "name": "installed native market error stops discovery safely",
+      "passed": true
+    },
+    {
+      "name": "fresh session recovers from market error with purchase mode OFF",
+      "passed": true
+    },
+    {
+      "name": "new native metadata appears without an extension rebuild",
+      "passed": true
+    },
+    {
+      "name": "future rarity inherits no higher spending limits",
+      "passed": true
+    },
+    {
+      "name": "missing native valuation is rejected before live discovery starts",
+      "passed": true
+    },
+    {
+      "name": "explicit valuation enablement changes the native rule without enabling buying",
+      "passed": true
+    },
+    {
+      "name": "acceptance review uses the native timer and production safeguards without a purchase",
+      "passed": true
+    },
+    {
+      "name": "exact review includes coins, budget and native comparable evidence",
+      "passed": true
+    },
+    {
+      "name": "exact acceptance execution is disabled before explicit consent",
+      "passed": true
+    },
+    {
+      "name": "editing any review limit invalidates the old transaction approval",
+      "passed": true
+    },
+    {
+      "name": "approved exact simulated transaction completes once and stops",
+      "passed": true
+    },
+    {
+      "name": "zero external network requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "extensionId": "mmcppbadeenilflecpcjafokgcbpkfmj",
+  "browser": "156.0.8078.79",
+  "worker": {
+    "id": "mmcppbadeenilflecpcjafokgcbpkfmj",
+    "version": "27.0.6.0"
+  },
+  "session": {
+    "running": true,
+    "status": {
+      "authorizationExpiresAt": null,
+      "enabled": true,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 10
+      },
+      "remainingBudget": 2200,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 1800,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "enabled-for-this-session",
+      "eligible": 3,
+      "attempts": 3,
+      "successes": 2,
+      "lost": 1,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        },
+        {
+          "tradeId": "2002",
+          "outcome": "confirmed-sold"
+        },
+        {
+          "tradeId": "2005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 3.1,
+          "medianMs": 3.3,
+          "p95Ms": 3.3,
+          "maxMs": 3.3,
+          "totalMs": 6.4
+        },
+        "candidate_parsing": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "purchase_decision": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0.2,
+          "p95Ms": 0.3,
+          "maxMs": 0.3,
+          "totalMs": 0.5
+        },
+        "price_evidence": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 1.7,
+          "p95Ms": 2.1,
+          "maxMs": 2.1,
+          "totalMs": 5.3
+        },
+        "safety_evaluation": {
+          "count": 3,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.4,
+          "maxMs": 0.4,
+          "totalMs": 0.6
+        },
+        "discovery_to_purchase_ready": {
+          "count": 3,
+          "minMs": 1.7,
+          "medianMs": 2.2,
+          "p95Ms": 3.5,
+          "maxMs": 3.5,
+          "totalMs": 7.4
+        },
+        "transaction_completion": {
+          "count": 3,
+          "minMs": 3.4,
+          "medianMs": 3.6,
+          "p95Ms": 4.4,
+          "maxMs": 4.4,
+          "totalMs": 11.4
+        },
+        "reconciliation": {
+          "count": 3,
+          "minMs": 1.3,
+          "medianMs": 2.1,
+          "p95Ms": 2.5,
+          "maxMs": 2.5,
+          "totalMs": 5.9
+        }
+      },
+      "automaticSessionMode": false,
+      "lastTransaction": null,
+      "acceptanceReview": null,
+      "rejections": {
+        "count": 1,
+        "reasons": {
+          "stale-response": 1
+        }
+      }
+    },
+    "attempts": 3,
+    "coins": 3200,
+    "inventory": [
+      201,
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.9000000059604645
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793656568967
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.7000000029802322
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 202,
+        "reference": 1000,
+        "at": 1793656575967
+      },
+      {
+        "kind": "attempt",
+        "id": "2002",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2002",
+        "success": false,
+        "coinsAfter": 4100,
+        "elapsedMs": 3
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 850,
+          "maxBuy": 900
+        },
+        "elapsedMs": 3.0999999940395355
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793656589967
+      },
+      {
+        "kind": "attempt",
+        "id": "2005",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2005",
+        "success": true,
+        "coinsAfter": 3200,
+        "elapsedMs": 3
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=12 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 201 tradeId=2001 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8 candidate] Player: Player 202 tradeId=2002 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] Player: Player 203 tradeId=2003 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=stale-response purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] tradeId=2004 price=901 priceEligible=false execution=RC-controls",
+      "[v8] state=DISCOVERY page=1 offset=0 count=4 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 850",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 205 tradeId=2005 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=2 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 3.1,
+        "medianMs": 3.3,
+        "p95Ms": 3.3,
+        "maxMs": 3.3,
+        "totalMs": 6.4
+      },
+      "candidate_parsing": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "purchase_decision": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0.2,
+        "p95Ms": 0.3,
+        "maxMs": 0.3,
+        "totalMs": 0.5
+      },
+      "price_evidence": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 1.7,
+        "p95Ms": 2.1,
+        "maxMs": 2.1,
+        "totalMs": 5.3
+      },
+      "safety_evaluation": {
+        "count": 3,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.4,
+        "maxMs": 0.4,
+        "totalMs": 0.6
+      },
+      "discovery_to_purchase_ready": {
+        "count": 3,
+        "minMs": 1.7,
+        "medianMs": 2.2,
+        "p95Ms": 3.5,
+        "maxMs": 3.5,
+        "totalMs": 7.4
+      },
+      "transaction_completion": {
+        "count": 3,
+        "minMs": 3.4,
+        "medianMs": 3.6,
+        "p95Ms": 4.4,
+        "maxMs": 4.4,
+        "totalMs": 11.4
+      },
+      "reconciliation": {
+        "count": 3,
+        "minMs": 1.3,
+        "medianMs": 2.1,
+        "p95Ms": 2.5,
+        "maxMs": 2.5,
+        "totalMs": 5.9
+      }
+    }
+  },
+  "acceptanceSession": {
+    "running": false,
+    "status": {
+      "authorizationExpiresAt": null,
+      "enabled": false,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 1
+      },
+      "remainingBudget": 3100,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 900,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "TraderProcessor.stop",
+      "eligible": 1,
+      "attempts": 1,
+      "successes": 1,
+      "lost": 0,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "9005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 4.2,
+          "medianMs": 4.2,
+          "p95Ms": 4.2,
+          "maxMs": 4.2,
+          "totalMs": 8.4
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 0.5,
+          "medianMs": 0.5,
+          "p95Ms": 0.5,
+          "maxMs": 0.5,
+          "totalMs": 0.5
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 3.5,
+          "medianMs": 3.5,
+          "p95Ms": 3.5,
+          "maxMs": 3.5,
+          "totalMs": 3.5
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 2.3,
+          "medianMs": 2.3,
+          "p95Ms": 2.3,
+          "maxMs": 2.3,
+          "totalMs": 2.3
+        }
+      },
+      "automaticSessionMode": false,
+      "lastTransaction": null,
+      "acceptanceReview": {
+        "requested": false,
+        "ready": false,
+        "count": 1,
+        "reviewBudget": 4000,
+        "minimumProfit": 25,
+        "endReason": "qualifying-candidate-ready",
+        "evaluations": [
+          {
+            "name": "Player 205",
+            "tradeId": "9005",
+            "itemId": 1000009005,
+            "rarity": 151,
+            "price": 900,
+            "response": true,
+            "reason": "qualified-for-review",
+            "netProfitEstimate": 50,
+            "fee": 50,
+            "referencePrice": 1000,
+            "sampleCount": 4,
+            "quoteObservedAt": 1793656583722,
+            "observedAt": 1793656583722,
+            "minimumProfit": 25
+          }
+        ],
+        "last": {
+          "response": true,
+          "purchaseAuthorized": false,
+          "tradeId": "9005",
+          "itemId": 1000009005,
+          "rarity": 151,
+          "name": "Player 205",
+          "price": 900,
+          "netProfitEstimate": 50,
+          "referencePrice": 1000,
+          "fee": 50,
+          "additionalCosts": 0,
+          "reviewedAt": 1793656583722,
+          "quoteObservedAt": 1793656583722,
+          "remainingSeconds": 3559,
+          "maximumExpenditure": 900,
+          "availableCoins": 5000,
+          "remainingBudget": 4000,
+          "inventoryCapacityVerified": true,
+          "valuation": {
+            "source": "native-live-asks",
+            "definitionId": 205,
+            "rarity": 151,
+            "sampleCount": 4,
+            "observedAt": 1793656583722,
+            "comparables": [
+              {
+                "tradeId": "9002051",
+                "price": 1000,
+                "validUntil": 1793660183722
+              },
+              {
+                "tradeId": "9002052",
+                "price": 1000,
+                "validUntil": 1793660183722
+              },
+              {
+                "tradeId": "9002053",
+                "price": 1000,
+                "validUntil": 1793660183722
+              },
+              {
+                "tradeId": "9002054",
+                "price": 1000,
+                "validUntil": 1793660183722
+              }
+            ]
+          }
+        },
+        "result": {
+          "response": true,
+          "eligible": true,
+          "reason": "native-flow-completed",
+          "purchaseAuthorized": true,
+          "wonCount": 1,
+          "observedBalanceChange": 900,
+          "coinsDeducted": 900
+        }
+      },
+      "rejections": {
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "attempts": 1,
+    "coins": 4100,
+    "inventory": [
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4.100000008940697
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793656569722
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4.200000002980232
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793656583722
+      },
+      {
+        "kind": "attempt",
+        "id": "9005",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "9005",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.2999999970197678
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "abStopped",
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 0",
+      "abStopped",
+      "Next action in 4 (secs)",
+      "abStopped"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 4.2,
+        "medianMs": 4.2,
+        "p95Ms": 4.2,
+        "maxMs": 4.2,
+        "totalMs": 8.4
+      },
+      "candidate_parsing": {
+        "count": 2,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "purchase_decision": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "price_evidence": {
+        "count": 1,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "safety_evaluation": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "discovery_to_purchase_ready": {
+        "count": 1,
+        "minMs": 0.5,
+        "medianMs": 0.5,
+        "p95Ms": 0.5,
+        "maxMs": 0.5,
+        "totalMs": 0.5
+      },
+      "transaction_completion": {
+        "count": 1,
+        "minMs": 3.5,
+        "medianMs": 3.5,
+        "p95Ms": 3.5,
+        "maxMs": 3.5,
+        "totalMs": 3.5
+      },
+      "reconciliation": {
+        "count": 1,
+        "minMs": 2.3,
+        "medianMs": 2.3,
+        "p95Ms": 2.3,
+        "maxMs": 2.3,
+        "totalMs": 2.3
+      }
+    }
+  },
+  "passed": true
+}
+{"passed":true,"checks":16}

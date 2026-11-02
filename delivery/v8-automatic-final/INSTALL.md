@@ -1,0 +1,12 @@
+# FC Enhancer v8 AUTOMATIC 27.0.8.0
+
+1. In Chrome, disable other FC Enhancer copies. Open chrome://extensions, enable Developer mode, Load unpacked, and select C:\Users\Ihtisham\Downloads\FC_Enhancer_v8_AUTOMATIC_FINAL_READY_TO_INSTALL. Keep this folder in place. Verify version27.0.8.0.
+2. Reload EA Web App and open Trader. Select your market rarity with no individual player selected. Configure/save: maximum Buy Now100000; minimum estimated net profit15000; per-purchase maximum100000; session budget100000; purchase count1. Preserve additional costs, inventory and native safety settings. Stricter limits are permitted; weaker limits cannot arm automatic buying.
+3. Enable native dynamic Buy Now pricing for valuation. Purchasing remains OFF until you deliberately check **Enable automatic purchasing for this session**.
+4. When you intend a real automatic session, check that separate control and press Start universal discovery. The extension decides which card qualifies; no per-card approval is required. Session permission expires five minutes after enablement. Stop, reload, emergency disable or a safety failure revokes permission.
+5. Candidate economics shows resale estimate, fees, costs, net estimate, required profit and exact rejection. Missing/stale evidence cannot authorize spending. The separate transaction result shows player, trade, price, estimated resale/profit, ownership confirmation and observed updated coin balance.
+6. At most ONE confirmed purchase is allowed. After native transaction, inventory and coin reconciliation confirm ownership, Trader stops and holds the card unassigned. An uncertain result also stops; do not retry blindly. Existing explicit reconciliation requires authoritative native evidence before clearing an unresolved journal.
+
+If no card qualifies, the bounded session ends without a purchase. You must deliberately authorize any later session again. A positive estimate is not a purchase confirmation or guaranteed realized profit. Fresh-window remaining time does not prove creation time; bounded scanning cannot prove exhaustive market coverage.
+
+Development verification uses isolated synthetic transactions, never your account for purchasing. Actual EA purchasing remains unverified until you personally authorize and run a session. The old per-card development acceptance flow is hidden in this build; historical packages remain unchanged.

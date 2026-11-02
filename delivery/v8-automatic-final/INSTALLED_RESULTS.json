@@ -1,0 +1,316 @@
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "realPurchases": 0,
+  "checks": [
+    {
+      "name": "clean installed version 27.0.8.0",
+      "passed": true
+    },
+    {
+      "name": "separate automatic purchase control defaults OFF",
+      "passed": true
+    },
+    {
+      "name": "native rarity 12 selectable and purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "native rarity 72 selectable and purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "native rarity 151 selectable and purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "Start with automatic mode OFF cannot purchase",
+      "passed": true
+    },
+    {
+      "name": "deliberate trusted enablement authorizes only this synthetic session",
+      "passed": true
+    },
+    {
+      "name": "individual card approval controls are hidden",
+      "passed": true
+    },
+    {
+      "name": "production discovery-to-native-buy simulation confirms exactly one purchase",
+      "passed": true
+    },
+    {
+      "name": "Trader stops immediately after confirmation with authorization OFF",
+      "passed": true
+    },
+    {
+      "name": "transaction display has valid readable text",
+      "passed": true
+    },
+    {
+      "name": "result directly shows player, price, resale, profit, inventory and updated balance",
+      "passed": true
+    },
+    {
+      "name": "no per-card consent was granted",
+      "passed": true
+    },
+    {
+      "name": "reload never restores automatic authorization",
+      "passed": true
+    },
+    {
+      "name": "zero external requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "version": "27.0.8.0",
+  "session": {
+    "running": false,
+    "status": {
+      "authorizationExpiresAt": 1793657021250,
+      "enabled": false,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 15000,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 100000,
+        "maxPurchases": 1
+      },
+      "remainingBudget": 0,
+      "lastEconomics": {
+        "response": true,
+        "fee": 6250,
+        "netProceeds": 118750,
+        "netProfit": 18750,
+        "referencePrice": 125000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 100000,
+      "budget": 100000,
+      "reconciliationRequired": false,
+      "reason": "one-confirmed-purchase-complete",
+      "eligible": 1,
+      "attempts": 1,
+      "successes": 1,
+      "lost": 0,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 18750
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 1,
+          "minMs": 2.7,
+          "medianMs": 2.7,
+          "p95Ms": 2.7,
+          "maxMs": 2.7,
+          "totalMs": 2.7
+        },
+        "candidate_parsing": {
+          "count": 1,
+          "minMs": 0.3,
+          "medianMs": 0.3,
+          "p95Ms": 0.3,
+          "maxMs": 0.3,
+          "totalMs": 0.3
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.2,
+          "medianMs": 0.2,
+          "p95Ms": 0.2,
+          "maxMs": 0.2,
+          "totalMs": 0.2
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 1.9,
+          "medianMs": 1.9,
+          "p95Ms": 1.9,
+          "maxMs": 1.9,
+          "totalMs": 1.9
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 2.5,
+          "medianMs": 2.5,
+          "p95Ms": 2.5,
+          "maxMs": 2.5,
+          "totalMs": 2.5
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 4.1,
+          "medianMs": 4.1,
+          "p95Ms": 4.1,
+          "maxMs": 4.1,
+          "totalMs": 4.1
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 1.4,
+          "medianMs": 1.4,
+          "p95Ms": 1.4,
+          "maxMs": 1.4,
+          "totalMs": 1.4
+        }
+      },
+      "automaticSessionMode": true,
+      "lastTransaction": {
+        "player": "Player 201",
+        "rarity": "Ultimate Scream",
+        "tradeId": "2001",
+        "purchasePrice": 100000,
+        "referencePrice": 125000,
+        "estimatedNetProfit": 18750,
+        "fee": 6250,
+        "additionalCosts": 0,
+        "result": "CONFIRMED OWNED",
+        "reason": "native-flow-completed",
+        "inventoryConfirmed": true,
+        "updatedBalance": 150000,
+        "at": 1793656732250
+      },
+      "acceptanceReview": null,
+      "rejections": {
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "attempts": 1,
+    "coins": 150000,
+    "inventory": [
+      201
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 100000
+        },
+        "elapsedMs": 2.5999999940395355
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 125000,
+        "at": 1793656728250
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 100000,
+        "coinsBefore": 250000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 150000,
+        "elapsedMs": 2.7000000029802322
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=100000 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "abStopped"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 1,
+        "minMs": 2.7,
+        "medianMs": 2.7,
+        "p95Ms": 2.7,
+        "maxMs": 2.7,
+        "totalMs": 2.7
+      },
+      "candidate_parsing": {
+        "count": 1,
+        "minMs": 0.3,
+        "medianMs": 0.3,
+        "p95Ms": 0.3,
+        "maxMs": 0.3,
+        "totalMs": 0.3
+      },
+      "purchase_decision": {
+        "count": 1,
+        "minMs": 0.2,
+        "medianMs": 0.2,
+        "p95Ms": 0.2,
+        "maxMs": 0.2,
+        "totalMs": 0.2
+      },
+      "price_evidence": {
+        "count": 1,
+        "minMs": 1.9,
+        "medianMs": 1.9,
+        "p95Ms": 1.9,
+        "maxMs": 1.9,
+        "totalMs": 1.9
+      },
+      "safety_evaluation": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "discovery_to_purchase_ready": {
+        "count": 1,
+        "minMs": 2.5,
+        "medianMs": 2.5,
+        "p95Ms": 2.5,
+        "maxMs": 2.5,
+        "totalMs": 2.5
+      },
+      "transaction_completion": {
+        "count": 1,
+        "minMs": 4.1,
+        "medianMs": 4.1,
+        "p95Ms": 4.1,
+        "maxMs": 4.1,
+        "totalMs": 4.1
+      },
+      "reconciliation": {
+        "count": 1,
+        "minMs": 1.4,
+        "medianMs": 1.4,
+        "p95Ms": 1.4,
+        "maxMs": 1.4,
+        "totalMs": 1.4
+      }
+    }
+  },
+  "display": "Transaction CONFIRMED OWNED · Player 201 · Ultimate Scream · Trade 2001 · Purchase price 100000 · Estimated resale 125000 · Fee 6250 · Costs 0 · Estimated net profit 18750 · Inventory CONFIRMED · Updated coin balance 150000 · native-flow-completed",
+  "passed": true
+}

@@ -1,0 +1,126 @@
+{
+  "measurement": "performance.now wall time in actual production modules against synthetic services; separate live native search sample",
+  "productionRateAndDelayFactoriesUnchanged": true,
+  "nativeTimerSimulation": "test driver simulates scheduling and native waits; production cadence is unchanged",
+  "rollingSampleLimitPerStage": 256,
+  "recordedSessionSnapshots": 16,
+  "stages": {
+    "search_response": {
+      "samples": 17,
+      "rangeOfSessionMediansMs": [
+        2.95,
+        64.517
+      ],
+      "maxObservedMs": 64.517,
+      "installedBrowser": {
+        "count": 2,
+        "minMs": 2.8,
+        "medianMs": 3.5,
+        "p95Ms": 3.5,
+        "maxMs": 3.5,
+        "totalMs": 6.3
+      }
+    },
+    "candidate_parsing": {
+      "samples": 18,
+      "rangeOfSessionMediansMs": [
+        0.017,
+        0.034
+      ],
+      "maxObservedMs": 0.06,
+      "installedBrowser": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      }
+    },
+    "safety_evaluation": {
+      "samples": 15,
+      "rangeOfSessionMediansMs": [
+        14.757,
+        15.149
+      ],
+      "maxObservedMs": 17.127,
+      "installedBrowser": {
+        "count": 4,
+        "minMs": 1.5,
+        "medianMs": 2,
+        "p95Ms": 2,
+        "maxMs": 2,
+        "totalMs": 7.4
+      }
+    },
+    "purchase_decision": {
+      "samples": 18,
+      "rangeOfSessionMediansMs": [
+        0.027,
+        0.207
+      ],
+      "maxObservedMs": 0.504,
+      "installedBrowser": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0.2,
+        "p95Ms": 0.2,
+        "maxMs": 0.2,
+        "totalMs": 0.4
+      }
+    },
+    "transaction_completion": {
+      "samples": 12,
+      "rangeOfSessionMediansMs": [
+        15.36,
+        307.095
+      ],
+      "maxObservedMs": 307.095,
+      "installedBrowser": {
+        "count": 3,
+        "minMs": 3.6,
+        "medianMs": 4.1,
+        "p95Ms": 5.4,
+        "maxMs": 5.4,
+        "totalMs": 13.1
+      }
+    },
+    "reconciliation": {
+      "samples": 11,
+      "rangeOfSessionMediansMs": [
+        14.649,
+        15.488
+      ],
+      "maxObservedMs": 15.488,
+      "installedBrowser": {
+        "count": 3,
+        "minMs": 1.7,
+        "medianMs": 1.9,
+        "p95Ms": 2,
+        "maxMs": 2,
+        "totalMs": 5.6
+      }
+    },
+    "recovery": {
+      "samples": 5,
+      "rangeOfSessionMediansMs": [
+        0.026,
+        0.067
+      ],
+      "maxObservedMs": 0.067,
+      "installedBrowser": null
+    }
+  },
+  "liveNativeSearch": {
+    "samples": 5,
+    "minMs": 33.1,
+    "medianMs": 558.2,
+    "maxMs": 802.8
+  },
+  "optimization": "Removed one redundant outer safety preview when purchase mode is enabled; coordinator preview and original final native middleware remain enforced.",
+  "scopeNotes": [
+    "Local candidate parsing samples cover qualifying-candidate preparation.",
+    "Recovery is local coordinator disable/status time; native confirmation is timed separately.",
+    "Synthetic completion delays and simulated native waits are not live transaction latency or win probability."
+  ]
+}

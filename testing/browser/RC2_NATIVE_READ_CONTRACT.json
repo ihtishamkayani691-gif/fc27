@@ -1,0 +1,39 @@
+{
+  "readOnly": true,
+  "noPurchasePermit": true,
+  "available": true,
+  "success": true,
+  "responseKeys": [
+    "data",
+    "error",
+    "status",
+    "success"
+  ],
+  "dataKeys": [
+    "itemIds"
+  ],
+  "dataIsArray": false,
+  "dataItemsIsArray": false,
+  "dataItemsCount": null,
+  "matchingTrade": null,
+  "sameAuctionObject": true,
+  "auctionMethods": {
+    "isWon": "function",
+    "isExpired": "function"
+  },
+  "owned": false,
+  "expired": false,
+  "coinType": "number",
+  "coinIsSafeInteger": true,
+  "identityContract": {
+    "success": true,
+    "itemIdsIsArray": true,
+    "itemIdType": "number",
+    "acknowledgedMatchingItem": true,
+    "acknowledgementTypes": [
+      "number"
+    ],
+    "itemCount": 1,
+    "auctionTradeIdExactType": "string"
+  }
+}

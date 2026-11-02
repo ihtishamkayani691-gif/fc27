@@ -1,0 +1,21 @@
+'use strict';
+module.exports=function(module,exports,require){
+ const {createExecution}=require(99017),base=require(99019),policy=require(99014).policy;
+ const guard=globalThis[Symbol.for('fcEnhancer.v8.executionGuard')],connection=guard?.connect?.();
+ const storage={getItem:key=>globalThis.localStorage.getItem(key),setItem:(key,value)=>globalThis.localStorage.setItem(key,value)};
+ const {createStateReader,hydrateNativeItem}=require(99020),metrics=require(99021);
+ const readBalance=()=>typeof services!=='undefined'?services.User?.getUser()?.coins?.amount:undefined;
+ const confirm=createStateReader({native:require(13808),readBalance,resolveItem:(id,tradeId)=>typeof repositories!=='undefined'?hydrateNativeItem({repository:repositories.Item,service:services.Item,observableToPromise:require(27988).observableToPromise},id,tradeId):null});
+ const engine=createExecution({storage,confirm,preview:(item,options)=>base.preview(item,options),readBalance:()=>typeof services!=='undefined'?services.User?.getUser()?.coins?.amount:undefined,guard:connection||{grant(){throw Error('RC-guard-unavailable')},revoke(){}},withLock:fn=>globalThis.navigator?.locks?.request('fcEnhancer-v8-RC-purchase',{ifAvailable:true},lock=>lock?fn():{response:false,reason:'another-Trader-tab-is-executing',purchaseAuthorized:false})??Promise.resolve({response:false,reason:'browser-execution-lock-unavailable',purchaseAuthorized:false})});
+ let controls;const update=()=>controls?.refresh();
+ exports.preview=(...args)=>metrics.measure('safety_evaluation',()=>base.preview(...args));
+ exports.reconcile=async(p,options)=>{try{return await engine.reconcile(p,options)}catch(error){return{response:false,reason:error.message,purchaseAuthorized:false,stop:true}}finally{update()}};
+ exports.arm=(p,options)=>{if(policy.releaseCandidate!==true||!connection||!globalThis.navigator?.locks)return{response:false,reason:'RC-execution-controls-unavailable',purchaseAuthorized:false};const result=engine.arm(p,options);update();return result};
+ exports.disarm=(p,reason)=>{engine.disarm(p,reason);update();Promise.resolve().then(update)};
+ exports.status=engine.status;
+ exports.execute=async(item,options)=>{try{return await engine.execute(item,options)}finally{update()}};
+ exports.reserveNativeCache=(...args)=>engine.reserveNativeCache(...args);
+ exports.beginNativeTransaction=(...args)=>engine.beginNativeTransaction(...args);
+ exports.recordNativeOutcome=(...args)=>engine.recordNativeOutcome(...args);
+ exports.attachControls=(p,near)=>{if(typeof document==='undefined')return;if(!controls)controls=require(99018).createControls(document,exports);controls.mount(p,near)};
+};

@@ -1,0 +1,11 @@
+{
+  "sanitized": true,
+  "scope": "hard-locked RC2 live discovery",
+  "console": "## Console messages\n<no console messages found>",
+  "platformResourceErrorObserved": {
+    "origin": "https://www.ea.com",
+    "resourcePathPrefix": "/akam/",
+    "status": 404,
+    "note": "One cached page resource error was present; no extension exception observed and native market responses succeeded. No platform protection was modified."
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "baseline": "4e3d8d6",
+  "branch": "dev/v8-browser-testing",
+  "build": "FC Enhancer v8 RC2 (purchases OFF by default)",
+  "version": "27.0.3.2",
+  "archive": "FC_Enhancer_v8_RC2.zip",
+  "sha256": "a42b80b7303fad935705dddfff0815e03d58eca9f22f50c645dd3e54c1dea49a",
+  "bytes": 1996987,
+  "filesMatchTestedBuild": 26,
+  "manifestResourcesChecked": 12,
+  "purchasingOffByDefault": true,
+  "realPurchases": 0,
+  "realBids": 0,
+  "priorArchivesUnchanged": {
+    "lockedTest": [
+      "delivery/v8/FC_Enhancer_v8_Trader_Validation_TEST.zip",
+      "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4"
+    ],
+    "rc1": [
+      "delivery/v8-rc/FC_Enhancer_v8_RC1_PURCHASING_OFF_DEFAULT.zip",
+      "69d4f0330190cb32a4bf1cb1900d962611c0ccda79cb12f4bbdf2e77360f4bdf"
+    ]
+  },
+  "tests": {
+    "v8": 161,
+    "evaluator": 47,
+    "baseline": 2,
+    "archivedRegression": 74,
+    "total": 284,
+    "existing252Retained": true
+  },
+  "fullSessionEntry": "Actual TraderProcessor.start/runActions and production native purchase/won middleware",
+  "recordedSessionSnapshots": 16,
+  "browser": {
+    "RC2_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 11
+    },
+    "RC2_ZIP_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 11
+    },
+    "RC2_MCP_RESULTS": {
+      "passed": true,
+      "checks": null
+    }
+  },
+  "liveDiscovery": [
+    {
+      "testMaximum": 25000,
+      "observedPlayers": 6,
+      "freshCandidates": 0,
+      "stopped": true,
+      "purchaseAttempts": 0
+    },
+    {
+      "testMaximum": 50000,
+      "observedPlayers": 12,
+      "freshCandidates": 1,
+      "stopped": true,
+      "purchaseAttempts": 0
+    }
+  ],
+  "discoveryFactoriesPreserved": [
+    99007,
+    99009,
+    99013,
+    65757,
+    30154
+  ],
+  "liveDiscoveryFactoriesMatchFinalRC2": true,
+  "nativeRefreshAcknowledgementVerifiedReadOnly": true,
+  "productionReady": false,
+  "remainingUnverified": [
+    "Real purchase completion, latency, winning ownership and coin synchronization require separately authorized transaction evidence.",
+    "Live economic profitability and post-purchase inventory/listing effects are not established by synthetic transactions.",
+    "Exhaustive all-player/all-listing coverage and long-duration live soak are unproven.",
+    "If native inventory/targets/history cannot supply the exact old item/trade and coin proof after restart, reconciliation remains locked; no inferred loss or retry."
+  ]
+}

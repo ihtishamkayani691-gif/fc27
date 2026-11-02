@@ -165,3 +165,17 @@ configuration changes and reload disarm it. All automated RC browser tests use
 fresh offline profiles and synthetic native APIs, with HTTP(S) traffic blocked.
 See `delivery/v8-rc/ACCEPTANCE.md` for installation, evidence and what remains
 unverified. This does not authorize live purchases or bids.
+
+## RC2 connected workflow
+
+`npm run build:v8:rc2` creates `.local/v8-rc2` separately. `npm test` retains all
+earlier suites and adds production Trader session simulation, native state
+reconciliation and RC2 installed-extension checks. The simulation never calls a
+real EA purchase endpoint. `testing/v8/RC2_SESSION_RESULTS.json` contains session
+traces; `delivery/v8-rc2` contains the ZIP, full test output, workflow mapping,
+performance data and acceptance report.
+
+RC2 adds an always-available purchase disable control and explicit read-only
+reconciliation while stopped. Reconciliation cannot re-arm or retry purchases.
+All permissions reset OFF after reload. The packaged offline simulation is
+separate from an authenticated account and requires no credentials.

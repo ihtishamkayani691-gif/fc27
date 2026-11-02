@@ -1,0 +1,31 @@
+{
+  "endpoint": "http://127.0.0.1:9222",
+  "liveEA": false,
+  "marketRequestsExecuted": 0,
+  "servers": [
+    {
+      "name": "playwright",
+      "server": {
+        "name": "Playwright",
+        "version": "1.65.0-alpha-2026-10-30"
+      },
+      "toolCount": 25,
+      "browserInspectionTool": "browser_tabs",
+      "browserConnected": true,
+      "passed": true
+    },
+    {
+      "name": "chrome-devtools",
+      "server": {
+        "name": "chrome_devtools",
+        "title": "Chrome DevTools MCP server",
+        "version": "1.12.0"
+      },
+      "toolCount": 37,
+      "browserInspectionTool": "list_pages",
+      "browserConnected": true,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

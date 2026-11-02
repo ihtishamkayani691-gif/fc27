@@ -1,5 +1,47 @@
 # FC Enhancer browser testing
 
+For the subsequent production Trader integration and authenticated discovery
+results, see `V8_PRODUCTION_STATUS.md`. The offline-only limitations and bundle
+descriptions below record the earlier setup stage, not the latest v8 build.
+
+## Verified local Windows setup — 2026-11-01
+
+See `LOCAL_SETUP_RESULTS.md` for the actual local run, which supersedes the
+cloud-only limitations below. From the verified checkout run:
+
+```powershell
+npm.cmd ci --ignore-scripts --registry=https://registry.npmjs.org
+npm.cmd test
+npm.cmd run test:mcp
+npm.cmd run browser:offline
+```
+
+The test runner extracts the tracked source archive, builds the offline v8
+factory integration and supplies Windows paths automatically. Override
+`CHROMIUM_PATH` if Chrome is installed elsewhere. `test:mcp` starts and closes
+its own isolated browser on port 9222; stop `browser:offline` first if it is
+already using that port. The persistent offline browser blocks HTTP(S) with a
+dead proxy and routing. It contains no account data. Stop it with Ctrl+C.
+
+Both MCP servers are registered in the local Codex configuration and were
+verified through real MCP initialization, tool discovery and browser inspection.
+A newly started Codex session can expose those tools; registering servers does
+not inject them into this already-running chat. No sign-in is required.
+
+On local Chrome 156, command-line extension flags produced a worker timeout.
+The supported `Extensions.loadUnpacked` debugging API succeeded, with a
+registered service-worker target and matching runtime manifest. No administrator
+policy was changed. This local result is distinct from the historical cloud
+administrator rejection below.
+
+The new test bundle matches only `https://fc-offline-smoke.invalid/*`, removes
+external host permissions and does not wire v8 into the live EA Trader loop.
+It joins v8 planner and read-only native safety to the real Trader logger for
+explicit synthetic replay. This is an offline integration increment, not a
+finished live v8 release.
+Open the extension's `offline-test.html` resource to run the seven synthetic
+integration checks on its installed origin; `npm.cmd test` does this automatically.
+
 ## Observed cloud support (2026-11-01)
 
 No Playwright MCP or Chrome DevTools MCP tools are exposed to this ChatGPT session.

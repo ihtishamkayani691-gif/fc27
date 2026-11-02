@@ -1,5 +1,8 @@
 # Browser testing status — 2026-11-01
 
+Historical cloud-stage status. Subsequent local Windows production Trader and
+live discovery results are in `V8_PRODUCTION_STATUS.md` and `LIVE_V8_RESULTS.json`.
+
 - Branch: `dev/v8-browser-testing`; no change to main or published environment.
 - Playwright MCP / Chrome DevTools MCP: not exposed to the ChatGPT tool session.
 - Official package CLI help verified: Playwright MCP 0.0.84, DevTools MCP 1.12.0.

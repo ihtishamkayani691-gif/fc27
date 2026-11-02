@@ -1,0 +1,91 @@
+{
+  "scope": "offline-browser-loader-and-explicit-production-module-fixture",
+  "liveEA": false,
+  "accountUsed": false,
+  "marketRequestsExecuted": 0,
+  "extensionInstalled": false,
+  "checks": [
+    {
+      "name": "all manifest resources exist",
+      "passed": true
+    },
+    {
+      "name": "exact content script loads all declared application assets",
+      "passed": true
+    },
+    {
+      "name": "classic vendor executes before classic main",
+      "passed": true
+    },
+    {
+      "name": "loader injects CSS and registers runtime message bridge",
+      "passed": true
+    },
+    {
+      "name": "expected webpack factory capture boundary exists",
+      "passed": true
+    },
+    {
+      "name": "exact production normal Trader Logger renders discovery diagnostics",
+      "passed": true
+    },
+    {
+      "name": "escaped external display text stays text in normal Trader log",
+      "passed": true
+    },
+    {
+      "name": "fixture made no forbidden network/market calls",
+      "passed": true
+    },
+    {
+      "name": "browser reports no page errors",
+      "passed": true
+    },
+    {
+      "name": "browser reports no console errors",
+      "passed": true
+    },
+    {
+      "name": "fixture requests have no transport failures",
+      "passed": true
+    },
+    {
+      "name": "loader requested no unexpected fixture paths",
+      "passed": true
+    }
+  ],
+  "consoleErrors": [],
+  "failedRequests": [],
+  "pageErrors": [],
+  "blockedExternalRequests": 0,
+  "unexpectedFixtureRequests": [],
+  "limitations": [
+    "This fixture does not attempt extension installation; see the separate local registration report.",
+    "App-asset markers test the content loader, not execution of the modern EA-dependent app bundles.",
+    "Only explicitly allowed production factories and supplied mocked dependencies are invoked."
+  ],
+  "browser": "156.0.8078.79",
+  "loaderMarkers": [
+    "/js/index.js",
+    "/js/vendor.js",
+    "/js/main.js"
+  ],
+  "productionFixture": {
+    "checks": [
+      {
+        "name": "exact production normal Trader Logger renders discovery diagnostics",
+        "passed": true
+      },
+      {
+        "name": "escaped external display text stays text in normal Trader log",
+        "passed": true
+      }
+    ],
+    "blockedCalls": 0,
+    "messages": [
+      "[Fresh Listing] Player: Synthetic <Alpha> Trade ID: 9000001 Buy Now: 75000 Remaining: 3559 Newly Discovered: TRUE Snipe Eligible: TRUE buying=DISABLED"
+    ],
+    "moduleCount": 767
+  },
+  "passed": true
+}

@@ -1,0 +1,26 @@
+'use strict';
+module.exports=async function({loadModule,assert,stubs,document,window}){
+ window.DEFAULT_PLAYSTYLE_ID=0;window.ItemSubType={TRAINING_PLAYERSTYLE_GOALKEEPER_5:9};
+ stubs[26735]={UINotificationTypeEnum:{POSITIVE:1,NEGATIVE:2,NEUTRAL:3}};
+ stubs[82125]={getCurrentTimeString:()=> '00:00:00',find:selector=>document.querySelector(selector),htmlToElement:html=>{const t=document.createElement('template');t.innerHTML=html.trim();return t.content.firstElementChild}};
+ stubs[32024]={InMemoryStore:{instance:{get:()=>({commonSetting:{showMilliSecond:false,logTypes:['ALL']}})}}};
+ stubs[27988]={getLocalization:()=>({localizeNumber:String,localizeAuctionTimeRemaining:String})};
+ stubs[22869]={TraderLogType:{ALL:'ALL',INFO:'INFO',WARN:'WARN',ERROR:'ERROR',SUCCESS:'SUCCESS'}};
+ stubs[44669]={translate:key=>key};stubs[99398]={writeBuyPriceGreaterLog(){}};
+ const {OfflineIntegration}=loadModule(99008);
+ const session=new OfflineIntegration({criteria:{type:'player',rarities:[4242]},verifiedRarityIds:[4242],snipeMaximum:900});
+ const auction={tradeId:'900000000000000001',buyNowPrice:700,expires:3559,isExpired:()=>false};
+ const item={_auction:auction,rating:85,preferredPosition:1,playStyle:1,getAuctionData:()=>auction,getStaticData:()=>({name:'Synthetic <Alpha>'})};
+ const settings={buySetting:{buyPrice:900,findBuyPrice:false},searchSetting:{ratingRange:[10,99]}},data={cache:{cachedBids:new Set()}};
+ const replay=()=>session.replay({intentId:session.next().id,items:[item],settings,data,safetyOptions:{balance:10000}});
+ const result=await replay();
+ assert('bundled v8 planner and native safety evaluate synthetic item',result.records[0].safety.status==='pass',JSON.stringify(result.records[0].safety));
+ assert('v8 integration cannot authorize purchase',result.purchaseAuthorized===false&&result.records[0].safety.purchaseAuthorized===false&&data.cache.cachedBids.size===0);
+ const duplicate=await replay();assert('v8 integration deduplicates repeated trade IDs',duplicate.records.length===0);
+ await new Promise(resolve=>window.setTimeout(resolve,100));
+ const message=document.querySelector('.process-log-messages .message');
+ assert('integrated v8 output reaches the production Trader logger',message?.textContent.includes('[v8 OFFLINE]')&&message.textContent.includes('buying=DISABLED'));
+ assert('integrated player display text is escaped',message.textContent.includes('Synthetic <Alpha>')&&message.querySelector('alpha')===null);
+ session.stop();assert('stopped integration produces no further intents',session.next()===null);
+ assert('offline integration reports incomplete live coverage',result.diagnostics.coverageComplete===false&&result.liveDiscoveryProven===false);
+};

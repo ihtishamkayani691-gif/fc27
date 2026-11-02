@@ -1,6 +1,6 @@
 'use strict';
 // Offline browser renderer/loader smoke. No extension installation is attempted:
-// administrator policy blocks that operation in this environment.
+// Installed-extension registration is tested separately; this harness uses inert assets.
 // CLI: node renderer-smoke.cjs EXTENSION_DIR [SELF_CONTAINED_FIXTURE.cjs] [REPORT.json]
 const fs=require('node:fs'),path=require('node:path');
 let chromium;for(const p of ['playwright','/opt/codex/runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright']){try{({chromium}=require(p));break}catch{}}
@@ -8,7 +8,7 @@ if(!chromium)throw Error('Playwright required');
 const extension=path.resolve(process.argv[2]||'/workspace/fc-enhancer-v72/patched');
 const fixturePath=process.argv[3]?path.resolve(process.argv[3]):null;
 const reportPath=path.resolve(process.argv[4]||path.join(__dirname,'RENDERER_RESULTS.json'));
-const report={scope:'offline-browser-loader-and-explicit-production-module-fixture',liveEA:false,accountUsed:false,marketRequestsExecuted:0,extensionInstalled:false,checks:[],consoleErrors:[],failedRequests:[],pageErrors:[],blockedExternalRequests:0,unexpectedFixtureRequests:[],limitations:['Unpacked extension installation is disabled by administrator policy; no policy bypass attempted.','App-asset markers test the content loader, not execution of the modern EA-dependent app bundles.','Only explicitly allowed production factories and supplied mocked dependencies are invoked.']};
+const report={scope:'offline-browser-loader-and-explicit-production-module-fixture',liveEA:false,accountUsed:false,marketRequestsExecuted:0,extensionInstalled:false,checks:[],consoleErrors:[],failedRequests:[],pageErrors:[],blockedExternalRequests:0,unexpectedFixtureRequests:[],limitations:['This fixture does not attempt extension installation; see the separate local registration report.','App-asset markers test the content loader, not execution of the modern EA-dependent app bundles.','Only explicitly allowed production factories and supplied mocked dependencies are invoked.']};
 function check(name,condition,detail){report.checks.push({name,passed:!!condition,...(detail?{detail}:{})});if(!condition)throw Error(name)}
 (async()=>{let browser;
  try{
@@ -46,7 +46,7 @@ function check(name,condition,detail){report.checks.push({name,passed:!!conditio
   await page.addScriptTag({content:main.slice(0,end)+';globalThis.__fcProductionFactories=a;})();'});
   const fixture=fixturePath?require(fixturePath):null;
   const result=await page.evaluate(async fixtureSource=>{
-   const checks=[],stubs={},cache=new Map(),allowed=new Set([99007,99008,99009,99010,51477]);let blockedCalls=0;
+   const checks=[],stubs={},cache=new Map(),allowed=new Set([99007,99008,99009,99010,51477,72316,93727,39887,10270,30804]);let blockedCalls=0;
    const assert=(name,condition,detail)=>{checks.push({name,passed:!!condition,...(detail?{detail}:{})});if(!condition)throw Error(name)};
    const loadModule=id=>{
     id=Number(id);if(Object.prototype.hasOwnProperty.call(stubs,id))return stubs[id];

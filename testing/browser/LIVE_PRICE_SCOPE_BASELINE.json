@@ -1,0 +1,2278 @@
+{
+  "scope": "authenticated-native-Trader-discovery-validation",
+  "buyingEnabled": false,
+  "realPurchasingAuthorized": false,
+  "observations": [
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 3,
+        "leafScopeCount": 2,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 1,
+        "tick": 1,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-2",
+            "minBuy": 0,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-3",
+            "minBuy": 49750,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 5,
+        "leafScopeCount": 3,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 2,
+        "tick": 2,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-3",
+            "minBuy": 49750,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-4",
+            "minBuy": 0,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-5",
+            "minBuy": 24750,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 7,
+        "leafScopeCount": 4,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 3,
+        "tick": 3,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-4",
+            "minBuy": 0,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-5",
+            "minBuy": 24750,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-6",
+            "minBuy": 49750,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-7",
+            "minBuy": 74000,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 9,
+        "leafScopeCount": 5,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 4,
+        "tick": 4,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-5",
+            "minBuy": 24750,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-6",
+            "minBuy": 49750,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-7",
+            "minBuy": 74000,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 11,
+        "leafScopeCount": 6,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 5,
+        "tick": 5,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-6",
+            "minBuy": 49750,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-7",
+            "minBuy": 74000,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 13,
+        "leafScopeCount": 7,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 6,
+        "tick": 6,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-7",
+            "minBuy": 74000,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 15,
+        "leafScopeCount": 8,
+        "observedLeafScopeCount": 0,
+        "intentsIssued": 7,
+        "tick": 7,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 15,
+        "leafScopeCount": 8,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 8,
+        "tick": 8,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 15,
+        "leafScopeCount": 8,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 9,
+        "tick": 9,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 15,
+        "leafScopeCount": 8,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 10,
+        "tick": 10,
+        "pendingIntentId": "intent-10",
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-9",
+            "minBuy": 12250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-10",
+            "minBuy": 24750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 19,
+        "leafScopeCount": 10,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 11,
+        "tick": 11,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-11",
+            "minBuy": 37000,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-16",
+            "minBuy": 12250,
+            "maxBuy": 18500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-17",
+            "minBuy": 18250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-18",
+            "minBuy": 24750,
+            "maxBuy": 31000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-19",
+            "minBuy": 30750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 21,
+        "leafScopeCount": 11,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 12,
+        "tick": 12,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-12",
+            "minBuy": 49750,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-16",
+            "minBuy": 12250,
+            "maxBuy": 18500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-17",
+            "minBuy": 18250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-18",
+            "minBuy": 24750,
+            "maxBuy": 31000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-19",
+            "minBuy": 30750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-20",
+            "minBuy": 37000,
+            "maxBuy": 43500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-21",
+            "minBuy": 43250,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 23,
+        "leafScopeCount": 12,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 13,
+        "tick": 13,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-13",
+            "minBuy": 61500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-16",
+            "minBuy": 12250,
+            "maxBuy": 18500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-17",
+            "minBuy": 18250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-18",
+            "minBuy": 24750,
+            "maxBuy": 31000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-19",
+            "minBuy": 30750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-20",
+            "minBuy": 37000,
+            "maxBuy": 43500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-21",
+            "minBuy": 43250,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-22",
+            "minBuy": 49750,
+            "maxBuy": 55500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-23",
+            "minBuy": 55000,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 25,
+        "leafScopeCount": 13,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 14,
+        "tick": 14,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-14",
+            "minBuy": 74000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-16",
+            "minBuy": 12250,
+            "maxBuy": 18500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-17",
+            "minBuy": 18250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-18",
+            "minBuy": 24750,
+            "maxBuy": 31000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-19",
+            "minBuy": 30750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-20",
+            "minBuy": 37000,
+            "maxBuy": 43500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-21",
+            "minBuy": 43250,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-22",
+            "minBuy": 49750,
+            "maxBuy": 55500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-23",
+            "minBuy": 55000,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-24",
+            "minBuy": 61500,
+            "maxBuy": 68000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-25",
+            "minBuy": 67500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "running": true,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "maximum": 100000,
+      "planner": {
+        "mode": "native-price-scopes",
+        "allPlayerIntent": true,
+        "selectedRarityIds": [
+          151
+        ],
+        "fixedSnipeMaximum": 100000,
+        "effectiveSearchMaximum": 100000,
+        "nativeMinimum": 0,
+        "restrictedNativeFields": [
+          "ovrMin",
+          "ovrMax"
+        ],
+        "allSelectedPromoPlayersUnrestricted": false,
+        "scopeCount": 27,
+        "leafScopeCount": 14,
+        "observedLeafScopeCount": 1,
+        "intentsIssued": 15,
+        "tick": 15,
+        "pendingIntentId": null,
+        "lastCapacityProvenance": "wire",
+        "responseCapacityObserved": true,
+        "incompleteReasons": [
+          "server-ordering-and-range-boundary-semantics-unverified",
+          "preserved-native-filters-restrict-player-coverage"
+        ],
+        "coverageComplete": false,
+        "liveDiscoveryProven": false,
+        "scopes": [
+          {
+            "id": "price-scope-8",
+            "minBuy": 0,
+            "maxBuy": 12500,
+            "visits": 1,
+            "acceptedVisits": 1,
+            "lastRawCount": 0,
+            "lastCapacity": 21,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 8,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-15",
+            "minBuy": 86500,
+            "maxBuy": 100000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-16",
+            "minBuy": 12250,
+            "maxBuy": 18500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-17",
+            "minBuy": 18250,
+            "maxBuy": 25000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-18",
+            "minBuy": 24750,
+            "maxBuy": 31000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-19",
+            "minBuy": 30750,
+            "maxBuy": 37250,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-20",
+            "minBuy": 37000,
+            "maxBuy": 43500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-21",
+            "minBuy": 43250,
+            "maxBuy": 50000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-22",
+            "minBuy": 49750,
+            "maxBuy": 55500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-23",
+            "minBuy": 55000,
+            "maxBuy": 62000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-24",
+            "minBuy": 61500,
+            "maxBuy": 68000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-25",
+            "minBuy": 67500,
+            "maxBuy": 74500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-26",
+            "minBuy": 74000,
+            "maxBuy": 80500,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          },
+          {
+            "id": "price-scope-27",
+            "minBuy": 80000,
+            "maxBuy": 87000,
+            "visits": 0,
+            "acceptedVisits": 0,
+            "lastRawCount": null,
+            "lastCapacity": null,
+            "lastFreshCount": 0,
+            "lastNewFreshCount": 0,
+            "nextEligibleTick": 0,
+            "terminalReason": null
+          }
+        ]
+      },
+      "nativeBidInterlockInstalled": true,
+      "blockedMutationAttempts": 0
+    }
+  ],
+  "logs": [
+    "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=100000 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=0 maxBuy=100000 minSec=45 maxSec=51 minPrice=24000 maxPrice=95000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=3 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=0 maxBuy=50000 minSec=46 maxSec=62 minPrice=17000 maxPrice=47750 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=5 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=49750 maxBuy=100000 minSec=45 maxSec=87 minPrice=49750 maxPrice=73000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=7 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=0 maxBuy=25000 minSec=45 maxSec=99 minPrice=16500 maxPrice=23750 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=9 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=24750 maxBuy=50000 minSec=45 maxSec=66 minPrice=25250 maxPrice=48750 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=11 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=49750 maxBuy=74500 minSec=49 maxSec=103 minPrice=50500 maxPrice=74500 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=13 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=74000 maxBuy=100000 minSec=45 maxSec=99 minPrice=74000 maxPrice=100000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=15 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=0 minBuy=0 maxBuy=12500 minSec=unknown maxSec=unknown minPrice=unknown maxPrice=unknown observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=15 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=0 maxBuy=100000 minSec=44 maxSec=55 minPrice=17000 maxPrice=100000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=15 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=12250 maxBuy=25000 minSec=44 maxSec=119 minPrice=16500 maxPrice=24750 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=17 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=24750 maxBuy=37250 minSec=44 maxSec=77 minPrice=24750 maxPrice=36750 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=19 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=37000 maxBuy=50000 minSec=57 maxSec=149 minPrice=38000 maxPrice=48000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=21 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=49750 maxBuy=62000 minSec=48 maxSec=147 minPrice=50500 maxPrice=60500 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=23 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=61500 maxBuy=74500 minSec=69 maxSec=274 minPrice=62500 maxPrice=74000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=25 coverageComplete=false buying=DISABLED",
+    "[v8] state=DISCOVERY page=1 count=21 minBuy=74000 maxBuy=87000 minSec=47 maxSec=128 minPrice=75000 maxPrice=87000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=27 coverageComplete=false buying=DISABLED"
+  ],
+  "stopped": true
+}

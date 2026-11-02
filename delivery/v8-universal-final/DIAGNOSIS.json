@@ -1,0 +1,120 @@
+{
+  "historicalEvidence": "testing/browser/universal/LIVE_HERO_ACCEPTANCE_PREPARATION.json",
+  "recordedFreshCount": 1,
+  "actualRejection": "profitability-rule-not-configured",
+  "rootCause": "Native buySetting.findBuyPrice was not enabled; required profitability preflight rejected the fresh listing before a valuation could authorize it.",
+  "statusBug": "The bounded-window handler overwrote the last candidate rejection with a generic window-ended result.",
+  "previousSummaryCorrection": "The prior statement that this Hero review had no fresh listing was incorrect. Identity of that historical listing was not retained, and its profitability was not established.",
+  "fixes": [
+    "Preflight checks native valuation before starting searches; no implicit enablement.",
+    "Explicit valuation-only control changes the native rule, disarms and never enables purchasing.",
+    "Candidate identity/reason/economic evidence retained separately from review endReason.",
+    "Exact approval view includes available coins,remaining test budget,inventory proof and comparable valuation evidence; account balances excluded from public reports."
+  ],
+  "regressionEvidence": [
+    "review preflight rejects a disabled native profitability rule before scanning",
+    "review window end preserves the actual candidate rejection and its identity",
+    "installed native valuation control tests"
+  ],
+  "currentLiveOutcomes": [
+    {
+      "rarity": 72,
+      "fresh": 3,
+      "evaluated": 3,
+      "results": [
+        {
+          "name": "Nakata",
+          "tradeId": "620285685782",
+          "itemId": 943266484766,
+          "rarity": 72,
+          "price": 100000,
+          "response": false,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -3100,
+          "fee": 5100,
+          "referencePrice": 102000,
+          "sampleCount": 21,
+          "quoteObservedAt": 1793639540961,
+          "observedAt": 1793639540976,
+          "minimumProfit": 15000
+        },
+        {
+          "name": "Zamorano",
+          "tradeId": "620285613966",
+          "itemId": 947363161064,
+          "rarity": 72,
+          "price": 99500,
+          "response": false,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -5450,
+          "fee": 4950,
+          "referencePrice": 99000,
+          "sampleCount": 21,
+          "quoteObservedAt": 1793639547970,
+          "observedAt": 1793639547986,
+          "minimumProfit": 15000
+        },
+        {
+          "name": "Giuly",
+          "tradeId": "620285592633",
+          "itemId": 947036158286,
+          "rarity": 72,
+          "price": 100000,
+          "response": false,
+          "reason": "stale-response",
+          "netProfitEstimate": null,
+          "fee": null,
+          "referencePrice": null,
+          "sampleCount": 0,
+          "quoteObservedAt": null,
+          "observedAt": 1793639554810,
+          "minimumProfit": 15000
+        }
+      ],
+      "endReason": "candidate-review-limit-reached"
+    },
+    {
+      "rarity": 151,
+      "fresh": 2,
+      "evaluated": 2,
+      "results": [
+        {
+          "name": "Crnogorčević",
+          "tradeId": "620285946892",
+          "itemId": 955476292903,
+          "rarity": 151,
+          "price": 100000,
+          "response": false,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -84088,
+          "fee": 838,
+          "referencePrice": 16750,
+          "sampleCount": 21,
+          "quoteObservedAt": 1793639645002,
+          "observedAt": 1793639645020,
+          "minimumProfit": 15000
+        },
+        {
+          "name": "Laura Pérez",
+          "tradeId": "620285907928",
+          "itemId": 955487406540,
+          "rarity": 151,
+          "price": 100000,
+          "response": false,
+          "reason": "outside-fresh-window",
+          "netProfitEstimate": null,
+          "fee": null,
+          "referencePrice": null,
+          "sampleCount": 0,
+          "quoteObservedAt": null,
+          "observedAt": 1793639645057,
+          "minimumProfit": 15000
+        }
+      ],
+      "endReason": "bounded-review-window-ended"
+    }
+  ],
+  "realPurchaseResult": "PENDING_NO_QUALIFYING_CANDIDATE",
+  "realPurchases": 0,
+  "realBids": 0
+}

@@ -1,0 +1,127 @@
+{
+  "baseline": "14afe0f",
+  "branch": "dev/v8-browser-testing",
+  "version": "27.0.6.0",
+  "archive": "FC_Enhancer_v8_UNIVERSAL_FINAL.zip",
+  "sha256": "1e8bae0b251ed826dab19510babb0f91d0af1126605f783d8c3c142340e5f15e",
+  "bytes": 1998601,
+  "filesMatchTestedBuild": 25,
+  "manifestResourcesChecked": 12,
+  "priorArchivesUnchanged": {
+    "TEST": [
+      "delivery/v8/FC_Enhancer_v8_Trader_Validation_TEST.zip",
+      "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4"
+    ],
+    "RC1": [
+      "delivery/v8-rc/FC_Enhancer_v8_RC1_PURCHASING_OFF_DEFAULT.zip",
+      "69d4f0330190cb32a4bf1cb1900d962611c0ccda79cb12f4bbdf2e77360f4bdf"
+    ],
+    "RC2": [
+      "delivery/v8-rc2/FC_Enhancer_v8_RC2.zip",
+      "a42b80b7303fad935705dddfff0815e03d58eca9f22f50c645dd3e54c1dea49a"
+    ],
+    "FINAL": [
+      "delivery/v8-final/FC_Enhancer_v8_FINAL_RC.zip",
+      "729c404abd37b5bcce18f36a061766b797dfdda8e024c508895172dfae1d0d3c"
+    ],
+    "UNIVERSAL_RC": [
+      "delivery/v8-universal/FC_Enhancer_v8_UNIVERSAL_RC.zip",
+      "3c664256cc0deee947e37ea280039e50a9c4550cc3af516aca5cd8679fdb2f2a"
+    ]
+  },
+  "tests": {
+    "v8": 276,
+    "evaluator": 47,
+    "baseline": 2,
+    "archivedRegression": 74,
+    "total": 399,
+    "allOriginal396Preserved": true
+  },
+  "browser": {
+    "INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 28
+    },
+    "ZIP_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 28
+    },
+    "MCP_RESULTS": {
+      "passed": true,
+      "checks": null
+    }
+  },
+  "simulatedSessionSnapshots": 42,
+  "liveMainMatchesPackagedMain": true,
+  "liveReloadSafe": true,
+  "liveSessions": [
+    {
+      "rarity": 72,
+      "allPlayerCriteria": true,
+      "dynamicPricing": true,
+      "fresh": 3,
+      "evaluated": 3,
+      "reason": "candidate-review-limit-reached",
+      "actualRejections": [
+        {
+          "name": "Nakata",
+          "tradeId": "620285685782",
+          "price": 100000,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -3100
+        },
+        {
+          "name": "Zamorano",
+          "tradeId": "620285613966",
+          "price": 99500,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -5450
+        },
+        {
+          "name": "Giuly",
+          "tradeId": "620285592633",
+          "price": 100000,
+          "reason": "stale-response",
+          "netProfitEstimate": null
+        }
+      ]
+    },
+    {
+      "rarity": 151,
+      "allPlayerCriteria": true,
+      "dynamicPricing": true,
+      "fresh": 2,
+      "evaluated": 2,
+      "reason": "bounded-review-window-ended",
+      "actualRejections": [
+        {
+          "name": "Crnogorčević",
+          "tradeId": "620285946892",
+          "price": 100000,
+          "reason": "minimum-net-profit-not-met",
+          "netProfitEstimate": -84088
+        },
+        {
+          "name": "Laura Pérez",
+          "tradeId": "620285907928",
+          "price": 100000,
+          "reason": "outside-fresh-window",
+          "netProfitEstimate": null
+        }
+      ]
+    }
+  ],
+  "historicalHeroCorrection": "Fresh listing existed; actual rejection profitability-rule-not-configured; prior summary was incorrect.",
+  "limits": {
+    "maximum": 100000,
+    "minimumNetProfit": 15000,
+    "budget": 100000,
+    "maxPurchases": 1
+  },
+  "realPurchases": 0,
+  "realBids": 0,
+  "exactPurchaseApprovalReceived": false,
+  "actualPurchaseAcceptance": "PENDING_NO_QUALIFYING_CANDIDATE",
+  "purchasingOffByDefault": true,
+  "productionReady": false
+}

@@ -1,0 +1,12 @@
+{
+  "authenticated": true,
+  "running": false,
+  "purchasingEnabled": false,
+  "maximum": 0,
+  "purchaseModeChecked": false,
+  "exactConsentChecked": false,
+  "reviewAfterReload": null,
+  "interlockInstalled": true,
+  "blockedMutations": 0,
+  "controlsMounted": true
+}

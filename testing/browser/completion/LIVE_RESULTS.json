@@ -1,0 +1,1994 @@
+{
+  "baseline": "14afe0f",
+  "readOnly": true,
+  "realPurchases": 0,
+  "realBids": 0,
+  "exactApprovalReceived": false,
+  "limits": {
+    "maximum": 100000,
+    "minimumProfit": 15000,
+    "budget": 100000,
+    "maxPurchases": 1
+  },
+  "mainSha256": "d932a08f5ec87baa43eff5a6b5007506416e1760178018d8ace017834162f9a1",
+  "sessions": [
+    {
+      "rarity": 72,
+      "before": {
+        "authenticated": true,
+        "state": {
+          "running": false,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              72
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 0
+          },
+          "filter": {
+            "current": "default",
+            "selected": []
+          },
+          "maximum": 100000,
+          "autoFind": true,
+          "nativeBuyMaximum": 0,
+          "realPurchasingEnabled": false,
+          "nativeDynamicBuyNowPricing": true,
+          "acceptanceReview": null,
+          "status": {
+            "state": "stopped",
+            "freshCount": 0,
+            "rejectedCount": 0,
+            "rejectionReasons": {},
+            "freshCandidates": [],
+            "observedPlayerCount": 0,
+            "freshPlayerCount": 0,
+            "rarityIds": [
+              72
+            ],
+            "rarityLabel": "Base Hero",
+            "configuredMaximum": 100000,
+            "effectiveMaximum": 100000,
+            "executionStatus": "DISABLED"
+          }
+        },
+        "purchaseChecked": false,
+        "consentChecked": false,
+        "blockedMutations": 0,
+        "reviewText": ""
+      },
+      "startedAt": "2026-11-02T17:11:16.305Z",
+      "observations": [
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                72
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 0,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [],
+              "last": null
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                72
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 0,
+              "intentsIssued": 1,
+              "tick": 1,
+              "pendingIntentId": null,
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 0,
+              "rejectedCount": 21,
+              "rejectionReasons": {
+                "Outside fresh window": 21
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 10,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                72
+              ],
+              "rarityLabel": "Base Hero",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Read-only candidate review running; purchasing OFF."
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                72
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 1,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [],
+              "last": null
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                72
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 7,
+              "tick": 7,
+              "pendingIntentId": "intent-7",
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 4,
+                  "acceptedVisits": 4,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 6,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 1,
+              "rejectedCount": 126,
+              "rejectionReasons": {
+                "Outside fresh window": 121,
+                "Duplicate trade ID": 5
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 35,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                72
+              ],
+              "rarityLabel": "Base Hero",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": ""
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                72
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 2,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [
+                {
+                  "name": "Nakata",
+                  "tradeId": "620285685782",
+                  "itemId": 943266484766,
+                  "rarity": 72,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -3100,
+                  "fee": 5100,
+                  "referencePrice": 102000,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639540961,
+                  "observedAt": 1793639540976,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "fee": 5100,
+                "netProceeds": 96900,
+                "netProfit": -3100,
+                "purchaseAuthorized": false
+              }
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                72
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 7,
+              "tick": 7,
+              "pendingIntentId": "intent-7",
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 4,
+                  "acceptedVisits": 4,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 6,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 2,
+              "rejectedCount": 127,
+              "rejectionReasons": {
+                "Outside fresh window": 121,
+                "Duplicate trade ID": 5,
+                "minimum-net-profit-not-met": 1
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 35,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                72
+              ],
+              "rarityLabel": "Base Hero",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": ""
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                72
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 3,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [
+                {
+                  "name": "Nakata",
+                  "tradeId": "620285685782",
+                  "itemId": 943266484766,
+                  "rarity": 72,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -3100,
+                  "fee": 5100,
+                  "referencePrice": 102000,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639540961,
+                  "observedAt": 1793639540976,
+                  "minimumProfit": 15000
+                },
+                {
+                  "name": "Zamorano",
+                  "tradeId": "620285613966",
+                  "itemId": 947363161064,
+                  "rarity": 72,
+                  "price": 99500,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -5450,
+                  "fee": 4950,
+                  "referencePrice": 99000,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639547970,
+                  "observedAt": 1793639547986,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "fee": 4950,
+                "netProceeds": 94050,
+                "netProfit": -5450,
+                "purchaseAuthorized": false
+              }
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                72
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 7,
+              "tick": 7,
+              "pendingIntentId": "intent-7",
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 4,
+                  "acceptedVisits": 4,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 6,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 3,
+              "rejectedCount": 128,
+              "rejectionReasons": {
+                "Outside fresh window": 121,
+                "Duplicate trade ID": 5,
+                "minimum-net-profit-not-met": 2
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 35,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                72
+              ],
+              "rarityLabel": "Base Hero",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": ""
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": false,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                72
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": false,
+              "ready": false,
+              "count": 3,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": "candidate-review-limit-reached",
+              "evaluations": [
+                {
+                  "name": "Nakata",
+                  "tradeId": "620285685782",
+                  "itemId": 943266484766,
+                  "rarity": 72,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -3100,
+                  "fee": 5100,
+                  "referencePrice": 102000,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639540961,
+                  "observedAt": 1793639540976,
+                  "minimumProfit": 15000
+                },
+                {
+                  "name": "Zamorano",
+                  "tradeId": "620285613966",
+                  "itemId": 947363161064,
+                  "rarity": 72,
+                  "price": 99500,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -5450,
+                  "fee": 4950,
+                  "referencePrice": 99000,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639547970,
+                  "observedAt": 1793639547986,
+                  "minimumProfit": 15000
+                },
+                {
+                  "name": "Giuly",
+                  "tradeId": "620285592633",
+                  "itemId": 947036158286,
+                  "rarity": 72,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "stale-response",
+                  "netProfitEstimate": null,
+                  "fee": null,
+                  "referencePrice": null,
+                  "sampleCount": 0,
+                  "quoteObservedAt": null,
+                  "observedAt": 1793639554810,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "stale-response",
+                "purchaseAuthorized": false,
+                "stop": false
+              }
+            },
+            "status": {
+              "state": "stopped",
+              "freshCount": 3,
+              "rejectedCount": 128,
+              "rejectionReasons": {
+                "Outside fresh window": 121,
+                "Duplicate trade ID": 5,
+                "minimum-net-profit-not-met": 2
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 35,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                72
+              ],
+              "rarityLabel": "Base Hero",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": ""
+        }
+      ],
+      "final": {
+        "authenticated": true,
+        "state": {
+          "running": false,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              72
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 0
+          },
+          "filter": {
+            "current": "default",
+            "selected": []
+          },
+          "maximum": 100000,
+          "autoFind": true,
+          "nativeBuyMaximum": 0,
+          "realPurchasingEnabled": false,
+          "nativeDynamicBuyNowPricing": true,
+          "acceptanceReview": {
+            "requested": false,
+            "ready": false,
+            "count": 3,
+            "reviewBudget": 100000,
+            "minimumProfit": 15000,
+            "endReason": "candidate-review-limit-reached",
+            "evaluations": [
+              {
+                "name": "Nakata",
+                "tradeId": "620285685782",
+                "itemId": 943266484766,
+                "rarity": 72,
+                "price": 100000,
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "netProfitEstimate": -3100,
+                "fee": 5100,
+                "referencePrice": 102000,
+                "sampleCount": 21,
+                "quoteObservedAt": 1793639540961,
+                "observedAt": 1793639540976,
+                "minimumProfit": 15000
+              },
+              {
+                "name": "Zamorano",
+                "tradeId": "620285613966",
+                "itemId": 947363161064,
+                "rarity": 72,
+                "price": 99500,
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "netProfitEstimate": -5450,
+                "fee": 4950,
+                "referencePrice": 99000,
+                "sampleCount": 21,
+                "quoteObservedAt": 1793639547970,
+                "observedAt": 1793639547986,
+                "minimumProfit": 15000
+              },
+              {
+                "name": "Giuly",
+                "tradeId": "620285592633",
+                "itemId": 947036158286,
+                "rarity": 72,
+                "price": 100000,
+                "response": false,
+                "reason": "stale-response",
+                "netProfitEstimate": null,
+                "fee": null,
+                "referencePrice": null,
+                "sampleCount": 0,
+                "quoteObservedAt": null,
+                "observedAt": 1793639554810,
+                "minimumProfit": 15000
+              }
+            ],
+            "last": {
+              "response": false,
+              "reason": "stale-response",
+              "purchaseAuthorized": false,
+              "stop": false
+            }
+          },
+          "status": {
+            "state": "stopped",
+            "freshCount": 3,
+            "rejectedCount": 128,
+            "rejectionReasons": {
+              "Outside fresh window": 121,
+              "Duplicate trade ID": 5,
+              "minimum-net-profit-not-met": 2
+            },
+            "freshCandidates": [],
+            "observedPlayerCount": 35,
+            "freshPlayerCount": 0,
+            "rarityIds": [
+              72
+            ],
+            "rarityLabel": "Base Hero",
+            "configuredMaximum": 100000,
+            "effectiveMaximum": 100000,
+            "executionStatus": "DISABLED"
+          }
+        },
+        "purchaseChecked": false,
+        "consentChecked": false,
+        "blockedMutations": 0,
+        "reviewText": ""
+      },
+      "completedAt": "2026-11-02T17:12:37.002Z"
+    },
+    {
+      "rarity": 151,
+      "before": {
+        "authenticated": true,
+        "state": {
+          "running": false,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 0
+          },
+          "filter": {
+            "current": "default",
+            "selected": []
+          },
+          "maximum": 100000,
+          "autoFind": true,
+          "nativeBuyMaximum": 0,
+          "realPurchasingEnabled": false,
+          "nativeDynamicBuyNowPricing": true,
+          "acceptanceReview": {
+            "requested": false,
+            "ready": false,
+            "count": 3,
+            "reviewBudget": 100000,
+            "minimumProfit": 15000,
+            "endReason": "candidate-review-limit-reached",
+            "evaluations": [
+              {
+                "name": "Nakata",
+                "tradeId": "620285685782",
+                "itemId": 943266484766,
+                "rarity": 72,
+                "price": 100000,
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "netProfitEstimate": -3100,
+                "fee": 5100,
+                "referencePrice": 102000,
+                "sampleCount": 21,
+                "quoteObservedAt": 1793639540961,
+                "observedAt": 1793639540976,
+                "minimumProfit": 15000
+              },
+              {
+                "name": "Zamorano",
+                "tradeId": "620285613966",
+                "itemId": 947363161064,
+                "rarity": 72,
+                "price": 99500,
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "netProfitEstimate": -5450,
+                "fee": 4950,
+                "referencePrice": 99000,
+                "sampleCount": 21,
+                "quoteObservedAt": 1793639547970,
+                "observedAt": 1793639547986,
+                "minimumProfit": 15000
+              },
+              {
+                "name": "Giuly",
+                "tradeId": "620285592633",
+                "itemId": 947036158286,
+                "rarity": 72,
+                "price": 100000,
+                "response": false,
+                "reason": "stale-response",
+                "netProfitEstimate": null,
+                "fee": null,
+                "referencePrice": null,
+                "sampleCount": 0,
+                "quoteObservedAt": null,
+                "observedAt": 1793639554810,
+                "minimumProfit": 15000
+              }
+            ],
+            "last": {
+              "response": false,
+              "reason": "stale-response",
+              "purchaseAuthorized": false,
+              "stop": false
+            }
+          },
+          "status": {
+            "state": "stopped",
+            "freshCount": 3,
+            "rejectedCount": 128,
+            "rejectionReasons": {
+              "Outside fresh window": 121,
+              "Duplicate trade ID": 5,
+              "minimum-net-profit-not-met": 2
+            },
+            "freshCandidates": [],
+            "observedPlayerCount": 35,
+            "freshPlayerCount": 0,
+            "rarityIds": [
+              151
+            ],
+            "rarityLabel": "Ultimate Scream",
+            "configuredMaximum": 100000,
+            "effectiveMaximum": 100000,
+            "executionStatus": "DISABLED"
+          }
+        },
+        "purchaseChecked": false,
+        "consentChecked": false,
+        "blockedMutations": 0,
+        "reviewText": ""
+      },
+      "startedAt": "2026-11-02T17:12:40.376Z",
+      "observations": [
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                151
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 0,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [],
+              "last": null
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                151
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 0,
+              "intentsIssued": 1,
+              "tick": 1,
+              "pendingIntentId": null,
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 0,
+              "rejectedCount": 21,
+              "rejectionReasons": {
+                "Outside fresh window": 21
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 12,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                151
+              ],
+              "rarityLabel": "Ultimate Scream",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Read-only candidate review running; purchasing OFF."
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                151
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 1,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [],
+              "last": null
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                151
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 9,
+              "tick": 9,
+              "pendingIntentId": "intent-9",
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 6,
+                  "acceptedVisits": 6,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 8,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 1,
+              "rejectedCount": 178,
+              "rejectionReasons": {
+                "Outside fresh window": 172,
+                "Duplicate trade ID": 6
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 24,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                151
+              ],
+              "rarityLabel": "Ultimate Scream",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Read-only candidate review running; purchasing OFF."
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                151
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 2,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [
+                {
+                  "name": "Crnogorčević",
+                  "tradeId": "620285946892",
+                  "itemId": 955476292903,
+                  "rarity": 151,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -84088,
+                  "fee": 838,
+                  "referencePrice": 16750,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639645002,
+                  "observedAt": 1793639645020,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "fee": 838,
+                "netProceeds": 15912,
+                "netProfit": -84088,
+                "purchaseAuthorized": false
+              }
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                151
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 9,
+              "tick": 9,
+              "pendingIntentId": "intent-9",
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 6,
+                  "acceptedVisits": 6,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 8,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 2,
+              "rejectedCount": 179,
+              "rejectionReasons": {
+                "Outside fresh window": 172,
+                "Duplicate trade ID": 6,
+                "minimum-net-profit-not-met": 1
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 24,
+              "freshPlayerCount": 0,
+              "rarityIds": [
+                151
+              ],
+              "rarityLabel": "Ultimate Scream",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Last review outcome: minimum-net-profit-not-met · Candidate results: Crnogorčević / trade 620285946892 / 100000 coins / minimum-net-profit-not-met / net estimate -84088"
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": true,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                151
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": true,
+              "ready": false,
+              "count": 2,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": null,
+              "evaluations": [
+                {
+                  "name": "Crnogorčević",
+                  "tradeId": "620285946892",
+                  "itemId": 955476292903,
+                  "rarity": 151,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -84088,
+                  "fee": 838,
+                  "referencePrice": 16750,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639645002,
+                  "observedAt": 1793639645020,
+                  "minimumProfit": 15000
+                },
+                {
+                  "name": "Laura Pérez",
+                  "tradeId": "620285907928",
+                  "itemId": 955487406540,
+                  "rarity": 151,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "outside-fresh-window",
+                  "netProfitEstimate": null,
+                  "fee": null,
+                  "referencePrice": null,
+                  "sampleCount": 0,
+                  "quoteObservedAt": null,
+                  "observedAt": 1793639645057,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "outside-fresh-window",
+                "purchaseAuthorized": false,
+                "stop": false
+              }
+            },
+            "planner": {
+              "mode": "native-price-scopes",
+              "allPlayerIntent": true,
+              "selectedRarityIds": [
+                151
+              ],
+              "fixedSnipeMaximum": 100000,
+              "effectiveSearchMaximum": 100000,
+              "nativeMinimum": 0,
+              "restrictedNativeFields": [
+                "ovrMin",
+                "ovrMax"
+              ],
+              "allSelectedPromoPlayersUnrestricted": false,
+              "scopeCount": 4,
+              "leafScopeCount": 3,
+              "observedLeafScopeCount": 1,
+              "intentsIssued": 9,
+              "tick": 9,
+              "pendingIntentId": null,
+              "lastCapacityProvenance": "wire",
+              "responseCapacityObserved": true,
+              "incompleteReasons": [
+                "server-ordering-and-range-boundary-semantics-unverified",
+                "preserved-native-filters-restrict-player-coverage",
+                "crowded-atomic-or-unsplittable-price-band"
+              ],
+              "coverageComplete": false,
+              "liveDiscoveryProven": false,
+              "scopes": [
+                {
+                  "id": "price-scope-2",
+                  "minBuy": 99500,
+                  "maxBuy": 100000,
+                  "visits": 7,
+                  "acceptedVisits": 7,
+                  "lastRawCount": 21,
+                  "lastCapacity": 21,
+                  "lastFreshCount": 2,
+                  "lastNewFreshCount": 2,
+                  "nextEligibleTick": 9,
+                  "terminalReason": "crowded-atomic-or-unsplittable-price-band"
+                },
+                {
+                  "id": "price-scope-3",
+                  "minBuy": 0,
+                  "maxBuy": 50000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                },
+                {
+                  "id": "price-scope-4",
+                  "minBuy": 49750,
+                  "maxBuy": 100000,
+                  "visits": 0,
+                  "acceptedVisits": 0,
+                  "lastRawCount": null,
+                  "lastCapacity": null,
+                  "lastFreshCount": 0,
+                  "lastNewFreshCount": 0,
+                  "nextEligibleTick": 0,
+                  "terminalReason": null
+                }
+              ]
+            },
+            "status": {
+              "state": "running",
+              "freshCount": 2,
+              "rejectedCount": 189,
+              "rejectionReasons": {
+                "Outside fresh window": 180,
+                "Duplicate trade ID": 7,
+                "minimum-net-profit-not-met": 1,
+                "outside-fresh-window": 1
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 24,
+              "freshPlayerCount": 2,
+              "rarityIds": [
+                151
+              ],
+              "rarityLabel": "Ultimate Scream",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Last review outcome: outside-fresh-window · Candidate results: Crnogorčević / trade 620285946892 / 100000 coins / minimum-net-profit-not-met / net estimate -84088; Laura Pérez / trade 620285907928 / 100000 coins / outside-fresh-window / net estimate unavailable"
+        },
+        {
+          "authenticated": true,
+          "state": {
+            "running": false,
+            "criteria": {
+              "type": "player",
+              "rarities": [
+                151
+              ],
+              "defId": [],
+              "maskedDefId": 0,
+              "minBuy": 0,
+              "maxBuy": 0
+            },
+            "filter": {
+              "current": "default",
+              "selected": []
+            },
+            "maximum": 100000,
+            "autoFind": true,
+            "nativeBuyMaximum": 0,
+            "realPurchasingEnabled": false,
+            "nativeDynamicBuyNowPricing": true,
+            "acceptanceReview": {
+              "requested": false,
+              "ready": false,
+              "count": 2,
+              "reviewBudget": 100000,
+              "minimumProfit": 15000,
+              "endReason": "bounded-review-window-ended",
+              "evaluations": [
+                {
+                  "name": "Crnogorčević",
+                  "tradeId": "620285946892",
+                  "itemId": 955476292903,
+                  "rarity": 151,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "minimum-net-profit-not-met",
+                  "netProfitEstimate": -84088,
+                  "fee": 838,
+                  "referencePrice": 16750,
+                  "sampleCount": 21,
+                  "quoteObservedAt": 1793639645002,
+                  "observedAt": 1793639645020,
+                  "minimumProfit": 15000
+                },
+                {
+                  "name": "Laura Pérez",
+                  "tradeId": "620285907928",
+                  "itemId": 955487406540,
+                  "rarity": 151,
+                  "price": 100000,
+                  "response": false,
+                  "reason": "outside-fresh-window",
+                  "netProfitEstimate": null,
+                  "fee": null,
+                  "referencePrice": null,
+                  "sampleCount": 0,
+                  "quoteObservedAt": null,
+                  "observedAt": 1793639645057,
+                  "minimumProfit": 15000
+                }
+              ],
+              "last": {
+                "response": false,
+                "reason": "outside-fresh-window",
+                "purchaseAuthorized": false,
+                "stop": false
+              }
+            },
+            "status": {
+              "state": "stopped",
+              "freshCount": 2,
+              "rejectedCount": 267,
+              "rejectionReasons": {
+                "Outside fresh window": 256,
+                "Duplicate trade ID": 9,
+                "minimum-net-profit-not-met": 1,
+                "outside-fresh-window": 1
+              },
+              "freshCandidates": [],
+              "observedPlayerCount": 24,
+              "freshPlayerCount": 2,
+              "rarityIds": [
+                151
+              ],
+              "rarityLabel": "Ultimate Scream",
+              "configuredMaximum": 100000,
+              "effectiveMaximum": 100000,
+              "executionStatus": "DISABLED"
+            }
+          },
+          "purchaseChecked": false,
+          "consentChecked": false,
+          "blockedMutations": 0,
+          "reviewText": "Last review outcome: outside-fresh-window · Review ended: bounded-review-window-ended · Candidates evaluated: 2 · Planned test budget 100000 · Minimum net profit 15000 · Candidate results: Crnogorčević / trade 620285946892 / 100000 coins / minimum-net-profit-not-met / net estimate -84088; Laura Pérez / trade 620285907928 / 100000 coins / outside-fresh-window / net estimate unavailable"
+        }
+      ],
+      "final": {
+        "authenticated": true,
+        "state": {
+          "running": false,
+          "criteria": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "maskedDefId": 0,
+            "minBuy": 0,
+            "maxBuy": 0
+          },
+          "filter": {
+            "current": "default",
+            "selected": []
+          },
+          "maximum": 100000,
+          "autoFind": true,
+          "nativeBuyMaximum": 0,
+          "realPurchasingEnabled": false,
+          "nativeDynamicBuyNowPricing": true,
+          "acceptanceReview": {
+            "requested": false,
+            "ready": false,
+            "count": 2,
+            "reviewBudget": 100000,
+            "minimumProfit": 15000,
+            "endReason": "bounded-review-window-ended",
+            "evaluations": [
+              {
+                "name": "Crnogorčević",
+                "tradeId": "620285946892",
+                "itemId": 955476292903,
+                "rarity": 151,
+                "price": 100000,
+                "response": false,
+                "reason": "minimum-net-profit-not-met",
+                "netProfitEstimate": -84088,
+                "fee": 838,
+                "referencePrice": 16750,
+                "sampleCount": 21,
+                "quoteObservedAt": 1793639645002,
+                "observedAt": 1793639645020,
+                "minimumProfit": 15000
+              },
+              {
+                "name": "Laura Pérez",
+                "tradeId": "620285907928",
+                "itemId": 955487406540,
+                "rarity": 151,
+                "price": 100000,
+                "response": false,
+                "reason": "outside-fresh-window",
+                "netProfitEstimate": null,
+                "fee": null,
+                "referencePrice": null,
+                "sampleCount": 0,
+                "quoteObservedAt": null,
+                "observedAt": 1793639645057,
+                "minimumProfit": 15000
+              }
+            ],
+            "last": {
+              "response": false,
+              "reason": "outside-fresh-window",
+              "purchaseAuthorized": false,
+              "stop": false
+            }
+          },
+          "status": {
+            "state": "stopped",
+            "freshCount": 2,
+            "rejectedCount": 267,
+            "rejectionReasons": {
+              "Outside fresh window": 256,
+              "Duplicate trade ID": 9,
+              "minimum-net-profit-not-met": 1,
+              "outside-fresh-window": 1
+            },
+            "freshCandidates": [],
+            "observedPlayerCount": 24,
+            "freshPlayerCount": 2,
+            "rarityIds": [
+              151
+            ],
+            "rarityLabel": "Ultimate Scream",
+            "configuredMaximum": 100000,
+            "effectiveMaximum": 100000,
+            "executionStatus": "DISABLED"
+          }
+        },
+        "purchaseChecked": false,
+        "consentChecked": false,
+        "blockedMutations": 0,
+        "reviewText": "Last review outcome: outside-fresh-window · Review ended: bounded-review-window-ended · Candidates evaluated: 2 · Planned test budget 100000 · Minimum net profit 15000 · Candidate results: Crnogorčević / trade 620285946892 / 100000 coins / minimum-net-profit-not-met / net estimate -84088; Laura Pérez / trade 620285907928 / 100000 coins / outside-fresh-window / net estimate unavailable"
+      },
+      "completedAt": "2026-11-02T17:14:47.721Z"
+    }
+  ],
+  "metadata": {
+    "source": "native DataProvider",
+    "cacheExpired": false,
+    "all": [
+      {
+        "id": -1,
+        "label": "Any",
+        "value": -1
+      },
+      {
+        "id": 0,
+        "label": "Common",
+        "value": 0
+      },
+      {
+        "id": 9,
+        "label": "Base Hall of FUT",
+        "value": 9
+      },
+      {
+        "id": 72,
+        "label": "Base Hero",
+        "value": 72
+      },
+      {
+        "id": 12,
+        "label": "Base Icon",
+        "value": 12
+      },
+      {
+        "id": 160,
+        "label": "Debut International Icon",
+        "value": 160
+      },
+      {
+        "id": 22,
+        "label": "Destined for Glory",
+        "value": 22
+      },
+      {
+        "id": 103,
+        "label": "FC Heritage",
+        "value": 103
+      },
+      {
+        "id": 19,
+        "label": "FUT Champions",
+        "value": 19
+      },
+      {
+        "id": 71,
+        "label": "Future Stars",
+        "value": 71
+      },
+      {
+        "id": 150,
+        "label": "Ones to Watch",
+        "value": 150
+      },
+      {
+        "id": 42,
+        "label": "POTM Bundesliga",
+        "value": 42
+      },
+      {
+        "id": 86,
+        "label": "POTM LALIGA EA SPORTS",
+        "value": 86
+      },
+      {
+        "id": 177,
+        "label": "POTM LIGA F",
+        "value": 177
+      },
+      {
+        "id": 79,
+        "label": "POTM Ligue 1",
+        "value": 79
+      },
+      {
+        "id": 43,
+        "label": "POTM Premier League",
+        "value": 43
+      },
+      {
+        "id": 114,
+        "label": "POTM Serie A",
+        "value": 114
+      },
+      {
+        "id": 58,
+        "label": "Showdown",
+        "value": 58
+      },
+      {
+        "id": 57,
+        "label": "Showdown Upgrade",
+        "value": 57
+      },
+      {
+        "id": 87,
+        "label": "Squad Foundations",
+        "value": 87
+      },
+      {
+        "id": 8,
+        "label": "Star Performer",
+        "value": 8
+      },
+      {
+        "id": 3,
+        "label": "Team of the Week",
+        "value": 3
+      },
+      {
+        "id": 151,
+        "label": "Ultimate Scream",
+        "value": 151
+      },
+      {
+        "id": 168,
+        "label": "Ultimate Scream Hero",
+        "value": 168
+      }
+    ],
+    "market": [
+      {
+        "id": -1,
+        "label": "Any",
+        "value": -1
+      },
+      {
+        "id": 0,
+        "label": "Common",
+        "value": 0
+      },
+      {
+        "id": 9,
+        "label": "Base Hall of FUT",
+        "value": 9
+      },
+      {
+        "id": 72,
+        "label": "Base Hero",
+        "value": 72
+      },
+      {
+        "id": 12,
+        "label": "Base Icon",
+        "value": 12
+      },
+      {
+        "id": 160,
+        "label": "Debut International Icon",
+        "value": 160
+      },
+      {
+        "id": 22,
+        "label": "Destined for Glory",
+        "value": 22
+      },
+      {
+        "id": 103,
+        "label": "FC Heritage",
+        "value": 103
+      },
+      {
+        "id": 19,
+        "label": "FUT Champions",
+        "value": 19
+      },
+      {
+        "id": 71,
+        "label": "Future Stars",
+        "value": 71
+      },
+      {
+        "id": 150,
+        "label": "Ones to Watch",
+        "value": 150
+      },
+      {
+        "id": 177,
+        "label": "POTM LIGA F",
+        "value": 177
+      },
+      {
+        "id": 114,
+        "label": "POTM Serie A",
+        "value": 114
+      },
+      {
+        "id": 58,
+        "label": "Showdown",
+        "value": 58
+      },
+      {
+        "id": 57,
+        "label": "Showdown Upgrade",
+        "value": 57
+      },
+      {
+        "id": 8,
+        "label": "Star Performer",
+        "value": 8
+      },
+      {
+        "id": 3,
+        "label": "Team of the Week",
+        "value": 3
+      },
+      {
+        "id": 151,
+        "label": "Ultimate Scream",
+        "value": 151
+      },
+      {
+        "id": 168,
+        "label": "Ultimate Scream Hero",
+        "value": 168
+      }
+    ]
+  },
+  "completedAt": "2026-11-02T17:14:47.722Z"
+}

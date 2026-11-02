@@ -11,6 +11,7 @@ run(process.execPath,['testing/v8/build-rc.cjs','--skip-test-build']);
 run(process.execPath,['testing/v8/build-rc2.cjs','--skip-rc1-build']);
 run(process.execPath,['testing/v8/build-final.cjs','--skip-rc2-build']);
 run(process.execPath,['testing/v8/build-universal.cjs','--skip-final-build']);
+run(process.execPath,['testing/v8/build-universal-final.cjs','--skip-universal-build']);
 const tests=fs.readdirSync(path.join(root,'testing/v8/tests')).filter(f=>f.endsWith('.test.cjs')).map(f=>'testing/v8/tests/'+f);
 run(process.execPath,['--test',...tests]);
 run(process.execPath,['delivery/fresh-listing-research/offline/evaluator.test.cjs']);
@@ -28,3 +29,5 @@ run(process.execPath,['testing/browser/rc2-registration.cjs','.local/v8-rc2','te
 run(process.execPath,['testing/browser/final-registration.cjs','.local/v8-final-rc','testing/browser/FINAL_INSTALLED_RESULTS.json']);
 
 run(process.execPath,['testing/browser/universal-registration.cjs','.local/v8-universal-rc','testing/browser/UNIVERSAL_INSTALLED_RESULTS.json']);
+
+run(process.execPath,['testing/browser/universal-registration.cjs','.local/v8-universal-final','testing/browser/completion/INSTALLED_RESULTS.json'],{env:{...process.env,FC_EXPECTED_EXTENSION_VERSION:'27.0.6.0'}});

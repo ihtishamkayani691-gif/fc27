@@ -1,0 +1,232 @@
+[
+  {
+    "id": 0,
+    "name": "Common",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 9,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 9,
+    "name": "Base Hall of FUT",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 72,
+    "name": "Base Hero",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 14,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 12,
+    "name": "Base Icon",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 160,
+    "name": "Debut International Icon",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 22,
+    "name": "Destined for Glory",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 10,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 103,
+    "name": "FC Heritage",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 19,
+    "name": "FUT Champions",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 71,
+    "name": "Future Stars",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 12,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 150,
+    "name": "Ones to Watch",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 42,
+    "name": "POTM Bundesliga",
+    "nativeMarketSelectable": false,
+    "liveQuery": "NATIVE_UNAVAILABLE",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "NOT_MARKET_SELECTABLE"
+  },
+  {
+    "id": 86,
+    "name": "POTM LALIGA EA SPORTS",
+    "nativeMarketSelectable": false,
+    "liveQuery": "NATIVE_UNAVAILABLE",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "NOT_MARKET_SELECTABLE"
+  },
+  {
+    "id": 177,
+    "name": "POTM LIGA F",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 79,
+    "name": "POTM Ligue 1",
+    "nativeMarketSelectable": false,
+    "liveQuery": "NATIVE_UNAVAILABLE",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "NOT_MARKET_SELECTABLE"
+  },
+  {
+    "id": 43,
+    "name": "POTM Premier League",
+    "nativeMarketSelectable": false,
+    "liveQuery": "NATIVE_UNAVAILABLE",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "NOT_MARKET_SELECTABLE"
+  },
+  {
+    "id": 114,
+    "name": "POTM Serie A",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 58,
+    "name": "Showdown",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 57,
+    "name": "Showdown Upgrade",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 87,
+    "name": "Squad Foundations",
+    "nativeMarketSelectable": false,
+    "liveQuery": "NATIVE_UNAVAILABLE",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "NOT_MARKET_SELECTABLE"
+  },
+  {
+    "id": 8,
+    "name": "Star Performer",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 3,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 3,
+    "name": "Team of the Week",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 16,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 151,
+    "name": "Ultimate Scream",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "PASS",
+    "liveObservedPlayers": 12,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  },
+  {
+    "id": 168,
+    "name": "Ultimate Scream Hero",
+    "nativeMarketSelectable": true,
+    "liveQuery": "PASS",
+    "liveResultMatching": "UNVERIFIED",
+    "liveObservedPlayers": 0,
+    "liveFreshWindowListings": 0,
+    "simulation": "PASS"
+  }
+]

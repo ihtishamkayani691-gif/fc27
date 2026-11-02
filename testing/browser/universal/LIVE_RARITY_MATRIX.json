@@ -1,0 +1,2236 @@
+{
+  "readOnly": true,
+  "hardPurchaseLock": true,
+  "discoveryTestMaximum": 100000,
+  "purchaseBudget": null,
+  "realBuys": 0,
+  "realBids": 0,
+  "startedAt": "2026-11-02T16:27:59.173Z",
+  "rarities": [
+    {
+      "id": 0,
+      "name": "Common",
+      "selectable": true,
+      "elapsedMs": 1970,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        0
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 9,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              0
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 471.70000000298023,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 272200,
+              "rarity": 0,
+              "itemId": 955525325387,
+              "name": "Cecilia Marcos",
+              "tradeId": "619986007576",
+              "buyNow": 10000,
+              "expires": 44
+            },
+            {
+              "definitionId": 212888,
+              "rarity": 0,
+              "itemId": 955622842360,
+              "name": "Salcedo",
+              "tradeId": "620140621546",
+              "buyNow": 950,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 943574996840,
+              "name": "Tielemans",
+              "tradeId": "620206072856",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 942233273955,
+              "name": "Tielemans",
+              "tradeId": "620206072878",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 943290211942,
+              "name": "Tielemans",
+              "tradeId": "620206072900",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 942521527224,
+              "name": "Tielemans",
+              "tradeId": "620206072919",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 942504574646,
+              "name": "Tielemans",
+              "tradeId": "620206072945",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 942914753552,
+              "name": "Tielemans",
+              "tradeId": "620206072970",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 208128,
+              "rarity": 0,
+              "itemId": 944542091031,
+              "name": "Çalhanoğlu",
+              "tradeId": "620206072989",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 944776188675,
+              "name": "Tielemans",
+              "tradeId": "620206073006",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 199503,
+              "rarity": 0,
+              "itemId": 944544161846,
+              "name": "Xhaka",
+              "tradeId": "620206073023",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 271446,
+              "rarity": 0,
+              "itemId": 952448101470,
+              "name": "Vicky López",
+              "tradeId": "620206073039",
+              "buyNow": 28000,
+              "expires": 44
+            },
+            {
+              "definitionId": 227110,
+              "rarity": 0,
+              "itemId": 945313992732,
+              "name": "Foord",
+              "tradeId": "620206073056",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 943292957600,
+              "name": "Tielemans",
+              "tradeId": "620206073096",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 227110,
+              "rarity": 0,
+              "itemId": 945849649675,
+              "name": "Foord",
+              "tradeId": "620206073113",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 208128,
+              "rarity": 0,
+              "itemId": 945387284549,
+              "name": "Çalhanoğlu",
+              "tradeId": "620206073129",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 943291665579,
+              "name": "Tielemans",
+              "tradeId": "620206073145",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 946262018728,
+              "name": "Tielemans",
+              "tradeId": "620206073158",
+              "buyNow": 8500,
+              "expires": 44
+            },
+            {
+              "definitionId": 216393,
+              "rarity": 0,
+              "itemId": 943439920727,
+              "name": "Tielemans",
+              "tradeId": "620206073178",
+              "buyNow": 8900,
+              "expires": 44
+            },
+            {
+              "definitionId": 232073,
+              "rarity": 0,
+              "itemId": 941935001730,
+              "name": "Swanson",
+              "tradeId": "620206073191",
+              "buyNow": 10000,
+              "expires": 44
+            },
+            {
+              "definitionId": 265239,
+              "rarity": 0,
+              "itemId": 943559574182,
+              "name": "McCabe",
+              "tradeId": "620206073204",
+              "buyNow": 8900,
+              "expires": 44
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 9,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          0
+        ],
+        "rarityLabel": "Common",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 9,
+      "name": "Base Hall of FUT",
+      "selectable": true,
+      "elapsedMs": 5884,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              9
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 689.2999999970198,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          9
+        ],
+        "rarityLabel": "Base Hall of FUT",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 72,
+      "name": "Base Hero",
+      "selectable": true,
+      "elapsedMs": 6997,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        72
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 14,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              72
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 983.5,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 155897,
+              "rarity": 72,
+              "itemId": 943338828244,
+              "name": "Dempsey",
+              "tradeId": "620265239615",
+              "buyNow": 58000,
+              "expires": 44
+            },
+            {
+              "definitionId": 150418,
+              "rarity": 72,
+              "itemId": 946448433558,
+              "name": "Gomez",
+              "tradeId": "620265239656",
+              "buyNow": 76000,
+              "expires": 45
+            },
+            {
+              "definitionId": 168886,
+              "rarity": 72,
+              "itemId": 955076114782,
+              "name": "Al Jaber",
+              "tradeId": "620265239695",
+              "buyNow": 79000,
+              "expires": 45
+            },
+            {
+              "definitionId": 51412,
+              "rarity": 72,
+              "itemId": 954010277845,
+              "name": "Cahill",
+              "tradeId": "620265239704",
+              "buyNow": 49750,
+              "expires": 45
+            },
+            {
+              "definitionId": 51412,
+              "rarity": 72,
+              "itemId": 955187950691,
+              "name": "Cahill",
+              "tradeId": "620265245345",
+              "buyNow": 55000,
+              "expires": 48
+            },
+            {
+              "definitionId": 25420,
+              "rarity": 72,
+              "itemId": 955393639741,
+              "name": "Pizarro",
+              "tradeId": "620265231110",
+              "buyNow": 43750,
+              "expires": 49
+            },
+            {
+              "definitionId": 215732,
+              "rarity": 72,
+              "itemId": 946218773009,
+              "name": "Bierhoff",
+              "tradeId": "620265241203",
+              "buyNow": 47500,
+              "expires": 49
+            },
+            {
+              "definitionId": 227271,
+              "rarity": 72,
+              "itemId": 943538480153,
+              "name": "Williams",
+              "tradeId": "620265249128",
+              "buyNow": 97500,
+              "expires": 50
+            },
+            {
+              "definitionId": 181783,
+              "rarity": 72,
+              "itemId": 952889250680,
+              "name": "Mandžukić",
+              "tradeId": "620265249161",
+              "buyNow": 62500,
+              "expires": 50
+            },
+            {
+              "definitionId": 5679,
+              "rarity": 72,
+              "itemId": 954429813287,
+              "name": "Kanu",
+              "tradeId": "620265249259",
+              "buyNow": 47750,
+              "expires": 50
+            },
+            {
+              "definitionId": 44897,
+              "rarity": 72,
+              "itemId": 955121604073,
+              "name": "Dudek",
+              "tradeId": "620265249378",
+              "buyNow": 98500,
+              "expires": 51
+            },
+            {
+              "definitionId": 226306,
+              "rarity": 72,
+              "itemId": 943616079398,
+              "name": "Šašić",
+              "tradeId": "620265249407",
+              "buyNow": 69500,
+              "expires": 51
+            },
+            {
+              "definitionId": 168886,
+              "rarity": 72,
+              "itemId": 954697750698,
+              "name": "Al Jaber",
+              "tradeId": "620265249447",
+              "buyNow": 71500,
+              "expires": 51
+            },
+            {
+              "definitionId": 51257,
+              "rarity": 72,
+              "itemId": 943581599147,
+              "name": "Crouch",
+              "tradeId": "620265249457",
+              "buyNow": 92500,
+              "expires": 51
+            },
+            {
+              "definitionId": 25420,
+              "rarity": 72,
+              "itemId": 955190101936,
+              "name": "Pizarro",
+              "tradeId": "620265249502",
+              "buyNow": 43750,
+              "expires": 51
+            },
+            {
+              "definitionId": 25420,
+              "rarity": 72,
+              "itemId": 947792545234,
+              "name": "Pizarro",
+              "tradeId": "620265255740",
+              "buyNow": 58000,
+              "expires": 51
+            },
+            {
+              "definitionId": 5679,
+              "rarity": 72,
+              "itemId": 948564210645,
+              "name": "Kanu",
+              "tradeId": "620265255826",
+              "buyNow": 53500,
+              "expires": 51
+            },
+            {
+              "definitionId": 25420,
+              "rarity": 72,
+              "itemId": 947516344279,
+              "name": "Pizarro",
+              "tradeId": "620265258979",
+              "buyNow": 55000,
+              "expires": 52
+            },
+            {
+              "definitionId": 5673,
+              "rarity": 72,
+              "itemId": 944517586907,
+              "name": "Litmanen",
+              "tradeId": "620265267289",
+              "buyNow": 99000,
+              "expires": 52
+            },
+            {
+              "definitionId": 155897,
+              "rarity": 72,
+              "itemId": 946368754286,
+              "name": "Dempsey",
+              "tradeId": "620265253862",
+              "buyNow": 56500,
+              "expires": 53
+            },
+            {
+              "definitionId": 191694,
+              "rarity": 72,
+              "itemId": 945283933295,
+              "name": "Campos",
+              "tradeId": "620265259108",
+              "buyNow": 78500,
+              "expires": 53
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 14,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          72
+        ],
+        "rarityLabel": "Base Hero",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 12,
+      "name": "Base Icon",
+      "selectable": true,
+      "elapsedMs": 5873,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              12
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 583.6000000089407,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          12
+        ],
+        "rarityLabel": "Base Icon",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 160,
+      "name": "Debut International Icon",
+      "selectable": true,
+      "elapsedMs": 5879,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              160
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 495,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          160
+        ],
+        "rarityLabel": "Debut International Icon",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 22,
+      "name": "Destined for Glory",
+      "selectable": true,
+      "elapsedMs": 6989,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        22
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 10,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              22
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 581.9000000059605,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 50575824,
+              "rarity": 22,
+              "itemId": 948533037304,
+              "name": "Undav",
+              "tradeId": "620265292180",
+              "buyNow": 41500,
+              "expires": 46
+            },
+            {
+              "definitionId": 50578336,
+              "rarity": 22,
+              "itemId": 947256714520,
+              "name": "Abdulhamid",
+              "tradeId": "620265300728",
+              "buyNow": 41500,
+              "expires": 46
+            },
+            {
+              "definitionId": 50606677,
+              "rarity": 22,
+              "itemId": 949343597367,
+              "name": "Maza",
+              "tradeId": "620265300739",
+              "buyNow": 32250,
+              "expires": 46
+            },
+            {
+              "definitionId": 50555345,
+              "rarity": 22,
+              "itemId": 950432420568,
+              "name": "Gosens",
+              "tradeId": "620265300781",
+              "buyNow": 43250,
+              "expires": 46
+            },
+            {
+              "definitionId": 67353040,
+              "rarity": 22,
+              "itemId": 947890431525,
+              "name": "Undav",
+              "tradeId": "620265307451",
+              "buyNow": 65500,
+              "expires": 47
+            },
+            {
+              "definitionId": 50575824,
+              "rarity": 22,
+              "itemId": 947864092926,
+              "name": "Undav",
+              "tradeId": "620265314176",
+              "buyNow": 41500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50575824,
+              "rarity": 22,
+              "itemId": 948326963228,
+              "name": "Undav",
+              "tradeId": "620265316783",
+              "buyNow": 43750,
+              "expires": 50
+            },
+            {
+              "definitionId": 50584757,
+              "rarity": 22,
+              "itemId": 948033043458,
+              "name": "Veerman",
+              "tradeId": "620265316790",
+              "buyNow": 34750,
+              "expires": 50
+            },
+            {
+              "definitionId": 50575824,
+              "rarity": 22,
+              "itemId": 947530534241,
+              "name": "Undav",
+              "tradeId": "620265338086",
+              "buyNow": 41500,
+              "expires": 52
+            },
+            {
+              "definitionId": 67383893,
+              "rarity": 22,
+              "itemId": 949795334245,
+              "name": "Maza",
+              "tradeId": "620265347446",
+              "buyNow": 49750,
+              "expires": 59
+            },
+            {
+              "definitionId": 50606677,
+              "rarity": 22,
+              "itemId": 948910488704,
+              "name": "Maza",
+              "tradeId": "620265347508",
+              "buyNow": 34500,
+              "expires": 59
+            },
+            {
+              "definitionId": 50584757,
+              "rarity": 22,
+              "itemId": 948551491796,
+              "name": "Veerman",
+              "tradeId": "620265343051",
+              "buyNow": 34750,
+              "expires": 60
+            },
+            {
+              "definitionId": 50584757,
+              "rarity": 22,
+              "itemId": 948544593640,
+              "name": "Veerman",
+              "tradeId": "620265343102",
+              "buyNow": 34750,
+              "expires": 60
+            },
+            {
+              "definitionId": 50575824,
+              "rarity": 22,
+              "itemId": 946844637468,
+              "name": "Undav",
+              "tradeId": "620265348649",
+              "buyNow": 40500,
+              "expires": 61
+            },
+            {
+              "definitionId": 50597341,
+              "rarity": 22,
+              "itemId": 950378723317,
+              "name": "Kiwior",
+              "tradeId": "620265346213",
+              "buyNow": 29750,
+              "expires": 62
+            },
+            {
+              "definitionId": 50555345,
+              "rarity": 22,
+              "itemId": 949442061869,
+              "name": "Gosens",
+              "tradeId": "620265346239",
+              "buyNow": 42000,
+              "expires": 62
+            },
+            {
+              "definitionId": 67362985,
+              "rarity": 22,
+              "itemId": 949595704278,
+              "name": "Cresswell",
+              "tradeId": "620265346281",
+              "buyNow": 39750,
+              "expires": 63
+            },
+            {
+              "definitionId": 67374557,
+              "rarity": 22,
+              "itemId": 949807591750,
+              "name": "Kiwior",
+              "tradeId": "620265346373",
+              "buyNow": 44250,
+              "expires": 63
+            },
+            {
+              "definitionId": 50584757,
+              "rarity": 22,
+              "itemId": 947343917994,
+              "name": "Veerman",
+              "tradeId": "620265346437",
+              "buyNow": 39750,
+              "expires": 63
+            },
+            {
+              "definitionId": 50578336,
+              "rarity": 22,
+              "itemId": 948446231651,
+              "name": "Abdulhamid",
+              "tradeId": "620265352226",
+              "buyNow": 39750,
+              "expires": 64
+            },
+            {
+              "definitionId": 50578336,
+              "rarity": 22,
+              "itemId": 948410323056,
+              "name": "Abdulhamid",
+              "tradeId": "620265361005",
+              "buyNow": 50500,
+              "expires": 64
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 10,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          22
+        ],
+        "rarityLabel": "Destined for Glory",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 103,
+      "name": "FC Heritage",
+      "selectable": true,
+      "elapsedMs": 5882,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              103
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 901,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          103
+        ],
+        "rarityLabel": "FC Heritage",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 19,
+      "name": "FUT Champions",
+      "selectable": true,
+      "elapsedMs": 5897,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              19
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 632.7999999970198,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          19
+        ],
+        "rarityLabel": "FUT Champions",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 71,
+      "name": "Future Stars",
+      "selectable": true,
+      "elapsedMs": 7016,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        71
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 12,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              71
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 731.5,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 67380782,
+              "rarity": 71,
+              "itemId": 951685523068,
+              "name": "Risser",
+              "tradeId": "620265370746",
+              "buyNow": 50500,
+              "expires": 46
+            },
+            {
+              "definitionId": 50603566,
+              "rarity": 71,
+              "itemId": 951072787662,
+              "name": "Risser",
+              "tradeId": "620265370896",
+              "buyNow": 30250,
+              "expires": 47
+            },
+            {
+              "definitionId": 67184127,
+              "rarity": 71,
+              "itemId": 953271028464,
+              "name": "Peio Canales",
+              "tradeId": "620265370968",
+              "buyNow": 50500,
+              "expires": 47
+            },
+            {
+              "definitionId": 50609822,
+              "rarity": 71,
+              "itemId": 952048945458,
+              "name": "Hall",
+              "tradeId": "620265371321",
+              "buyNow": 40250,
+              "expires": 47
+            },
+            {
+              "definitionId": 50603566,
+              "rarity": 71,
+              "itemId": 951297471338,
+              "name": "Risser",
+              "tradeId": "620265379250",
+              "buyNow": 38000,
+              "expires": 47
+            },
+            {
+              "definitionId": 50412322,
+              "rarity": 71,
+              "itemId": 952510417502,
+              "name": "Dro Fernández",
+              "tradeId": "620265379276",
+              "buyNow": 86000,
+              "expires": 47
+            },
+            {
+              "definitionId": 50609599,
+              "rarity": 71,
+              "itemId": 951455342462,
+              "name": "Yohannes",
+              "tradeId": "620265379288",
+              "buyNow": 61000,
+              "expires": 47
+            },
+            {
+              "definitionId": 50408698,
+              "rarity": 71,
+              "itemId": 953158423162,
+              "name": "Kanjinga",
+              "tradeId": "620265379332",
+              "buyNow": 74000,
+              "expires": 47
+            },
+            {
+              "definitionId": 50609822,
+              "rarity": 71,
+              "itemId": 951351321878,
+              "name": "Hall",
+              "tradeId": "620265371285",
+              "buyNow": 50500,
+              "expires": 48
+            },
+            {
+              "definitionId": 50609822,
+              "rarity": 71,
+              "itemId": 951349950763,
+              "name": "Hall",
+              "tradeId": "620265379421",
+              "buyNow": 54000,
+              "expires": 48
+            },
+            {
+              "definitionId": 50610428,
+              "rarity": 71,
+              "itemId": 953802019270,
+              "name": "Jeltsch",
+              "tradeId": "620265379460",
+              "buyNow": 38000,
+              "expires": 48
+            },
+            {
+              "definitionId": 50408698,
+              "rarity": 71,
+              "itemId": 953120936877,
+              "name": "Kanjinga",
+              "tradeId": "620265379483",
+              "buyNow": 73000,
+              "expires": 48
+            },
+            {
+              "definitionId": 50402434,
+              "rarity": 71,
+              "itemId": 950927204566,
+              "name": "King",
+              "tradeId": "620265379521",
+              "buyNow": 86000,
+              "expires": 48
+            },
+            {
+              "definitionId": 50402434,
+              "rarity": 71,
+              "itemId": 952118762452,
+              "name": "King",
+              "tradeId": "620265376835",
+              "buyNow": 67000,
+              "expires": 49
+            },
+            {
+              "definitionId": 67387644,
+              "rarity": 71,
+              "itemId": 953563903480,
+              "name": "Jeltsch",
+              "tradeId": "620265377589",
+              "buyNow": 50500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50610428,
+              "rarity": 71,
+              "itemId": 953439159600,
+              "name": "Jeltsch",
+              "tradeId": "620265380567",
+              "buyNow": 23500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50598543,
+              "rarity": 71,
+              "itemId": 953546761167,
+              "name": "Tresoldi",
+              "tradeId": "620265372441",
+              "buyNow": 56000,
+              "expires": 50
+            },
+            {
+              "definitionId": 50603566,
+              "rarity": 71,
+              "itemId": 951362495647,
+              "name": "Risser",
+              "tradeId": "620265395344",
+              "buyNow": 24000,
+              "expires": 50
+            },
+            {
+              "definitionId": 50406911,
+              "rarity": 71,
+              "itemId": 952850538946,
+              "name": "Peio Canales",
+              "tradeId": "620265372563",
+              "buyNow": 41000,
+              "expires": 51
+            },
+            {
+              "definitionId": 50598543,
+              "rarity": 71,
+              "itemId": 953721124154,
+              "name": "Tresoldi",
+              "tradeId": "620265372573",
+              "buyNow": 57000,
+              "expires": 51
+            },
+            {
+              "definitionId": 50402434,
+              "rarity": 71,
+              "itemId": 951732038057,
+              "name": "King",
+              "tradeId": "620265372595",
+              "buyNow": 85000,
+              "expires": 51
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 12,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          71
+        ],
+        "rarityLabel": "Future Stars",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 150,
+      "name": "Ones to Watch",
+      "selectable": true,
+      "elapsedMs": 5903,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              150
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 789.5,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          150
+        ],
+        "rarityLabel": "Ones to Watch",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 177,
+      "name": "POTM LIGA F",
+      "selectable": true,
+      "elapsedMs": 5901,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              177
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 587.7000000029802,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          177
+        ],
+        "rarityLabel": "POTM LIGA F",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 114,
+      "name": "POTM Serie A",
+      "selectable": true,
+      "elapsedMs": 7017,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              114
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 492,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          114
+        ],
+        "rarityLabel": "POTM Serie A",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 58,
+      "name": "Showdown",
+      "selectable": true,
+      "elapsedMs": 5898,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              58
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 496.40000000596046,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          58
+        ],
+        "rarityLabel": "Showdown",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 57,
+      "name": "Showdown Upgrade",
+      "selectable": true,
+      "elapsedMs": 5898,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              57
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 729.7000000029802,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          57
+        ],
+        "rarityLabel": "Showdown Upgrade",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 8,
+      "name": "Star Performer",
+      "selectable": true,
+      "elapsedMs": 6988,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        8
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 3,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              8
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 820.5,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 953053066711,
+              "name": "Vandevoordt",
+              "tradeId": "620265506006",
+              "buyNow": 46750,
+              "expires": 47
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954540690172,
+              "name": "Seys",
+              "tradeId": "620265514682",
+              "buyNow": 84500,
+              "expires": 48
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 953299809687,
+              "name": "Vandevoordt",
+              "tradeId": "620265524004",
+              "buyNow": 50500,
+              "expires": 50
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954237920866,
+              "name": "Seys",
+              "tradeId": "620265522459",
+              "buyNow": 52500,
+              "expires": 54
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 952841289485,
+              "name": "Vandevoordt",
+              "tradeId": "620265545803",
+              "buyNow": 40000,
+              "expires": 54
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954195221811,
+              "name": "Guirassy",
+              "tradeId": "620265561946",
+              "buyNow": 52000,
+              "expires": 60
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954359363650,
+              "name": "Seys",
+              "tradeId": "620265565964",
+              "buyNow": 36250,
+              "expires": 63
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954323402437,
+              "name": "Seys",
+              "tradeId": "620265569522",
+              "buyNow": 37750,
+              "expires": 65
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 953249408846,
+              "name": "Vandevoordt",
+              "tradeId": "620265569558",
+              "buyNow": 52500,
+              "expires": 65
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954428690204,
+              "name": "Guirassy",
+              "tradeId": "620265569765",
+              "buyNow": 52500,
+              "expires": 66
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 952665801379,
+              "name": "Vandevoordt",
+              "tradeId": "620265571186",
+              "buyNow": 71000,
+              "expires": 70
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 952993287369,
+              "name": "Vandevoordt",
+              "tradeId": "620265611335",
+              "buyNow": 48500,
+              "expires": 78
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 952862103393,
+              "name": "Vandevoordt",
+              "tradeId": "620265643568",
+              "buyNow": 43750,
+              "expires": 85
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954442985933,
+              "name": "Guirassy",
+              "tradeId": "620265643592",
+              "buyNow": 47500,
+              "expires": 85
+            },
+            {
+              "definitionId": 50574527,
+              "rarity": 8,
+              "itemId": 953001872286,
+              "name": "Vandevoordt",
+              "tradeId": "620265625444",
+              "buyNow": 70500,
+              "expires": 88
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954137975461,
+              "name": "Guirassy",
+              "tradeId": "620265649803",
+              "buyNow": 68000,
+              "expires": 88
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954431658001,
+              "name": "Seys",
+              "tradeId": "620265665488",
+              "buyNow": 50500,
+              "expires": 92
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954582266637,
+              "name": "Guirassy",
+              "tradeId": "620265666338",
+              "buyNow": 70500,
+              "expires": 93
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954179531245,
+              "name": "Seys",
+              "tradeId": "620265666515",
+              "buyNow": 39000,
+              "expires": 93
+            },
+            {
+              "definitionId": 67324305,
+              "rarity": 8,
+              "itemId": 954612313931,
+              "name": "Guirassy",
+              "tradeId": "620265687775",
+              "buyNow": 62500,
+              "expires": 97
+            },
+            {
+              "definitionId": 50402953,
+              "rarity": 8,
+              "itemId": 954325784245,
+              "name": "Seys",
+              "tradeId": "620265722130",
+              "buyNow": 36750,
+              "expires": 106
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 3,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          8
+        ],
+        "rarityLabel": "Star Performer",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 3,
+      "name": "Team of the Week",
+      "selectable": true,
+      "elapsedMs": 5847,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        3
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 16,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              3
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 405,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 67368061,
+              "rarity": 3,
+              "itemId": 955509160276,
+              "name": "Jackson",
+              "tradeId": "620265516484",
+              "buyNow": 13500,
+              "expires": 45
+            },
+            {
+              "definitionId": 67344837,
+              "rarity": 3,
+              "itemId": 955435822817,
+              "name": "Szymański",
+              "tradeId": "620265516605",
+              "buyNow": 15750,
+              "expires": 45
+            },
+            {
+              "definitionId": 50580140,
+              "rarity": 3,
+              "itemId": 955122577119,
+              "name": "Hill",
+              "tradeId": "620265521393",
+              "buyNow": 12000,
+              "expires": 45
+            },
+            {
+              "definitionId": 67376538,
+              "rarity": 3,
+              "itemId": 944428312040,
+              "name": "Amanda Gutierres",
+              "tradeId": "620265522328",
+              "buyNow": 16250,
+              "expires": 45
+            },
+            {
+              "definitionId": 67306645,
+              "rarity": 3,
+              "itemId": 952711375335,
+              "name": "Isco",
+              "tradeId": "620265524263",
+              "buyNow": 40500,
+              "expires": 45
+            },
+            {
+              "definitionId": 50584200,
+              "rarity": 3,
+              "itemId": 948839393069,
+              "name": "Tzolakis",
+              "tradeId": "620265527100",
+              "buyNow": 21250,
+              "expires": 45
+            },
+            {
+              "definitionId": 84161109,
+              "rarity": 3,
+              "itemId": 954727487375,
+              "name": "Maza",
+              "tradeId": "620265529768",
+              "buyNow": 13750,
+              "expires": 45
+            },
+            {
+              "definitionId": 84145277,
+              "rarity": 3,
+              "itemId": 955318793744,
+              "name": "Jackson",
+              "tradeId": "620265529776",
+              "buyNow": 19500,
+              "expires": 45
+            },
+            {
+              "definitionId": 50574555,
+              "rarity": 3,
+              "itemId": 952880350216,
+              "name": "Reynolds",
+              "tradeId": "620265529922",
+              "buyNow": 13000,
+              "expires": 45
+            },
+            {
+              "definitionId": 67360034,
+              "rarity": 3,
+              "itemId": 954052756214,
+              "name": "Sinayoko",
+              "tradeId": "620265529944",
+              "buyNow": 13000,
+              "expires": 45
+            },
+            {
+              "definitionId": 50605211,
+              "rarity": 3,
+              "itemId": 950635785537,
+              "name": "Schasching",
+              "tradeId": "620265529969",
+              "buyNow": 14750,
+              "expires": 45
+            },
+            {
+              "definitionId": 50604825,
+              "rarity": 3,
+              "itemId": 945723363970,
+              "name": "Holdt",
+              "tradeId": "620265530105",
+              "buyNow": 15250,
+              "expires": 45
+            },
+            {
+              "definitionId": 84161109,
+              "rarity": 3,
+              "itemId": 954379177906,
+              "name": "Maza",
+              "tradeId": "620265530191",
+              "buyNow": 13000,
+              "expires": 45
+            },
+            {
+              "definitionId": 67347094,
+              "rarity": 3,
+              "itemId": 952918155524,
+              "name": "Campaz",
+              "tradeId": "620265530207",
+              "buyNow": 13500,
+              "expires": 45
+            },
+            {
+              "definitionId": 67377567,
+              "rarity": 3,
+              "itemId": 952576745635,
+              "name": "Cambiaghi",
+              "tradeId": "620265530218",
+              "buyNow": 13750,
+              "expires": 45
+            },
+            {
+              "definitionId": 67291358,
+              "rarity": 3,
+              "itemId": 955007399606,
+              "name": "Muslera",
+              "tradeId": "620265530228",
+              "buyNow": 13750,
+              "expires": 45
+            },
+            {
+              "definitionId": 67347094,
+              "rarity": 3,
+              "itemId": 953235119466,
+              "name": "Campaz",
+              "tradeId": "620265530249",
+              "buyNow": 13750,
+              "expires": 45
+            },
+            {
+              "definitionId": 67291358,
+              "rarity": 3,
+              "itemId": 954924797348,
+              "name": "Muslera",
+              "tradeId": "620265530255",
+              "buyNow": 13500,
+              "expires": 45
+            },
+            {
+              "definitionId": 83969590,
+              "rarity": 3,
+              "itemId": 955032678447,
+              "name": "Lonebu",
+              "tradeId": "620265530264",
+              "buyNow": 13750,
+              "expires": 45
+            },
+            {
+              "definitionId": 67377567,
+              "rarity": 3,
+              "itemId": 952034659577,
+              "name": "Cambiaghi",
+              "tradeId": "620265530274",
+              "buyNow": 13500,
+              "expires": 45
+            },
+            {
+              "definitionId": 83969590,
+              "rarity": 3,
+              "itemId": 954983304246,
+              "name": "Lonebu",
+              "tradeId": "620265530281",
+              "buyNow": 13750,
+              "expires": 45
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 16,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          3
+        ],
+        "rarityLabel": "Team of the Week",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 151,
+      "name": "Ultimate Scream",
+      "selectable": true,
+      "elapsedMs": 5880,
+      "queryCorrect": true,
+      "returnedCount": 21,
+      "returnedRarities": [
+        151
+      ],
+      "allReturnedMatch": true,
+      "distinctPlayers": 12,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": false,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              151
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 695.7999999970198,
+          "success": true,
+          "errorCode": null,
+          "items": [
+            {
+              "definitionId": 67329201,
+              "rarity": 151,
+              "itemId": 954530875298,
+              "name": "Alonso",
+              "tradeId": "620265561773",
+              "buyNow": 41750,
+              "expires": 45
+            },
+            {
+              "definitionId": 50541147,
+              "rarity": 151,
+              "itemId": 955044537409,
+              "name": "Fabinho",
+              "tradeId": "620265561796",
+              "buyNow": 83500,
+              "expires": 46
+            },
+            {
+              "definitionId": 50599032,
+              "rarity": 151,
+              "itemId": 954210249565,
+              "name": "Flint",
+              "tradeId": "620140902730",
+              "buyNow": 70000,
+              "expires": 47
+            },
+            {
+              "definitionId": 50600588,
+              "rarity": 151,
+              "itemId": 955416736259,
+              "name": "Crnogorčević",
+              "tradeId": "620265554305",
+              "buyNow": 18250,
+              "expires": 47
+            },
+            {
+              "definitionId": 67380703,
+              "rarity": 151,
+              "itemId": 954959573628,
+              "name": "Vobian",
+              "tradeId": "620265562087",
+              "buyNow": 43750,
+              "expires": 47
+            },
+            {
+              "definitionId": 50551985,
+              "rarity": 151,
+              "itemId": 954179742705,
+              "name": "Alonso",
+              "tradeId": "620265551523",
+              "buyNow": 45500,
+              "expires": 48
+            },
+            {
+              "definitionId": 50603487,
+              "rarity": 151,
+              "itemId": 954158866475,
+              "name": "Vobian",
+              "tradeId": "620265556845",
+              "buyNow": 27500,
+              "expires": 48
+            },
+            {
+              "definitionId": 50603487,
+              "rarity": 151,
+              "itemId": 955081779205,
+              "name": "Vobian",
+              "tradeId": "620265565193",
+              "buyNow": 18500,
+              "expires": 48
+            },
+            {
+              "definitionId": 67373561,
+              "rarity": 151,
+              "itemId": 955264077113,
+              "name": "Amoura",
+              "tradeId": "620265572023",
+              "buyNow": 42500,
+              "expires": 48
+            },
+            {
+              "definitionId": 50565158,
+              "rarity": 151,
+              "itemId": 954959520627,
+              "name": "Chong",
+              "tradeId": "620265565452",
+              "buyNow": 18500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50603487,
+              "rarity": 151,
+              "itemId": 954837332685,
+              "name": "Vobian",
+              "tradeId": "620265565480",
+              "buyNow": 18500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50565158,
+              "rarity": 151,
+              "itemId": 954598089492,
+              "name": "Chong",
+              "tradeId": "620265565509",
+              "buyNow": 18500,
+              "expires": 49
+            },
+            {
+              "definitionId": 50600588,
+              "rarity": 151,
+              "itemId": 955384774355,
+              "name": "Crnogorčević",
+              "tradeId": "620265561576",
+              "buyNow": 16000,
+              "expires": 50
+            },
+            {
+              "definitionId": 50598032,
+              "rarity": 151,
+              "itemId": 955489563383,
+              "name": "Jónsdóttir",
+              "tradeId": "620265566436",
+              "buyNow": 42000,
+              "expires": 50
+            },
+            {
+              "definitionId": 67359722,
+              "rarity": 151,
+              "itemId": 955472588591,
+              "name": "Ciss",
+              "tradeId": "620265567322",
+              "buyNow": 32000,
+              "expires": 50
+            },
+            {
+              "definitionId": 50575305,
+              "rarity": 151,
+              "itemId": 955222308174,
+              "name": "Garner",
+              "tradeId": "620265574782",
+              "buyNow": 70500,
+              "expires": 50
+            },
+            {
+              "definitionId": 50565158,
+              "rarity": 151,
+              "itemId": 955115945920,
+              "name": "Chong",
+              "tradeId": "620265567055",
+              "buyNow": 18000,
+              "expires": 51
+            },
+            {
+              "definitionId": 67329201,
+              "rarity": 151,
+              "itemId": 954257631217,
+              "name": "Alonso",
+              "tradeId": "620265569533",
+              "buyNow": 41750,
+              "expires": 51
+            },
+            {
+              "definitionId": 50541147,
+              "rarity": 151,
+              "itemId": 954943195764,
+              "name": "Fabinho",
+              "tradeId": "620265569840",
+              "buyNow": 86500,
+              "expires": 52
+            },
+            {
+              "definitionId": 50599032,
+              "rarity": 151,
+              "itemId": 954637727151,
+              "name": "Flint",
+              "tradeId": "620265569849",
+              "buyNow": 76500,
+              "expires": 52
+            },
+            {
+              "definitionId": 50565158,
+              "rarity": 151,
+              "itemId": 954229869134,
+              "name": "Chong",
+              "tradeId": "620265564566",
+              "buyNow": 33000,
+              "expires": 53
+            }
+          ]
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 21,
+        "rejectionReasons": {
+          "Outside fresh window": 21
+        },
+        "freshCandidates": [],
+        "observedPlayerCount": 12,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          151
+        ],
+        "rarityLabel": "Ultimate Scream",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    },
+    {
+      "id": 168,
+      "name": "Ultimate Scream Hero",
+      "selectable": true,
+      "elapsedMs": 6989,
+      "queryCorrect": true,
+      "returnedCount": 0,
+      "returnedRarities": [],
+      "allReturnedMatch": null,
+      "distinctPlayers": 0,
+      "freshWindowObserved": 0,
+      "emptyOrUnavailable": true,
+      "calls": [
+        {
+          "request": {
+            "type": "player",
+            "rarities": [
+              168
+            ],
+            "defId": [],
+            "minBuy": 0,
+            "maxBuy": 100000,
+            "page": 1
+          },
+          "elapsedMs": 724.4000000059605,
+          "success": true,
+          "errorCode": null,
+          "items": []
+        }
+      ],
+      "status": {
+        "state": "stopped",
+        "freshCount": 0,
+        "rejectedCount": 0,
+        "rejectionReasons": {},
+        "freshCandidates": [],
+        "observedPlayerCount": 0,
+        "freshPlayerCount": 0,
+        "rarityIds": [
+          168
+        ],
+        "rarityLabel": "Ultimate Scream Hero",
+        "configuredMaximum": 100000,
+        "effectiveMaximum": 100000,
+        "executionStatus": "DISABLED"
+      },
+      "mutations": 0
+    }
+  ],
+  "mainMatchesUniversal": true,
+  "mainSha256": "40781003440dbcef803b4fed551677fb286dc8ce00b826c4daebf8bfecc9fd52",
+  "completedAt": "2026-11-02T16:30:08.010Z"
+}

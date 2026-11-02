@@ -1,0 +1,183 @@
+{
+  "readOnlyPreparation": true,
+  "state": {
+    "running": false,
+    "criteria": {
+      "type": "player",
+      "rarities": [
+        151
+      ],
+      "defId": [],
+      "maskedDefId": 0,
+      "minBuy": 0,
+      "maxBuy": 0
+    },
+    "filter": {
+      "current": "V8 SCREAM VALIDATION",
+      "selected": [
+        "V8 SCREAM VALIDATION"
+      ]
+    },
+    "maximum": 100000,
+    "autoFind": true,
+    "nativeBuyMaximum": 0,
+    "realPurchasingEnabled": false,
+    "status": {
+      "state": "stopped",
+      "freshCount": 0,
+      "rejectedCount": 251,
+      "rejectionReasons": {
+        "Outside fresh window": 243,
+        "Duplicate trade ID": 8
+      },
+      "freshCandidates": [],
+      "observedPlayerCount": 26,
+      "freshPlayerCount": 0,
+      "rarityIds": [
+        151
+      ],
+      "rarityLabel": "Ultimate Scream",
+      "configuredMaximum": 100000,
+      "effectiveMaximum": 100000,
+      "executionStatus": "DISABLED"
+    }
+  },
+  "review": "Review: bounded-review-window-ended",
+  "controls": "Discovery STOPPED · Rarity Ultimate Scream · Maximum 100000 · Purchase mode OFF · Pending none · Spent 0 · Remaining budget 0 · Safety/recovery: TraderProcessor.stop",
+  "purchaseModeChecked": false,
+  "exactConsentChecked": false,
+  "blockedMutations": 0,
+  "rarityOptions": [
+    {
+      "id": 0,
+      "name": "Common",
+      "disabled": false
+    },
+    {
+      "id": 9,
+      "name": "Base Hall of FUT",
+      "disabled": false
+    },
+    {
+      "id": 72,
+      "name": "Base Hero",
+      "disabled": false
+    },
+    {
+      "id": 12,
+      "name": "Base Icon",
+      "disabled": false
+    },
+    {
+      "id": 160,
+      "name": "Debut International Icon",
+      "disabled": false
+    },
+    {
+      "id": 22,
+      "name": "Destined for Glory",
+      "disabled": false
+    },
+    {
+      "id": 103,
+      "name": "FC Heritage",
+      "disabled": false
+    },
+    {
+      "id": 19,
+      "name": "FUT Champions",
+      "disabled": false
+    },
+    {
+      "id": 71,
+      "name": "Future Stars",
+      "disabled": false
+    },
+    {
+      "id": 150,
+      "name": "Ones to Watch",
+      "disabled": false
+    },
+    {
+      "id": 42,
+      "name": "POTM Bundesliga — unavailable for market trading",
+      "disabled": true
+    },
+    {
+      "id": 86,
+      "name": "POTM LALIGA EA SPORTS — unavailable for market trading",
+      "disabled": true
+    },
+    {
+      "id": 177,
+      "name": "POTM LIGA F",
+      "disabled": false
+    },
+    {
+      "id": 79,
+      "name": "POTM Ligue 1 — unavailable for market trading",
+      "disabled": true
+    },
+    {
+      "id": 43,
+      "name": "POTM Premier League — unavailable for market trading",
+      "disabled": true
+    },
+    {
+      "id": 114,
+      "name": "POTM Serie A",
+      "disabled": false
+    },
+    {
+      "id": 58,
+      "name": "Showdown",
+      "disabled": false
+    },
+    {
+      "id": 57,
+      "name": "Showdown Upgrade",
+      "disabled": false
+    },
+    {
+      "id": 87,
+      "name": "Squad Foundations — unavailable for market trading",
+      "disabled": true
+    },
+    {
+      "id": 8,
+      "name": "Star Performer",
+      "disabled": false
+    },
+    {
+      "id": 3,
+      "name": "Team of the Week",
+      "disabled": false
+    },
+    {
+      "id": 151,
+      "name": "Ultimate Scream",
+      "disabled": false
+    },
+    {
+      "id": 168,
+      "name": "Ultimate Scream Hero",
+      "disabled": false
+    }
+  ],
+  "logs": [
+    "[v8] state=DISCOVERY page=1 offset=0 count=21 minBuy=0 maxBuy=100000 minSec=44 maxSec=54 minPrice=17000 maxPrice=93000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=4 pageEvidence=native-sequential-page-probe coverageComplete=false execution=RC-controls",
+    "[v8] state=DISCOVERY page=2 offset=20 count=21 minBuy=0 maxBuy=100000 minSec=47 maxSec=58 minPrice=16500 maxPrice=91500 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=4 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+    "[v8] state=DISCOVERY page=1 offset=0 count=21 minBuy=0 maxBuy=50000 minSec=44 maxSec=57 minPrice=16000 maxPrice=50000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=6 pageEvidence=native-sequential-page-probe coverageComplete=false execution=RC-controls"
+  ],
+  "completedAt": "2026-11-02T16:37:14.108Z",
+  "planningLimits": {
+    "maximum": 100000,
+    "budget": 100000,
+    "minimumNetProfit": 15000,
+    "maxPurchases": 1
+  },
+  "realPurchasesAuthorized": false,
+  "realBuys": 0,
+  "realBids": 0,
+  "mainSha256": "3d32cc7292c5647d85d7adc043ad05ce362c78ba692f5bed6efcb04617c51562"
+}

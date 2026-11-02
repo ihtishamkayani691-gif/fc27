@@ -1,0 +1,84 @@
+{
+  "baseline": "394632c",
+  "branch": "dev/v8-browser-testing",
+  "version": "27.0.5.0",
+  "archive": "FC_Enhancer_v8_UNIVERSAL_RC.zip",
+  "sha256": "3c664256cc0deee947e37ea280039e50a9c4550cc3af516aca5cd8679fdb2f2a",
+  "bytes": 1996270,
+  "filesMatchingTestedBuild": 24,
+  "manifestResourcesChecked": 12,
+  "priorArchivesUnchanged": {
+    "TEST": [
+      "delivery/v8/FC_Enhancer_v8_Trader_Validation_TEST.zip",
+      "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4"
+    ],
+    "RC1": [
+      "delivery/v8-rc/FC_Enhancer_v8_RC1_PURCHASING_OFF_DEFAULT.zip",
+      "69d4f0330190cb32a4bf1cb1900d962611c0ccda79cb12f4bbdf2e77360f4bdf"
+    ],
+    "RC2": [
+      "delivery/v8-rc2/FC_Enhancer_v8_RC2.zip",
+      "a42b80b7303fad935705dddfff0815e03d58eca9f22f50c645dd3e54c1dea49a"
+    ],
+    "FINAL": [
+      "delivery/v8-final/FC_Enhancer_v8_FINAL_RC.zip",
+      "729c404abd37b5bcce18f36a061766b797dfdda8e024c508895172dfae1d0d3c"
+    ]
+  },
+  "tests": {
+    "v8": 273,
+    "evaluator": 47,
+    "baseline": 2,
+    "archivedRegression": 74,
+    "total": 396,
+    "original325Preserved": true
+  },
+  "sessionSnapshots": 42,
+  "browser": {
+    "UNIVERSAL_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 25
+    },
+    "UNIVERSAL_ZIP_INSTALLED_RESULTS": {
+      "passed": true,
+      "checks": 25
+    },
+    "UNIVERSAL_MCP_RESULTS": {
+      "passed": true,
+      "checks": null
+    }
+  },
+  "nativeRarityCount": 23,
+  "nativeMarketSelectable": 18,
+  "liveQueriesVerified": 18,
+  "liveRaritiesWithMatchingListings": 7,
+  "liveEmptyRarities": 11,
+  "plannerAndNativeMiddlewarePreserved": [
+    99007,
+    99009,
+    99013,
+    65757,
+    30154,
+    83847
+  ],
+  "identicalLiveDiscoveryFactories": [
+    99007,
+    99009,
+    99011,
+    99013,
+    65757,
+    30154,
+    99022
+  ],
+  "purchasingOffByDefault": true,
+  "realBuys": 0,
+  "realBids": 0,
+  "realTransactionApprovalReceived": false,
+  "userPlanningLimits": {
+    "maximumBuyNow": 100000,
+    "minimumNetProfit": 15000,
+    "totalOnePurchaseBudget": 100000,
+    "maxPurchases": 1
+  },
+  "productionReady": false
+}

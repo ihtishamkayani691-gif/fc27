@@ -1,0 +1,37 @@
+{
+  "status": "UNVERIFIED_NO_QUALIFYING_TRANSACTION",
+  "liveTestingEnabled": false,
+  "exactTransactionApprovalReceived": false,
+  "realBuys": 0,
+  "realBids": 0,
+  "planningLimits": {
+    "maximumBuyNow": 100000,
+    "minimumNetProfit": 15000,
+    "totalOnePurchaseBudget": 100000,
+    "maxPurchases": 1
+  },
+  "boundedReadOnlyReviews": [
+    {
+      "rarity": "Ultimate Scream",
+      "id": 151,
+      "stopped": true,
+      "result": "Review: bounded-review-window-ended",
+      "observedFresh": 0,
+      "purchaseMode": false,
+      "exactConsent": false,
+      "blockedMutationAttempts": 0
+    },
+    {
+      "rarity": "Base Hero",
+      "id": 72,
+      "stopped": true,
+      "result": "Review: bounded-review-window-ended",
+      "observedFresh": 1,
+      "purchaseMode": false,
+      "exactConsent": false,
+      "blockedMutationAttempts": 0
+    }
+  ],
+  "reason": "Neither bounded review found a fresh-window candidate to evaluate. There is no qualifying exact transaction to approve. Limits were not lowered; no real purchase or bid was submitted.",
+  "nextRequirement": "A fresh listing must pass the 100000 maximum,15000 estimated after-fee net profit,coin/inventory/budget/native safeguards, then the user must approve that exact one-purchase transaction. Revalidate; never substitute or retry blindly."
+}

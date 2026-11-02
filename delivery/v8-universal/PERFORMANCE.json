@@ -1,0 +1,19 @@
+{
+  "scope": "Bounded native searches; no purchase latency measured",
+  "liveSearchResponses": 18,
+  "minMs": 405,
+  "medianMs": 689.2999999970198,
+  "maxMs": 983.5,
+  "ratePolicy": "Original native timer plus shared minimum7s discovery/valuation scheduling; no rate-limit bypass",
+  "liveDiscoveryFactoryMatch": [
+    99007,
+    99009,
+    99011,
+    99013,
+    65757,
+    30154,
+    99022
+  ],
+  "discoveryNeverClaimsExhaustiveCoverage": true,
+  "offlineNativeTimersSimulated": true
+}

@@ -1,0 +1,224 @@
+{
+  "source": "factories.DataProvider.getItemRarityDP",
+  "tradable": [
+    {
+      "id": -1,
+      "label": "Any",
+      "value": -1
+    },
+    {
+      "id": 0,
+      "label": "Common",
+      "value": 0
+    },
+    {
+      "id": 9,
+      "label": "Base Hall of FUT",
+      "value": 9
+    },
+    {
+      "id": 72,
+      "label": "Base Hero",
+      "value": 72
+    },
+    {
+      "id": 12,
+      "label": "Base Icon",
+      "value": 12
+    },
+    {
+      "id": 160,
+      "label": "Debut International Icon",
+      "value": 160
+    },
+    {
+      "id": 22,
+      "label": "Destined for Glory",
+      "value": 22
+    },
+    {
+      "id": 103,
+      "label": "FC Heritage",
+      "value": 103
+    },
+    {
+      "id": 19,
+      "label": "FUT Champions",
+      "value": 19
+    },
+    {
+      "id": 71,
+      "label": "Future Stars",
+      "value": 71
+    },
+    {
+      "id": 150,
+      "label": "Ones to Watch",
+      "value": 150
+    },
+    {
+      "id": 177,
+      "label": "POTM LIGA F",
+      "value": 177
+    },
+    {
+      "id": 114,
+      "label": "POTM Serie A",
+      "value": 114
+    },
+    {
+      "id": 58,
+      "label": "Showdown",
+      "value": 58
+    },
+    {
+      "id": 57,
+      "label": "Showdown Upgrade",
+      "value": 57
+    },
+    {
+      "id": 8,
+      "label": "Star Performer",
+      "value": 8
+    },
+    {
+      "id": 3,
+      "label": "Team of the Week",
+      "value": 3
+    },
+    {
+      "id": 151,
+      "label": "Ultimate Scream",
+      "value": 151
+    },
+    {
+      "id": 168,
+      "label": "Ultimate Scream Hero",
+      "value": 168
+    }
+  ],
+  "all": [
+    {
+      "id": -1,
+      "label": "Any",
+      "value": -1
+    },
+    {
+      "id": 0,
+      "label": "Common",
+      "value": 0
+    },
+    {
+      "id": 9,
+      "label": "Base Hall of FUT",
+      "value": 9
+    },
+    {
+      "id": 72,
+      "label": "Base Hero",
+      "value": 72
+    },
+    {
+      "id": 12,
+      "label": "Base Icon",
+      "value": 12
+    },
+    {
+      "id": 160,
+      "label": "Debut International Icon",
+      "value": 160
+    },
+    {
+      "id": 22,
+      "label": "Destined for Glory",
+      "value": 22
+    },
+    {
+      "id": 103,
+      "label": "FC Heritage",
+      "value": 103
+    },
+    {
+      "id": 19,
+      "label": "FUT Champions",
+      "value": 19
+    },
+    {
+      "id": 71,
+      "label": "Future Stars",
+      "value": 71
+    },
+    {
+      "id": 150,
+      "label": "Ones to Watch",
+      "value": 150
+    },
+    {
+      "id": 42,
+      "label": "POTM Bundesliga",
+      "value": 42
+    },
+    {
+      "id": 86,
+      "label": "POTM LALIGA EA SPORTS",
+      "value": 86
+    },
+    {
+      "id": 177,
+      "label": "POTM LIGA F",
+      "value": 177
+    },
+    {
+      "id": 79,
+      "label": "POTM Ligue 1",
+      "value": 79
+    },
+    {
+      "id": 43,
+      "label": "POTM Premier League",
+      "value": 43
+    },
+    {
+      "id": 114,
+      "label": "POTM Serie A",
+      "value": 114
+    },
+    {
+      "id": 58,
+      "label": "Showdown",
+      "value": 58
+    },
+    {
+      "id": 57,
+      "label": "Showdown Upgrade",
+      "value": 57
+    },
+    {
+      "id": 87,
+      "label": "Squad Foundations",
+      "value": 87
+    },
+    {
+      "id": 8,
+      "label": "Star Performer",
+      "value": 8
+    },
+    {
+      "id": 3,
+      "label": "Team of the Week",
+      "value": 3
+    },
+    {
+      "id": 151,
+      "label": "Ultimate Scream",
+      "value": 151
+    },
+    {
+      "id": 168,
+      "label": "Ultimate Scream Hero",
+      "value": 168
+    }
+  ],
+  "metadataExpired": false,
+  "hasCache": true
+}

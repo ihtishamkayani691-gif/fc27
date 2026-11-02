@@ -1,0 +1,23 @@
+# Universal RC installation and use
+
+Version **27.0.5.0**. Purchasing defaults OFF. The previous FINAL RC remains unchanged for rollback. This release has not completed a real EA purchase acceptance test and is not certified production-ready.
+
+1. Extract `FC_Enhancer_v8_UNIVERSAL_RC.zip` to a permanent, separate folder. Disable other FC Enhancer copies in that Chrome profile. Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the folder containing manifest.json. Check version **27.0.5.0**.
+2. Sign in directly through the official EA Web App and open Trader. The **Universal Trader controls** mount when the native page is ready; no saved filter is required to make them visible.
+3. Choose a rarity by name in **Universal rarity**. The list comes from EA's native metadata; nontradable or unavailable entries are disabled. **Refresh native rarities** rereads that native metadata. If EA's cache has expired, reload the official Web App; do not guess an ID.
+4. Fill **Maximum snipe price**, minimum net profit, maximum coins per purchase, total budget, maximum purchases and additional costs. Choose the owned-player restriction. Click **Save settings for this rarity** to save those limits explicitly. New, renamed or changed-ID rarities start without inherited spending limits. Switching to an existing profile loads only its own validated limits; purchasing stays OFF.
+5. Keep existing native Buy/Bid and Safety rules enabled. Configure native dynamic Buy Now pricing before any future purchase session. Existing native maximums and filters may further restrict discovery. The universal controls use all-player criteria: no individual player selection. Other native nation/club/position/client restrictions, if retained, can narrow coverage.
+6. Click **Start universal discovery**. Leave **Enable purchases for this session** OFF for discovery-only use. Stop and Emergency purchase disable are always available. Stop, reload, settings changes and extension restart disarm purchasing. A valid profile never persists an enabled purchase mode.
+7. Automatic purchasing requires a separately authorized session and a trusted click on **Enable purchases for this session**, then Start. Your visible snipe maximum is reapplied before arming and checked again at submission. Fees/costs, fresh exact-rarity price evidence, coins, inventory, budgets, count, duplicate and Stop protections all remain enforced.
+
+## Controlled one-purchase acceptance
+
+The current planning limits are maximum 100,000 coins, one-purchase total budget 100,000 coins and minimum estimated net profit 15,000 coins. They do not authorize a real purchase. No real approval has been received.
+
+Open **Controlled one-purchase acceptance test**, configure maximum purchases to 1, then choose **Prepare one-purchase review (no buying)**. It scans with purchasing OFF, checks up to 3 candidate valuations within a bounded two-minute window, and stops when it has a qualifying exact transaction or reaches a limit. The review shows the exact card/rarity/trade, Buy Now price, fee, additional costs, comparable ask, estimated net profit and maximum expenditure. Any approved acceptance item is held unassigned; this mode does not sell or move it automatically, and does not silently rewrite saved settings.
+
+The first real test requires separate approval of that exact card, its price, budget and one-purchase limit. Only then may the user explicitly check **I approve this exact one-purchase acceptance test** and click **Execute the approved one-purchase test**. Do not click those controls during development or discovery validation. Approval is short-lived; native listing refresh, all safety/economic checks and exact identity/price must still agree before submission. No replacement card or blind retry is permitted. A sold, stale, changed or uncertain transaction stops. An old approval cannot resume in a new session after Stop/restart.
+
+Net profit is an estimate from at least 3 distinct native comparable asks of the same rarity and definition, excluding the target. Evidence is limited to 15 seconds and sample expiry. It deducts a conservatively rounded 5% sale fee and your additional costs; asks do not guarantee realized sales or profit. Extra valuation reads share the native safety spacing and can make candidates expire before execution; those candidates are rejected.
+
+Unknown outcomes remain journaled and locked. Stop and use explicit reconciliation when native auction, exact item ownership and coin evidence are available. Late-confirmed items can require manual handling; never clear the journal or replay uncertain mutations to force a retry.

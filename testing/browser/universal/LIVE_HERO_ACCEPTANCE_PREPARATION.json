@@ -1,0 +1,65 @@
+{
+  "state": {
+    "running": false,
+    "criteria": {
+      "type": "player",
+      "rarities": [
+        72
+      ],
+      "defId": [],
+      "maskedDefId": 0,
+      "minBuy": 0,
+      "maxBuy": 0
+    },
+    "filter": {
+      "current": "V8 SCREAM VALIDATION",
+      "selected": [
+        "V8 SCREAM VALIDATION"
+      ]
+    },
+    "maximum": 100000,
+    "autoFind": true,
+    "nativeBuyMaximum": 0,
+    "realPurchasingEnabled": false,
+    "status": {
+      "state": "stopped",
+      "freshCount": 1,
+      "rejectedCount": 258,
+      "rejectionReasons": {
+        "Outside fresh window": 204,
+        "Duplicate trade ID": 53,
+        "profitability-rule-not-configured": 1
+      },
+      "freshCandidates": [],
+      "observedPlayerCount": 40,
+      "freshPlayerCount": 1,
+      "rarityIds": [
+        72
+      ],
+      "rarityLabel": "Base Hero",
+      "configuredMaximum": 100000,
+      "effectiveMaximum": 100000,
+      "executionStatus": "DISABLED"
+    }
+  },
+  "review": "Review: bounded-review-window-ended",
+  "controls": "Discovery STOPPED · Rarity Base Hero · Maximum 100000 · Purchase mode OFF · Pending none · Spent 0 · Remaining budget 0 · Safety/recovery: TraderProcessor.stop",
+  "purchaseModeChecked": false,
+  "exactConsentChecked": false,
+  "blockedMutations": 0,
+  "logs": [
+    "[v8] state=DISCOVERY page=2 offset=20 count=21 minBuy=0 maxBuy=100000 minSec=53 maxSec=59 minPrice=43000 maxPrice=95500 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=6 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+    "[v8] state=DISCOVERY page=1 offset=0 count=21 minBuy=49750 maxBuy=100000 minSec=45 maxSec=52 minPrice=51500 maxPrice=99500 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=8 pageEvidence=native-sequential-page-probe coverageComplete=false execution=RC-controls",
+    "[v8] state=DISCOVERY page=1 offset=0 count=21 minBuy=99500 maxBuy=100000 minSec=105 maxSec=1427 minPrice=99500 maxPrice=100000 observedCount=21 http=200 freshCandidates=0 priceEligible=0 scopes=8 pageEvidence=native-sequential-page-probe coverageComplete=false execution=RC-controls"
+  ],
+  "completedAt": "2026-11-02T16:43:08.567Z",
+  "planningLimits": {
+    "maximum": 100000,
+    "budget": 100000,
+    "minimumNetProfit": 15000,
+    "maxPurchases": 1
+  },
+  "realTransactionApprovalReceived": false,
+  "realBuys": 0,
+  "realBids": 0
+}

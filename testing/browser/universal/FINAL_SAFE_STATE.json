@@ -1,0 +1,12 @@
+{
+  "installedUniversal": true,
+  "authenticated": true,
+  "running": false,
+  "purchasingEnabled": false,
+  "maximum": 0,
+  "purchaseCheckbox": false,
+  "exactConsent": false,
+  "interlockInstalled": true,
+  "blockedMutations": 0,
+  "controlsVisible": true
+}

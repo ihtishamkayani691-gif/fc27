@@ -15,3 +15,4 @@ run(process.execPath,[path.join(source,'work/regression.cjs')]);
 run(process.execPath,['testing/browser/renderer-smoke.cjs',process.env.FC_EXTENSION_DIR,'testing/browser/logger-fixture.cjs','testing/browser/LOCAL_LOGGER_RESULTS.json']);
 run(process.execPath,['testing/browser/renderer-smoke.cjs','.local/v8-offline-extension','testing/browser/v8-integration-fixture.cjs','testing/browser/LOCAL_V8_RENDERER.json']);
 run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-offline-extension','testing/browser/LOCAL_V8_REGISTRATION.json']);
+run(process.execPath,['testing/browser/local-registration.cjs','.local/v8-trader-validation','testing/browser/LOCAL_TRADER_REGISTRATION.json']);

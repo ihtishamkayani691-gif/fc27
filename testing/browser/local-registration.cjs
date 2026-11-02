@@ -29,6 +29,7 @@ try{
  const integration=await page.evaluate(()=>globalThis.__fcInstalledIntegrationResult);report.installedIntegration=integration;
  check('installed extension runs v8 integration checks',integration.checks.length>=7&&integration.checks.every(c=>c.passed));
  check('installed integration renders through production Trader logger',(await page.locator('.process-log-messages .message').innerText()).includes('[v8 OFFLINE]'));
+ if(manifest.version==='27.0.2.2'){const text=await page.locator('.fc-v8-trader-status').innerText();check('installed status shows rarity, both ceilings, candidates, rejection and execution lock',text.includes('Synthetic fixture rarity')&&text.includes('900')&&text.includes('800')&&text.includes('Fresh candidates: 1')&&text.includes('Rejected candidates: 2')&&text.includes('Execution: LOCKED'));}
  await page.screenshot({path:reportPath.replace(/\.json$/i,'.png'),fullPage:true});
  check('no page runtime errors',report.errors.length===0);report.passed=true;
 }catch(error){report.passed=false;report.error=error.message;process.exitCode=1}

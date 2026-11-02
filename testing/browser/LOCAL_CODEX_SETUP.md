@@ -126,7 +126,30 @@ First exercise only synthetic fixtures. Capture page exceptions, console errors,
 failed fixture requests, loader order, normal Trader log rendering and guard tests.
 Do not navigate to EA or start Trader market activity until the separate logging-only
 live-validation plan has been approved. Purchases and bids must remain disabled.
-No local or cloud browser test to date proves live fresh-listing retrieval.
+Historical setup note: live native fresh-window retrieval was subsequently demonstrated at baseline 6264458. See delivery/v8/ACCEPTANCE.md for the final TEST validation and its limits.
 
 Official references: https://github.com/microsoft/playwright-mcp and
 https://github.com/ChromeDevTools/chrome-devtools-mcp .
+
+
+## Final v8 reliability validation
+
+`npm test` rebuilds and runs the complete offline regression suite, renderer
+fixtures, and both offline and production installed-extension suites. It does
+not open EA or make market requests. `npm run build:v8` builds the locked TEST
+extension under `.local/v8-trader-validation`.
+
+The separately authorized live validation uses the isolated authenticated Chrome
+on loopback port 9223. Only in such a permitted discovery-only session, use
+`node testing/browser/reliability-sessions.cjs 25000 50000 75000` with Trader open
+and Search Settings visible. These arguments are temporary test ceilings, never
+purchase instructions. The runner changes the visible field, saves clearly named
+TEST filters, starts/stops through normal Trader controls, and checks sanitized
+reports. It excludes messages left over from earlier runs. Do not run concurrent
+UI controllers against that tab.
+
+Real execution remains disabled in the immutable build policy and service/transport
+guards. Mock-only authorization in unit tests never changes the installed policy.
+Unknown transaction outcomes or wins arriving after cancellation require native
+state reconciliation before future execution; there is no automatic unlock.
+The ZIP contains no browser profile, account data, or preset purchase limit.

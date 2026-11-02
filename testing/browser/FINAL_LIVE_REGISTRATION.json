@@ -1,0 +1,68 @@
+{
+  "version": "27.0.2.2",
+  "testedMainSha256": "937eb744d15101d2bc22b01f821a43110897091f29ad541bce57d2da1fa46d74",
+  "state": {
+    "title": "FC Ultimate Team Web App - EA SPORTS Official Site",
+    "loginButtonVisible": true,
+    "appNavigationPresent": true,
+    "nativeServicesAvailable": true,
+    "nativeTradeAccessAllowed": true,
+    "ultimateScreamVisible": true,
+    "executionGuardInstalled": true,
+    "v8": {
+      "running": false,
+      "criteria": {
+        "type": "player",
+        "rarities": [
+          151
+        ],
+        "defId": [],
+        "maskedDefId": 0,
+        "minBuy": 0,
+        "maxBuy": 0
+      },
+      "filter": {
+        "current": "V8 TEST LOCKED - SET YOUR LIMIT 20261102",
+        "selected": [
+          "V8 SCREAM VALIDATION",
+          "V8 RELIABILITY 50000 TEST 1793582128508",
+          "V8 RELIABILITY 75000 TEST 1793582200381",
+          "V8 TEST LOCKED - SET YOUR LIMIT 20261102"
+        ]
+      },
+      "maximum": 0,
+      "autoFind": true,
+      "nativeBuyMaximum": 0,
+      "realPurchasingEnabled": false,
+      "status": {
+        "state": "stopped",
+        "freshCount": 1,
+        "rejectedCount": 62,
+        "rejectionReasons": {
+          "Outside fresh window": 59,
+          "Duplicate trade ID": 3
+        },
+        "freshCandidates": [
+          {
+            "name": "Amoura",
+            "buyNowPrice": 75000,
+            "tradeId": "620107869724"
+          }
+        ],
+        "observedPlayerCount": 16,
+        "freshPlayerCount": 1,
+        "rarityIds": [
+          151
+        ],
+        "rarityLabel": "Ultimate Scream",
+        "configuredMaximum": 0,
+        "effectiveMaximum": null
+      }
+    }
+  },
+  "interlock": {
+    "nativeBidInterlockInstalled": true,
+    "blockedMutationAttempts": 0
+  },
+  "passed": true
+}

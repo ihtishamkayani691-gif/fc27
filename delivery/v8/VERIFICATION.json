@@ -1,10 +1,11 @@
 {
+  "baseline": "6264458",
   "build": "FC Enhancer v8 Trader Validation TEST",
-  "version": "27.0.2.1",
+  "version": "27.0.2.2",
   "archive": "FC_Enhancer_v8_Trader_Validation_TEST.zip",
-  "sha256": "18337e89b3cd03cb75fb37ebba87d0390d9613a35a6e86f8c4031f3cca479451",
-  "bytes": 1963525,
-  "filesMatchTestedBuild": 23,
+  "sha256": "8da6a6d3e2185a57cd5874f03939e22f2eb8df359f37ae66d0bdf5ff0644ede4",
+  "bytes": 1975691,
+  "filesMatchTestedBuild": 24,
   "manifestResourcesChecked": 12,
   "purchasePolicy": {
     "validationComplete": false,
@@ -12,24 +13,56 @@
     "userAuthorized": false
   },
   "tests": {
-    "v8": 72,
+    "v8": 92,
     "evaluator": 47,
     "baseline": 2,
     "productionRegression": 74,
-    "total": 195
+    "total": 215
   },
   "browserReports": {
     "LOCAL_LOGGER_RESULTS": "passed",
     "LOCAL_V8_RENDERER": "passed",
     "LOCAL_TRADER_REGISTRATION": "passed",
-    "LOCAL_MCP_RESULTS": "passed"
+    "LOCAL_MCP_RESULTS": "passed",
+    "FINAL_ZIP_REGISTRATION": "passed",
+    "FINAL_LIVE_REGISTRATION": "passed"
   },
-  "latestLiveCandidates": 2,
+  "baselineLiveCandidates": 2,
+  "reliabilitySessions": [
+    {
+      "testMaximum": 25000,
+      "observedPlayers": 6,
+      "freshPlayers": 2,
+      "freshCandidates": 2,
+      "safetyPassedCandidates": 2,
+      "rejected": 344,
+      "stopped": true
+    },
+    {
+      "testMaximum": 50000,
+      "observedPlayers": 14,
+      "freshPlayers": 1,
+      "freshCandidates": 1,
+      "safetyPassedCandidates": 1,
+      "rejected": 115,
+      "stopped": true
+    },
+    {
+      "testMaximum": 75000,
+      "observedPlayers": 16,
+      "freshPlayers": 1,
+      "freshCandidates": 1,
+      "safetyPassedCandidates": 1,
+      "rejected": 62,
+      "stopped": true
+    }
+  ],
+  "testCapsAreNotPurchaseInstructions": true,
   "latestLiveRunStopped": true,
   "realPurchasingEnabled": false,
   "limitations": [
     "No real purchase or bid was performed.",
     "Candidate durations do not prove listing creation time.",
-    "Exhaustive full-pool coverage and live profitability/budget behavior remain unproven."
+    "Exhaustive full-pool coverage and real purchase execution remain unproven. Profitability, budgets and transaction recovery were tested with mocks, not real money."
   ]
 }

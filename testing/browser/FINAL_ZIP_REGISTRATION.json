@@ -1,0 +1,94 @@
+{
+  "liveEA": false,
+  "marketRequestsExecuted": 0,
+  "checks": [
+    {
+      "name": "unpacked worker registered with expected identity",
+      "passed": true,
+      "detail": {
+        "id": "boffdonfioidojlcpmfnkngipappmcoh",
+        "name": "FC Enhancer v8 Trader Validation TEST (NO BUYING)",
+        "version": "27.0.2.2"
+      }
+    },
+    {
+      "name": "CDP exposes extension service worker",
+      "passed": true
+    },
+    {
+      "name": "installed extension assets are readable",
+      "passed": true
+    },
+    {
+      "name": "installed extension runs v8 integration checks",
+      "passed": true
+    },
+    {
+      "name": "installed integration renders through production Trader logger",
+      "passed": true
+    },
+    {
+      "name": "installed status shows rarity, both ceilings, candidates, rejection and execution lock",
+      "passed": true
+    },
+    {
+      "name": "no page runtime errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "browser": "156.0.8078.79",
+  "extensionId": "boffdonfioidojlcpmfnkngipappmcoh",
+  "workerUrl": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js",
+  "runtime": {
+    "id": "boffdonfioidojlcpmfnkngipappmcoh",
+    "name": "FC Enhancer v8 Trader Validation TEST (NO BUYING)",
+    "version": "27.0.2.2"
+  },
+  "targets": [
+    {
+      "type": "service_worker",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/background.js"
+    },
+    {
+      "type": "page",
+      "url": "chrome-extension://boffdonfioidojlcpmfnkngipappmcoh/manifest.json"
+    }
+  ],
+  "installedIntegration": {
+    "checks": [
+      {
+        "name": "bundled v8 planner and native safety evaluate synthetic item",
+        "passed": true,
+        "detail": "{\"eligible\":true,\"status\":\"pass\",\"reason\":\"logging-only-safety-checks-passed\",\"buyingDisabled\":true,\"purchaseAuthorized\":false,\"fullPurchaseSafety\":\"pending\",\"ceiling\":900,\"passed\":[\"checkIfGK\",\"checkIfBasicChemistry\",\"checkIfValidRatingRange\",\"checkIfExpired\",\"checkBuyPrice\"],\"profitEvaluation\":\"unverified/not-configured\",\"budgetEvaluation\":\"unverified/not-configured\"}"
+      },
+      {
+        "name": "v8 integration cannot authorize purchase",
+        "passed": true
+      },
+      {
+        "name": "v8 integration deduplicates repeated trade IDs",
+        "passed": true
+      },
+      {
+        "name": "integrated v8 output reaches the production Trader logger",
+        "passed": true
+      },
+      {
+        "name": "integrated player display text is escaped",
+        "passed": true
+      },
+      {
+        "name": "stopped integration produces no further intents",
+        "passed": true
+      },
+      {
+        "name": "offline integration reports incomplete live coverage",
+        "passed": true
+      }
+    ],
+    "liveEA": false,
+    "purchaseAuthorized": false
+  },
+  "passed": true
+}

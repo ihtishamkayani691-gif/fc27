@@ -2,7 +2,7 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),Module=require('node:module');
 const root=path.resolve(__dirname,'../../..'),bundle=path.join(root,'.local/v8-trader-validation/js/main.js');
 const harnessPath=path.join(root,'.local/v72-source/work/regression.cjs');
-const prefix=fs.readFileSync(harnessPath,'utf8').split("test('page 1 is validated first")[0].replace('const real=new Set([','const real=new Set([99009,99011,99012,99013,99014,7520,72316,93727,39887,10270,30804,22850,62813,72678,10454,');
+const prefix=fs.readFileSync(harnessPath,'utf8').split("test('page 1 is validated first")[0].replace('const real=new Set([','const real=new Set([99009,99011,99012,99013,99014,99015,99016,7520,72316,93727,39887,10270,30804,22850,62813,72678,10454,');
 const compiled=new Module(harnessPath,module);compiled.filename=harnessPath;compiled.paths=Module._nodeModulePaths(path.dirname(harnessPath));compiled._compile(prefix+'\nmodule.exports={harness};',harnessPath);
 const {harness}=compiled.exports;
 test('actual production Trader runActions calls v8 native search adapter and never transfer execution',async()=>{

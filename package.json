@@ -13,7 +13,9 @@
     "build:v8:rc2": "node testing/v8/build-rc2.cjs",
     "build:v8:final": "node testing/v8/build-final.cjs",
     "build:v8:universal": "node testing/v8/build-universal.cjs",
-    "build:v8:universal:final": "node testing/v8/build-universal-final.cjs"
+    "build:v8:universal:final": "node testing/v8/build-universal-final.cjs",
+    "build:v8:improved": "node testing/v8/build-improved.cjs",
+    "package:v8:improved": "node testing/v8/package-windows.cjs .local/v8-improved delivery/v8-improved/FC_Enhancer_v8_IMPROVED_READY_TO_INSTALL.zip"
   },
   "devDependencies": {
     "playwright": "1.65.0-alpha-2026-10-30",

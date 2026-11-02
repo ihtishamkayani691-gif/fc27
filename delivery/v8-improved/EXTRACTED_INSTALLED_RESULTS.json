@@ -1,0 +1,756 @@
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "checks": [
+    {
+      "name": "UNIVERSAL background worker runs with the expected manifest",
+      "passed": true
+    },
+    {
+      "name": "UNIVERSAL extension worker and native Trader controls installed",
+      "passed": true
+    },
+    {
+      "name": "purchases default OFF",
+      "passed": true
+    },
+    {
+      "name": "blank session limits cannot arm",
+      "passed": true
+    },
+    {
+      "name": "new rarity starts with blank spending limits and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "saved Icon profile restores only its own limits",
+      "passed": true
+    },
+    {
+      "name": "explicit limits allow trusted session enablement",
+      "passed": true
+    },
+    {
+      "name": "visible per-rarity snipe maximum overrides a stale native filter ceiling",
+      "passed": true
+    },
+    {
+      "name": "actual Trader discovered and purchased multiple players through native pipeline",
+      "passed": true
+    },
+    {
+      "name": "coins and native inventory accounting reconcile",
+      "passed": true
+    },
+    {
+      "name": "rarity and price visible",
+      "passed": true
+    },
+    {
+      "name": "hard disable works while discovery is running",
+      "passed": true
+    },
+    {
+      "name": "metadata rename during a run clears old spending after Stop",
+      "passed": true
+    },
+    {
+      "name": "Stop leaves Trader stopped and purchases OFF",
+      "passed": true
+    },
+    {
+      "name": "reload never re-enables purchases",
+      "passed": true
+    },
+    {
+      "name": "installed native market error stops discovery safely",
+      "passed": true
+    },
+    {
+      "name": "fresh session recovers from market error with purchase mode OFF",
+      "passed": true
+    },
+    {
+      "name": "new native metadata appears without an extension rebuild",
+      "passed": true
+    },
+    {
+      "name": "future rarity inherits no higher spending limits",
+      "passed": true
+    },
+    {
+      "name": "missing native valuation is rejected before live discovery starts",
+      "passed": true
+    },
+    {
+      "name": "explicit valuation enablement changes the native rule without enabling buying",
+      "passed": true
+    },
+    {
+      "name": "acceptance review uses the native timer and production safeguards without a purchase",
+      "passed": true
+    },
+    {
+      "name": "exact review includes coins, budget and native comparable evidence",
+      "passed": true
+    },
+    {
+      "name": "exact acceptance execution is disabled before explicit consent",
+      "passed": true
+    },
+    {
+      "name": "editing any review limit invalidates the old transaction approval",
+      "passed": true
+    },
+    {
+      "name": "approved exact simulated transaction completes once and stops",
+      "passed": true
+    },
+    {
+      "name": "zero external network requests",
+      "passed": true
+    },
+    {
+      "name": "zero runtime or console errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "network": [],
+  "extensionId": "mjdanojfmoobkdfcgcbhjnggbgcpekdp",
+  "browser": "156.0.8078.79",
+  "worker": {
+    "id": "mjdanojfmoobkdfcgcbhjnggbgcpekdp",
+    "version": "27.0.7.0"
+  },
+  "session": {
+    "running": true,
+    "status": {
+      "enabled": true,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 10
+      },
+      "remainingBudget": 2200,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 1800,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "enabled-for-this-session",
+      "eligible": 3,
+      "attempts": 3,
+      "successes": 2,
+      "lost": 1,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "2001",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        },
+        {
+          "tradeId": "2002",
+          "outcome": "confirmed-sold"
+        },
+        {
+          "tradeId": "2005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 2.3,
+          "medianMs": 3.2,
+          "p95Ms": 3.2,
+          "maxMs": 3.2,
+          "totalMs": 5.5
+        },
+        "candidate_parsing": {
+          "count": 4,
+          "minMs": 0.3,
+          "medianMs": 0.6,
+          "p95Ms": 0.6,
+          "maxMs": 0.6,
+          "totalMs": 1.9
+        },
+        "purchase_decision": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 0.1,
+          "p95Ms": 0.3,
+          "maxMs": 0.3,
+          "totalMs": 0.4
+        },
+        "price_evidence": {
+          "count": 4,
+          "minMs": 0,
+          "medianMs": 1.3,
+          "p95Ms": 1.4,
+          "maxMs": 1.4,
+          "totalMs": 4
+        },
+        "safety_evaluation": {
+          "count": 3,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.4,
+          "maxMs": 0.4,
+          "totalMs": 0.6
+        },
+        "discovery_to_purchase_ready": {
+          "count": 3,
+          "minMs": 1.7,
+          "medianMs": 1.8,
+          "p95Ms": 2.5,
+          "maxMs": 2.5,
+          "totalMs": 6
+        },
+        "transaction_completion": {
+          "count": 3,
+          "minMs": 2.6,
+          "medianMs": 2.8,
+          "p95Ms": 5.3,
+          "maxMs": 5.3,
+          "totalMs": 10.7
+        },
+        "reconciliation": {
+          "count": 3,
+          "minMs": 1.3,
+          "medianMs": 1.6,
+          "p95Ms": 1.7,
+          "maxMs": 1.7,
+          "totalMs": 4.6
+        }
+      },
+      "acceptanceReview": null,
+      "rejections": {
+        "count": 1,
+        "reasons": {
+          "stale-response": 1
+        }
+      }
+    },
+    "attempts": 3,
+    "coins": 3200,
+    "inventory": [
+      201,
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.7000000029802322
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793654520920
+      },
+      {
+        "kind": "attempt",
+        "id": "2001",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "2001",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 3.2999999970197678
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 202,
+        "reference": 1000,
+        "at": 1793654527920
+      },
+      {
+        "kind": "attempt",
+        "id": "2002",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2002",
+        "success": false,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.2999999970197678
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            12
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 850,
+          "maxBuy": 900
+        },
+        "elapsedMs": 2.2000000029802322
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793654541920
+      },
+      {
+        "kind": "attempt",
+        "id": "2005",
+        "price": 900,
+        "coinsBefore": 4100
+      },
+      {
+        "kind": "result",
+        "id": "2005",
+        "success": true,
+        "coinsAfter": 3200,
+        "elapsedMs": 2.0999999940395355
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=12 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 201 tradeId=2001 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8 candidate] Player: Player 202 tradeId=2002 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] Player: Player 203 tradeId=2003 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=stale-response purchaseAuthorized=false buying=DISABLED",
+      "[v8 candidate] tradeId=2004 price=901 priceEligible=false execution=RC-controls",
+      "[v8] state=DISCOVERY page=1 offset=0 count=4 minBuy=0 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=901 observedCount=21 http=200 freshCandidates=4 priceEligible=3 scopes=6 pageEvidence=bounded-scope-refresh coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 850",
+      "Next action in 4 (secs)",
+      "[v8 candidate] Player: Player 205 tradeId=2005 buyNow=900 remaining=3559 newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety=pass purchaseAuthorized=true buying=ENABLED",
+      "[v8] state=DISCOVERY page=1 offset=0 count=1 minBuy=850 maxBuy=900 minSec=3559 maxSec=3559 minPrice=900 maxPrice=900 observedCount=21 http=200 freshCandidates=1 priceEligible=1 scopes=6 pageEvidence=fresh-frontier-and-skipped-page-coverage coverageComplete=false execution=RC-controls"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 2.3,
+        "medianMs": 3.2,
+        "p95Ms": 3.2,
+        "maxMs": 3.2,
+        "totalMs": 5.5
+      },
+      "candidate_parsing": {
+        "count": 4,
+        "minMs": 0.3,
+        "medianMs": 0.6,
+        "p95Ms": 0.6,
+        "maxMs": 0.6,
+        "totalMs": 1.9
+      },
+      "purchase_decision": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 0.1,
+        "p95Ms": 0.3,
+        "maxMs": 0.3,
+        "totalMs": 0.4
+      },
+      "price_evidence": {
+        "count": 4,
+        "minMs": 0,
+        "medianMs": 1.3,
+        "p95Ms": 1.4,
+        "maxMs": 1.4,
+        "totalMs": 4
+      },
+      "safety_evaluation": {
+        "count": 3,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.4,
+        "maxMs": 0.4,
+        "totalMs": 0.6
+      },
+      "discovery_to_purchase_ready": {
+        "count": 3,
+        "minMs": 1.7,
+        "medianMs": 1.8,
+        "p95Ms": 2.5,
+        "maxMs": 2.5,
+        "totalMs": 6
+      },
+      "transaction_completion": {
+        "count": 3,
+        "minMs": 2.6,
+        "medianMs": 2.8,
+        "p95Ms": 5.3,
+        "maxMs": 5.3,
+        "totalMs": 10.7
+      },
+      "reconciliation": {
+        "count": 3,
+        "minMs": 1.3,
+        "medianMs": 1.6,
+        "p95Ms": 1.7,
+        "maxMs": 1.7,
+        "totalMs": 4.6
+      }
+    }
+  },
+  "acceptanceSession": {
+    "running": false,
+    "status": {
+      "enabled": false,
+      "inFlight": false,
+      "pending": null,
+      "limits": {
+        "minimumProfit": 25,
+        "additionalCosts": 0,
+        "maximumPerPurchase": 900,
+        "maxPurchases": 1
+      },
+      "remainingBudget": 3100,
+      "lastEconomics": {
+        "response": true,
+        "fee": 50,
+        "netProceeds": 950,
+        "netProfit": 50,
+        "referencePrice": 1000,
+        "source": "native-live-asks",
+        "ageMs": 0
+      },
+      "spent": 900,
+      "budget": 4000,
+      "reconciliationRequired": false,
+      "reason": "TraderProcessor.stop",
+      "eligible": 1,
+      "attempts": 1,
+      "successes": 1,
+      "lost": 0,
+      "uncertain": 0,
+      "history": [
+        {
+          "tradeId": "9005",
+          "outcome": "confirmed-owned",
+          "netProfitEstimate": 50
+        }
+      ],
+      "timings": {
+        "search_response": {
+          "count": 2,
+          "minMs": 4,
+          "medianMs": 4.2,
+          "p95Ms": 4.2,
+          "maxMs": 4.2,
+          "totalMs": 8.2
+        },
+        "candidate_parsing": {
+          "count": 2,
+          "minMs": 0.3,
+          "medianMs": 0.4,
+          "p95Ms": 0.4,
+          "maxMs": 0.4,
+          "totalMs": 0.7
+        },
+        "purchase_decision": {
+          "count": 1,
+          "minMs": 0.1,
+          "medianMs": 0.1,
+          "p95Ms": 0.1,
+          "maxMs": 0.1,
+          "totalMs": 0.1
+        },
+        "price_evidence": {
+          "count": 1,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "safety_evaluation": {
+          "count": 1,
+          "minMs": 0,
+          "medianMs": 0,
+          "p95Ms": 0,
+          "maxMs": 0,
+          "totalMs": 0
+        },
+        "discovery_to_purchase_ready": {
+          "count": 1,
+          "minMs": 0.3,
+          "medianMs": 0.3,
+          "p95Ms": 0.3,
+          "maxMs": 0.3,
+          "totalMs": 0.3
+        },
+        "transaction_completion": {
+          "count": 1,
+          "minMs": 3.3,
+          "medianMs": 3.3,
+          "p95Ms": 3.3,
+          "maxMs": 3.3,
+          "totalMs": 3.3
+        },
+        "reconciliation": {
+          "count": 1,
+          "minMs": 1.3,
+          "medianMs": 1.3,
+          "p95Ms": 1.3,
+          "maxMs": 1.3,
+          "totalMs": 1.3
+        }
+      },
+      "acceptanceReview": {
+        "requested": false,
+        "ready": false,
+        "count": 1,
+        "reviewBudget": 4000,
+        "minimumProfit": 25,
+        "endReason": "qualifying-candidate-ready",
+        "evaluations": [
+          {
+            "name": "Player 205",
+            "tradeId": "9005",
+            "itemId": 1000009005,
+            "rarity": 151,
+            "price": 900,
+            "response": true,
+            "reason": "qualified-for-review",
+            "netProfitEstimate": 50,
+            "fee": 50,
+            "referencePrice": 1000,
+            "sampleCount": 4,
+            "quoteObservedAt": 1793654535706,
+            "observedAt": 1793654535706,
+            "minimumProfit": 25
+          }
+        ],
+        "last": {
+          "response": true,
+          "purchaseAuthorized": false,
+          "tradeId": "9005",
+          "itemId": 1000009005,
+          "rarity": 151,
+          "name": "Player 205",
+          "price": 900,
+          "netProfitEstimate": 50,
+          "referencePrice": 1000,
+          "fee": 50,
+          "additionalCosts": 0,
+          "reviewedAt": 1793654535706,
+          "quoteObservedAt": 1793654535706,
+          "remainingSeconds": 3559,
+          "maximumExpenditure": 900,
+          "availableCoins": 5000,
+          "remainingBudget": 4000,
+          "inventoryCapacityVerified": true,
+          "valuation": {
+            "source": "native-live-asks",
+            "definitionId": 205,
+            "rarity": 151,
+            "sampleCount": 4,
+            "observedAt": 1793654535706,
+            "comparables": [
+              {
+                "tradeId": "9002051",
+                "price": 1000,
+                "validUntil": 1793658135706
+              },
+              {
+                "tradeId": "9002052",
+                "price": 1000,
+                "validUntil": 1793658135706
+              },
+              {
+                "tradeId": "9002053",
+                "price": 1000,
+                "validUntil": 1793658135706
+              },
+              {
+                "tradeId": "9002054",
+                "price": 1000,
+                "validUntil": 1793658135706
+              }
+            ]
+          }
+        },
+        "result": {
+          "response": true,
+          "eligible": true,
+          "reason": "native-flow-completed",
+          "purchaseAuthorized": true,
+          "wonCount": 1,
+          "observedBalanceChange": 900,
+          "coinsDeducted": 900
+        }
+      },
+      "rejections": {
+        "count": 0,
+        "reasons": {}
+      }
+    },
+    "attempts": 1,
+    "coins": 4100,
+    "inventory": [
+      205
+    ],
+    "events": [
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4.0999999940395355
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 201,
+        "reference": 1000,
+        "at": 1793654521706
+      },
+      {
+        "kind": "search",
+        "page": 1,
+        "criteria": {
+          "type": "player",
+          "rarities": [
+            151
+          ],
+          "defId": [],
+          "maskedDefId": 0,
+          "minBuy": 0,
+          "maxBuy": 900
+        },
+        "elapsedMs": 4
+      },
+      {
+        "kind": "price-quote",
+        "definitionId": 205,
+        "reference": 1000,
+        "at": 1793654535706
+      },
+      {
+        "kind": "attempt",
+        "id": "9005",
+        "price": 900,
+        "coinsBefore": 5000
+      },
+      {
+        "kind": "result",
+        "id": "9005",
+        "success": true,
+        "coinsAfter": 4100,
+        "elapsedMs": 2.2999999970197678
+      }
+    ],
+    "logs": [
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 4 page 1 minBuy 0",
+      "abStopped",
+      "[v8] state=DISCOVERY rarityIds=151 raritySource=native-selected-filter allPlayerIntent=true maxBuy=900 coverageComplete=false execution=RC-controls",
+      "Found 1 page 1 minBuy 0",
+      "abStopped",
+      "Next action in 4 (secs)",
+      "abStopped"
+    ],
+    "timings": {
+      "search_response": {
+        "count": 2,
+        "minMs": 4,
+        "medianMs": 4.2,
+        "p95Ms": 4.2,
+        "maxMs": 4.2,
+        "totalMs": 8.2
+      },
+      "candidate_parsing": {
+        "count": 2,
+        "minMs": 0.3,
+        "medianMs": 0.4,
+        "p95Ms": 0.4,
+        "maxMs": 0.4,
+        "totalMs": 0.7
+      },
+      "purchase_decision": {
+        "count": 1,
+        "minMs": 0.1,
+        "medianMs": 0.1,
+        "p95Ms": 0.1,
+        "maxMs": 0.1,
+        "totalMs": 0.1
+      },
+      "price_evidence": {
+        "count": 1,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "safety_evaluation": {
+        "count": 1,
+        "minMs": 0,
+        "medianMs": 0,
+        "p95Ms": 0,
+        "maxMs": 0,
+        "totalMs": 0
+      },
+      "discovery_to_purchase_ready": {
+        "count": 1,
+        "minMs": 0.3,
+        "medianMs": 0.3,
+        "p95Ms": 0.3,
+        "maxMs": 0.3,
+        "totalMs": 0.3
+      },
+      "transaction_completion": {
+        "count": 1,
+        "minMs": 3.3,
+        "medianMs": 3.3,
+        "p95Ms": 3.3,
+        "maxMs": 3.3,
+        "totalMs": 3.3
+      },
+      "reconciliation": {
+        "count": 1,
+        "minMs": 1.3,
+        "medianMs": 1.3,
+        "p95Ms": 1.3,
+        "maxMs": 1.3,
+        "totalMs": 1.3
+      }
+    }
+  },
+  "passed": true
+}

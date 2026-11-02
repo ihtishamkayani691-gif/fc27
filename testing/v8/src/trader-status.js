@@ -3,6 +3,16 @@
 module.exports=function(module,exports){
  const number=value=>Number.isSafeInteger(value)&&value>=0?value.toLocaleString('en-US'):null;
  const maximum=value=>Number.isSafeInteger(value)&&value>0?number(value):'Not configured';
+ const signed=value=>Number.isSafeInteger(value)?value.toLocaleString('en-US'):'unavailable';
+ exports.describeCandidate=(r={})=>{
+  const seconds=Number.isFinite(r.remainingSeconds)?Math.max(0,Math.floor(r.remainingSeconds)):null;
+  const valued=r.valuationState==='VALUED'&&Number.isSafeInteger(r.referencePrice)&&Number.isSafeInteger(r.netProfit);
+  return [String(r.name||'Unnamed player')+' · '+String(r.rarityLabel||'Rarity '+r.rarity)+' · Trade '+String(r.tradeId||'unknown'),
+   'Buy Now '+signed(r.buyNowPrice)+' · Remaining '+(seconds===null?'unknown':Math.floor(seconds/60)+'m '+seconds%60+'s')+' at observation',
+   valued?'Estimated resale '+signed(r.referencePrice)+' · Fee '+signed(r.fee)+' · Costs '+signed(r.additionalCosts)+' · Estimated net profit '+signed(r.netProfit):'NOT VALUED · '+String(r.valuationReason||r.reason||'price evidence unavailable'),
+   'Required profit '+signed(r.minimumProfit)+' · '+(r.qualifies===true&&valued?'QUALIFIES (estimate; purchasing permission separate)':'REJECTED / NOT QUALIFIED')+' · '+String(r.reason||'not evaluated'),
+   r.freshWindow?'Fresh-window observation; listing creation time unproven':'Freshness: '+String(r.freshnessReason||r.reason||'unverified')];
+ };
  exports.describeStatus=(snapshot={})=>{
   const ids=Array.isArray(snapshot.rarityIds)?snapshot.rarityIds.map(String).join(', '):'';
   const state={running:'Running',stopped:'Stopped',error:'Error'}[snapshot.state]||'Stopped';
@@ -28,6 +38,14 @@ module.exports=function(module,exports){
    snapshot={...snapshot,...partial};element.textContent='';
    const heading=document.createElement('strong');heading.textContent='Trader · v8 TEST';element.appendChild(heading);
    for(const line of exports.describeStatus(snapshot)){const row=document.createElement('div');row.textContent=line;element.appendChild(row);}
+   if(Array.isArray(snapshot.candidateRows)){
+    const title=document.createElement('strong');title.textContent='Candidate economics · latest '+snapshot.candidateRows.length+' (estimated asks, not guaranteed resale)';element.appendChild(title);
+    const history=document.createElement('div');history.setAttribute('aria-label','Candidate economics and rejection reasons');Object.assign(history.style,{maxHeight:'360px',overflowY:'auto',textAlign:'left'});
+    for(const candidate of snapshot.candidateRows.slice().reverse()){
+      const card=document.createElement('article');Object.assign(card.style,{borderTop:'1px solid currentColor',padding:'6px 0'});
+      for(const line of exports.describeCandidate(candidate)){const text=document.createElement('div');text.textContent=line;card.appendChild(text)}history.appendChild(card);
+    }element.appendChild(history);
+   }
    return element;
   };
   const mount=nearLog=>{

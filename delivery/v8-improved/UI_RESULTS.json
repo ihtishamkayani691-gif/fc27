@@ -1,0 +1,132 @@
+{
+  "simulationOnly": true,
+  "realEARequests": 0,
+  "realPurchases": 0,
+  "checks": [
+    {
+      "name": "clean installed manifest version is 27.0.7.0",
+      "passed": true
+    },
+    {
+      "name": "native rarity 12 is selectable",
+      "passed": true
+    },
+    {
+      "name": "rarity changes leave purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "native rarity 72 is selectable",
+      "passed": true
+    },
+    {
+      "name": "rarity changes leave purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "native rarity 151 is selectable",
+      "passed": true
+    },
+    {
+      "name": "rarity changes leave purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "profit and rejection details are visible directly in Trader",
+      "passed": true
+    },
+    {
+      "name": "remaining time, required profit and NOT VALUED explanations are visible",
+      "passed": true
+    },
+    {
+      "name": "ordinary discovery never submits a native purchase",
+      "passed": true
+    },
+    {
+      "name": "Stop preserves the candidate display and keeps purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "reload keeps purchasing OFF",
+      "passed": true
+    },
+    {
+      "name": "no page errors",
+      "passed": true
+    },
+    {
+      "name": "no external HTTP requests",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "manifest": {
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "js": [
+          "js/v8-execution-guard.js"
+        ],
+        "matches": [
+          "https://www.ea.com/ea-sports-fc/ultimate-team/web-app/*",
+          "https://www.ea.com/*/ea-sports-fc/ultimate-team/web-app/*"
+        ],
+        "run_at": "document_start",
+        "world": "MAIN"
+      },
+      {
+        "js": [
+          "content_script.js"
+        ],
+        "matches": [
+          "https://www.ea.com/ea-sports-fc/ultimate-team/web-app/*",
+          "https://www.ea.com/*/ea-sports-fc/ultimate-team/web-app/*"
+        ]
+      }
+    ],
+    "description": "Enhances your experience with FC 27 web app",
+    "host_permissions": [
+      "https://futbin.com/*",
+      "https://www.futbin.com/*",
+      "https://futnext.com/*",
+      "https://www.futnext.com/*",
+      "https://futbin.org/*",
+      "https://exp.host/*"
+    ],
+    "icons": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "manifest_version": 3,
+    "name": "FC Enhancer v8 IMPROVED (purchases OFF by default)",
+    "permissions": [
+      "alarms",
+      "contextMenus",
+      "notifications",
+      "storage"
+    ],
+    "version": "27.0.7.0",
+    "version_name": "v8 Improved — candidate economics and fair price coverage",
+    "web_accessible_resources": [
+      {
+        "matches": [
+          "<all_urls>"
+        ],
+        "resources": [
+          "js/vendor.js",
+          "js/main.js",
+          "js/index.js",
+          "assets/index.css",
+          "header_image.png"
+        ]
+      }
+    ]
+  },
+  "candidateText": "Player 205 · Ultimate Scream · Trade 2005\nBuy Now 900 · Remaining 59m 19s at observation\nEstimated resale 1,000 · Fee 50 · Costs 0 · Estimated net profit 50\nRequired profit 25 · QUALIFIES (estimate; purchasing permission separate) · all-read-only-checks-passed\nFresh-window observation; listing creation time unproven\nPlayer 2004 · Ultimate Scream · Trade 2004\nBuy Now 901 · Remaining 59m 19s at observation\nNOT VALUED · Outside price limits\nRequired profit 25 · REJECTED / NOT QUALIFIED · Outside price limits\nFresh-window observation; listing creation time unproven\nPlayer 203 · Ultimate Scream · Trade 2003\nBuy Now 900 · Remaining 59m 19s at observation\nNOT VALUED · stale-response\nRequired profit 25 · REJECTED / NOT QUALIFIED · stale-response\nFresh-window observation; listing creation time unproven\nPlayer 202 · Ultimate Scream · Trade 2002\nBuy Now 900 · Remaining 59m 19s at observation\nEstimated resale 1,000 · Fee 50 · Costs 0 · Estimated net profit 50\nRequired profit 25 · QUALIFIES (estimate; purchasing permission separate) · all-read-only-checks-passed\nFresh-window observation; listing creation time unproven\nPlayer 201 · Ultimate Scream · Trade 2001\nBuy Now 900 · Remaining 59m 19s at observation\nEstimated resale 900 · Fee 45 · Costs 0 · Estimated net profit -45\nRequired profit 25 · REJECTED / NOT QUALIFIED · minimum-net-profit-not-met\nFresh-window observation; listing creation time unproven",
+  "passed": true
+}

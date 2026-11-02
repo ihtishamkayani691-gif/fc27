@@ -12,6 +12,7 @@ run(process.execPath,['testing/v8/build-rc2.cjs','--skip-rc1-build']);
 run(process.execPath,['testing/v8/build-final.cjs','--skip-rc2-build']);
 run(process.execPath,['testing/v8/build-universal.cjs','--skip-final-build']);
 run(process.execPath,['testing/v8/build-universal-final.cjs','--skip-universal-build']);
+run(process.execPath,['testing/v8/build-improved.cjs','--skip-final-build']);
 const tests=fs.readdirSync(path.join(root,'testing/v8/tests')).filter(f=>f.endsWith('.test.cjs')).map(f=>'testing/v8/tests/'+f);
 run(process.execPath,['--test',...tests]);
 run(process.execPath,['delivery/fresh-listing-research/offline/evaluator.test.cjs']);

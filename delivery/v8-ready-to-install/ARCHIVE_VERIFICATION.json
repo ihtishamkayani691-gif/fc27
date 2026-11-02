@@ -1,0 +1,10 @@
+{
+  "explorerExtraction": true,
+  "allFilesMatch": true,
+  "files": 25,
+  "manifestRoot": true,
+  "requiredManifestFilesPresent": true,
+  "version": "27.0.6.0",
+  "crcPassed": true,
+  "mainSha256": "d932a08f5ec87baa43eff5a6b5007506416e1760178018d8ace017834162f9a1"
+}

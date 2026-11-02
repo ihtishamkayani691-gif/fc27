@@ -28,7 +28,7 @@ module.exports=function(module,exports,require){
   if(copy.defId?.length===0&&copy.rarities?.length===0&&enhancer.multiRarities?.size)copy.rarities=[...enhancer.multiRarities];
   return copy;
  };
- exports.endRun=(processor,source)=>{const session=sessions.get(processor.traderData);session?.planner.stop();sessions.delete(processor.traderData);if(snapshots.get(processor.traderData)?.state!=='error')setStatus(processor,{state:'stopped'});legacy.endRun(processor,source)};
+ exports.endRun=(processor,source)=>{const session=sessions.get(processor.traderData);session?.planner.stop();sessions.delete(processor.traderData);if(purchase.discoveryImprovements){const s=snapshots.get(processor.traderData);if(s?.candidateRows)s.candidateRows=s.candidateRows.map(r=>r.reason==='awaiting-safety-and-valuation'?{...r,reason:'discovery-stopped-before-valuation',qualifies:false,valuationState:'NOT VALUED'}:r)}if(snapshots.get(processor.traderData)?.state!=='error')setStatus(processor,{state:'stopped'});legacy.endRun(processor,source)};
  exports.filterRotationDecision=(data,settings)=>settings.searchSetting.autoFindNewest?'retain':legacy.filterRotationDecision(data,settings);
  exports.run=async(processor,criteria,orchestrator,log)=>{
   const settings=processor.traderSettings,cfg=settings.searchSetting,data=processor.traderData;
@@ -49,14 +49,14 @@ module.exports=function(module,exports,require){
     session?.planner.stop();const helpers=require(27988);
     const nativeMaximum=positive(settings.buySetting?.buyPrice)?Math.min(settings.buySetting.buyPrice,cfg.v8SnipeMaximum):cfg.v8SnipeMaximum;
     const roundDown=typeof helpers.roundToNearestStep==='function'&&typeof helpers.getBeforeStepValue==='function'?value=>{const rounded=helpers.roundToNearestStep(value);return rounded>value?helpers.getBeforeStepValue(rounded):rounded}:null;
-    const planner=new PriceScopePlanner({criteria:current,snipeMaximum:nativeMaximum,verifiedRarityIds:current.rarities,roundDown,previousStep:helpers.getBeforeStepValue,nextStep:helpers.getNextStepValue,probeUpperBoundary:true});
+    const planner=new PriceScopePlanner({criteria:current,snipeMaximum:nativeMaximum,verifiedRarityIds:current.rarities,roundDown,previousStep:helpers.getBeforeStepValue,nextStep:helpers.getNextStepValue,probeUpperBoundary:true,balancedCoverage:purchase.discoveryImprovements===true});
     session={identity,planner,seen:new Set(),pages:new Map(),players:new Set(),freshPlayers:new Set(),inFlight:false};sessions.set(data,session);
     setStatus(processor,{...emptyStatus(),state:'running'});exports.refreshStatus(processor);
     log('[v8] state=DISCOVERY rarityIds='+current.rarities.join(',')+' raritySource=native-selected-filter allPlayerIntent=true maxBuy='+planner.effectiveMaximum+' coverageComplete=false buying=DISABLED');
    }
    const intent=session.planner.next(session.continuationScope??null);if(!intent||intent.kind==='idle')return{items:[]};session.continuationScope=null;
    const request=intent.criteria,expected=JSON.stringify(canonical(legacy.semantic?legacy.semantic(request):request)),scopeKey=intent.scope.minBuy+'|'+intent.scope.maxBuy;
-   if(!session.pages.has(scopeKey))session.pages.set(scopeKey,new ScopePager(intent.scope.id===session.planner.root.id?2:20));
+   if(!session.pages.has(scopeKey))session.pages.set(scopeKey,new ScopePager(intent.scope.id===session.planner.root.id?2:20,{seekFresh:purchase.discoveryImprovements===true&&intent.scope.id!==session.planner.root.id}));
    const pager=session.pages.get(scopeKey),page=pager.page;
    legacy.markFresh(request);data.cache.nextPageNumber=page;session.inFlight=true;const token=processor.cancellationToken,requestStartedAt=Date.now();
    const items=await orchestrator.searchMarket(request,page);
@@ -73,19 +73,22 @@ module.exports=function(module,exports,require){
    const wire=legacy.wire(request),capacity=wire.fields?.num??wire.fields?.count,scope=session.planner.scopes.get(intent.scope.id);
    const ids=items.map(item=>item?.getAuctionData?.()?.tradeId);
    if(ids.some(id=>typeof id!=='string'||!/^\d+$/.test(id)))return fail('exact-trade-id-unavailable');
-   if(!pager.accept({wire,ids,canSplit:false})){session.planner.observe({intentId:intent.id,acceptedScope:false});log('[v8] page='+page+' nativePageAccess=unverified responseDiscarded=true buying=DISABLED');return{items:[]};}
+   if(!pager.accept({wire,ids,canSplit:false,maxRemaining:Math.max(...items.map(i=>i?.getAuctionData?.()?.expires).filter(Number.isFinite))})){session.planner.observe({intentId:intent.id,acceptedScope:false});log('[v8] page='+page+' nativePageAccess=unverified responseDiscarded=true buying=DISABLED');return{items:[]};}
    const enhancer=require(32024).InMemoryStore.instance.get('enhancerSettings'),allowed=legacy.getAllowed(request);
    const filtered=require(71446).filterResult(allowed?items.filter(item=>allowed.includes(item)):items.slice(),enhancer);
    const filteredSet=new Set(filtered);let freshCount=0,newFreshCount=0,newTradeCount=0,priceEligible=0;
-   const status=snapshots.get(data),reject=reason=>{status.rejectedCount++;status.rejectionReasons[reason]=(status.rejectionReasons[reason]||0)+1;};
+   const status=snapshots.get(data);let candidateRow=null;
+   const publish=()=>{if(purchase.discoveryImprovements&&(sessions.get(data)===session||!processor.isStarted&&!sessions.has(data)))setStatus(processor,{...status,state:processor.isStarted?'running':'stopped',candidateRows:status.candidateRows||[]})};
+   const reject=reason=>{status.rejectedCount++;status.rejectionReasons[reason]=(status.rejectionReasons[reason]||0)+1;if(candidateRow){candidateRow.reason=reason;candidateRow.qualifies=false;}publish()};
    for(const item of items){
     if(ended())return discard();if(changed())return fail('search-context-changed');
     const auction=item?.getAuctionData?.(),id=auction?.tradeId;
     if(typeof id!=='string'||!/^\d+$/.test(id))return fail('exact-trade-id-unavailable');
     const playerName=item.getStaticData?.()?.name??'Unnamed player',playerKey=String(item.definitionId??playerName);if(currentRarities(session).includes(item.rareflag))session.players.add(playerKey);
-    if(session.seen.has(id)){reject('Duplicate trade ID');continue;}
+    candidateRow=null;if(session.seen.has(id)){reject('Duplicate trade ID');continue;}
     if(session.seen.size>=50000)return fail('dedup-capacity-reached');session.seen.add(id);newTradeCount++;
     const seconds=auction.expires,price=auction.buyNowPrice,rarity=item.rareflag;
+    if(purchase.discoveryImprovements){candidateRow={name:playerName,rarity,rarityLabel:purchase.selectedRarity?.(processor)?.name||('Rarity '+rarity),tradeId:id,buyNowPrice:price,remainingSeconds:seconds,observedAt,minimumProfit:purchase.discoveryLimits?.(processor)?.minimumProfit??null,referencePrice:null,netProfit:null,fee:null,additionalCosts:purchase.discoveryLimits?.(processor)?.additionalCosts??null,qualifies:false,valuationState:'NOT VALUED',reason:'awaiting-safety-and-valuation',freshWindow:seconds>=3540&&seconds<=3600};status.candidateRows=(status.candidateRows||[]).concat(candidateRow).slice(-40);publish();}
     if(typeof seconds!=='number'||!Number.isFinite(seconds)||seconds<3540||seconds>3600){reject('Outside fresh window');continue;}
     if(!currentRarities(session).includes(rarity)){reject('Wrong rarity');continue;}
     if(!filteredSet.has(item)){reject('Native client filter');continue;}
@@ -96,15 +99,19 @@ module.exports=function(module,exports,require){
     priceEligible++;
     const purchaseOptions={maximum:Math.min(cfg.v8SnipeMaximum,intent.criteria.maxBuy),processor,orchestrator,perSearch,observedAt,observedRemaining:seconds};
     const preview=await purchase.preview(item,purchaseOptions);
+    if(candidateRow){Object.assign(candidateRow,purchase.candidateEvidence(item,processor,preview));publish();}
     if(ended())return discard();if(changed())return fail('search-context-changed');
     if(preview.response!==true)reject(preview.reason||'Native safety rejected');else{status.freshCandidates.push({name:playerName,buyNowPrice:price,tradeId:id});status.freshCandidates=status.freshCandidates.slice(-10);}
     const execution=preview.response===true?await purchase.execute(item,purchaseOptions):null;
     if(ended())return discard();if(changed())return fail('search-context-changed');
     log('[v8 candidate] Player: '+escape(item.getStaticData?.()?.name??'Unnamed player')+' tradeId='+id+' buyNow='+price+' remaining='+seconds+' newlyDiscovered=true listingBirthProven=false priceEligible=true nativeSafety='+escape(preview.response===true?'pass':preview.reason||'reject')+' purchaseAuthorized='+(execution?.purchaseAuthorized===true)+' buying='+(execution?.purchaseAuthorized===true?'ENABLED':'DISABLED'));
    }
-   session.planner.observe({intentId:intent.id,acceptedScope:true,rawCount:items.length,freshCount,newFreshCount,newPageObserved:page>1&&newTradeCount>0,observedRequestCount:capacity,countProvenance:['xhr','fetch'].includes(wire.transport)&&wire.status>=200&&wire.status<300?'wire':'unknown'});
+   session.planner.observe({intentId:intent.id,acceptedScope:true,rawCount:items.length,freshCount,newFreshCount,maxRemaining:Math.max(...items.map(i=>i?.getAuctionData?.()?.expires).filter(Number.isFinite)),seekingFresh:purchase.discoveryImprovements===true&&pager.reason==='evidence-checked-fresh-window-seek',newPageObserved:page>1&&newTradeCount>0,observedRequestCount:capacity,countProvenance:['xhr','fetch'].includes(wire.transport)&&wire.status>=200&&wire.status<300?'wire':'unknown'});
    setStatus(processor,{...status,state:'running',observedPlayerCount:session.players.size,freshPlayerCount:session.freshPlayers.size});
-   if(pager.page>page&&(scope.leaf||scope.id===session.planner.root.id))session.continuationScope=intent.scope.id;
+   if(pager.page>page&&(scope.leaf||scope.id===session.planner.root.id)){
+    const same=session.lastScope===intent.scope.id;session.consecutivePages=same?(session.consecutivePages||0)+1:1;session.lastScope=intent.scope.id;
+    if(!purchase.discoveryImprovements||session.consecutivePages<2)session.continuationScope=intent.scope.id;else session.consecutivePages=0;
+   }else{session.lastScope=null;session.consecutivePages=0;}
    const durations=items.map(item=>item?.getAuctionData?.()?.expires).filter(Number.isFinite),prices=items.map(item=>item?.getAuctionData?.()?.buyNowPrice).filter(Number.isFinite);
    log('[v8] state=DISCOVERY page='+page+' offset='+wire.offset+' count='+items.length+' minBuy='+intent.criteria.minBuy+' maxBuy='+intent.criteria.maxBuy+' minSec='+(durations.length?Math.min(...durations):'unknown')+' maxSec='+(durations.length?Math.max(...durations):'unknown')+' minPrice='+(prices.length?Math.min(...prices):'unknown')+' maxPrice='+(prices.length?Math.max(...prices):'unknown')+' observedCount='+(capacity??'unknown')+' http='+wire.status+' freshCandidates='+freshCount+' priceEligible='+priceEligible+' scopes='+session.planner.diagnostics().scopeCount+' pageEvidence='+pager.reason+' coverageComplete=false buying=DISABLED');
    return {items:[],diagnostics:session.planner.diagnostics()};

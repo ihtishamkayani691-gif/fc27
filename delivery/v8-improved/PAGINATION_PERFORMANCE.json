@@ -1,0 +1,56 @@
+{
+  "syntheticOnly": true,
+  "fixture": "valid native stride; fresh window begins at observed page8 in this fixture only",
+  "traces": [
+    {
+      "seekFresh": false,
+      "firstFreshRequest": 8,
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "seekFresh": true,
+      "firstFreshRequest": 4,
+      "pages": [
+        1,
+        2,
+        4,
+        8,
+        3,
+        9,
+        5,
+        10,
+        6,
+        11,
+        7,
+        12,
+        1,
+        2,
+        12,
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "scopeBudget": 12,
+  "allPagesCovered": true
+}

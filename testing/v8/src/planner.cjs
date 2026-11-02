@@ -58,6 +58,17 @@ class PriceScopePlanner {
       const lower=this.previousStep(cap);
       if(integer(lower)&&lower>nativeMinimum&&lower<cap){const edge=this.addScope(lower,cap,this.root.id);this.queue.unshift(edge.id);}
     }
+    this.balancedCoverage=options.balancedCoverage===true;
+    if(this.balancedCoverage&&this.roundDown&&this.previousStep&&this.config.maxScopes>=6){
+      const cuts=[nativeMinimum,...[1,2,3].map(n=>this.roundDown(nativeMinimum+(cap-nativeMinimum)*n/4)),cap];
+      if(cuts.every((v,n)=>integer(v)&&(n===0||v>cuts[n-1]))){
+        this.root.leaf=false;
+        for(let n=0;n<4;n++){
+          const minimum=n===0?nativeMinimum:Math.max(nativeMinimum,this.previousStep(cuts[n]));
+          const band=this.addScope(minimum,cuts[n+1],this.root.id);this.queue.push(band.id);
+        }
+      }
+    }
   }
   addScope(minimum,maximum,parent){
     const scope={id:'price-scope-'+(++this.sequence),minimum,maximum,parent,leaf:true,visits:0,acceptedVisits:0,noFreshVisits:0,nextEligibleTick:0,lastRawCount:null,lastCapacity:null,lastFreshCount:0,lastNewFreshCount:0,terminalReason:null};
@@ -77,8 +88,14 @@ class PriceScopePlanner {
     }else if(this.tick-this.lastBroadTick>=this.config.backstopEvery&&this.root.nextEligibleTick<=this.tick){
       scope=this.root;kind='broad-backstop';this.lastBroadTick=this.tick;
     }else{
+      // At most one productive bonus per four turns; FIFO and broad backstops
+      // retain bounded turns for cheaper and unproductive scopes.
+      if(this.balancedCoverage&&this.tick%4===0){
+        const productive=[...this.scopes.values()].filter(s=>s.leaf&&(s.lastNewFreshCount>0||s.seekingFresh)&&s.nextEligibleTick<=this.tick&&this.tick-(s.lastIssuedTick||0)>=3).sort((a,b)=>Number(b.lastNewFreshCount>0)-Number(a.lastNewFreshCount>0)||(b.lastMaxRemaining||0)-(a.lastMaxRemaining||0)||(b.lastProductiveTick||0)-(a.lastProductiveTick||0))[0];
+        if(productive){scope=productive;kind='price-band';this.queue=this.queue.filter(id=>id!==scope.id);}
+      }
       const length=this.queue.length;
-      for(let i=0;i<length;i++){
+      for(let i=0;!scope&&i<length;i++){
         const candidate=this.scopes.get(this.queue.shift());
         if(!candidate?.leaf)continue;
         if(candidate.nextEligibleTick>this.tick){this.queue.push(candidate.id);continue}
@@ -92,6 +109,7 @@ class PriceScopePlanner {
     if(kind==='broad-backstop')this.queue=this.queue.filter(id=>id!==scope.id);
     const criteria=copyCriteria(this.base);criteria.minBuy=scope.minimum;criteria.maxBuy=scope.maximum;
     const id='intent-'+(++this.issued);this.pending={id,scopeId:scope.id,kind};
+    scope.lastIssuedTick=this.tick;
     return {id,kind,criteria,scope:{id:scope.id,minBuy:scope.minimum,maxBuy:scope.maximum},epoch:this.tick,allPlayerIntent:true,coverageComplete:false};
   }
   split(scope){
@@ -117,6 +135,8 @@ class PriceScopePlanner {
     scope.acceptedVisits++;scope.lastRawCount=stats.rawCount;
     scope.lastFreshCount=integer(stats.freshCount)?stats.freshCount:0;
     scope.lastNewFreshCount=integer(stats.newFreshCount)?stats.newFreshCount:0;
+    scope.lastMaxRemaining=Number.isFinite(stats.maxRemaining)?stats.maxRemaining:null;scope.seekingFresh=stats.seekingFresh===true;
+    if(scope.lastNewFreshCount>0)scope.lastProductiveTick=this.tick;
     scope.noFreshVisits=scope.lastNewFreshCount>0||stats.newPageObserved===true?0:scope.noFreshVisits+1;
     const capacity=positive(stats.observedRequestCount)&&['wire','sdk'].includes(stats.countProvenance)?stats.observedRequestCount:null;
     scope.lastCapacity=capacity;

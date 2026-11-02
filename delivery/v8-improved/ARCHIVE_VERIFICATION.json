@@ -1,0 +1,12 @@
+{
+  "explorerExtraction": true,
+  "allFilesMatch": true,
+  "files": 26,
+  "manifestRoot": true,
+  "requiredManifestFilesPresent": true,
+  "version": "27.0.7.0",
+  "crcPassed": true,
+  "zipSha256": "e83011d8004b823ae3137d79bb4b77600b15a9a3502eb8906c92fd9b0f5d4ec7",
+  "mainSha256": "34c94644f3f74e82ea977a53ba8a4cfe2ff603c01938d409ef460245b2716c89",
+  "correctedQueueRegressionVerified": true
+}
